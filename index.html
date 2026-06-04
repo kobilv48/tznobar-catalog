@@ -114,7 +114,7 @@
         .btn-install {
             background: #ffffff;
             color: var(--primary-dark);
-            display: none;
+            display: inline-flex;
         }
 
         .btn-install:hover { background: #f4f4f4; }
@@ -1520,6 +1520,42 @@
             });
         }
 
+        function isStandaloneMode() {
+            return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+        }
+
+        function showInstallInstructionsDialog() {
+            return new Promise((resolve) => {
+                const overlay = document.createElement('div');
+                overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:5000;display:flex;align-items:center;justify-content:center;';
+
+                overlay.innerHTML = `
+                    <div style="background:white;border-radius:12px;padding:24px;width:90%;max-width:420px;box-shadow:0 10px 40px rgba(0,0,0,0.3);text-align:right;direction:rtl;">
+                        <h2 style="margin-bottom:12px;color:#1a3a1e;font-size:20px;text-align:center;">התקנה למסך הבית</h2>
+                        <p style="margin-bottom:10px;font-size:14px;line-height:1.6;color:#444;">כדי ליצור קיצור דרך כמו אפליקציה:</p>
+                        <p style="margin-bottom:6px;font-size:14px;color:#444;">1. פתח את תפריט השיתוף בדפדפן (Share).</p>
+                        <p style="margin-bottom:6px;font-size:14px;color:#444;">2. בחר Add to Home Screen / הוסף למסך הבית.</p>
+                        <p style="margin-bottom:18px;font-size:14px;color:#444;">3. אשר את שם האפליקציה ולחץ Add.</p>
+                        <div style="display:flex;justify-content:center;">
+                            <button id="installHelpClose" class="btn btn-primary" style="padding:10px 20px;border:none;border-radius:25px;font-size:14px;font-weight:600;cursor:pointer;background:#2c5530;color:white;">הבנתי</button>
+                        </div>
+                    </div>
+                `;
+
+                document.body.appendChild(overlay);
+                overlay.querySelector('#installHelpClose').onclick = () => {
+                    document.body.removeChild(overlay);
+                    resolve();
+                };
+                overlay.onclick = (e) => {
+                    if (e.target === overlay) {
+                        document.body.removeChild(overlay);
+                        resolve();
+                    }
+                };
+            });
+        }
+
         // ========== Reset ==========
         // Hidden feature: to reload original data from JSON, clear localStorage
         // localStorage.removeItem('tznobar_catalog_products'); location.reload();
@@ -1528,22 +1564,27 @@
         window.addEventListener('beforeinstallprompt', (event) => {
             event.preventDefault();
             deferredInstallPrompt = event;
-            const installBtn = document.getElementById('installBtn');
-            if (installBtn) installBtn.style.display = 'inline-flex';
         });
 
         document.getElementById('installBtn')?.addEventListener('click', async () => {
-            if (!deferredInstallPrompt) return;
-            deferredInstallPrompt.prompt();
-            await deferredInstallPrompt.userChoice;
-            deferredInstallPrompt = null;
-            document.getElementById('installBtn').style.display = 'none';
+            if (isStandaloneMode()) {
+                showToast('האפליקציה כבר מותקנת במסך הבית');
+                return;
+            }
+
+            if (deferredInstallPrompt) {
+                deferredInstallPrompt.prompt();
+                await deferredInstallPrompt.userChoice;
+                deferredInstallPrompt = null;
+                return;
+            }
+
+            await showInstallInstructionsDialog();
         });
 
         window.addEventListener('appinstalled', () => {
             deferredInstallPrompt = null;
-            const installBtn = document.getElementById('installBtn');
-            if (installBtn) installBtn.style.display = 'none';
+            showToast('הקיצור נוסף למסך הבית');
         });
 
         if ('serviceWorker' in navigator) {

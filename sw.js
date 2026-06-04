@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tznobar-cache-v3';
+const CACHE_NAME = 'tznobar-cache-v4';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -33,27 +33,39 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
+  const requestUrl = new URL(event.request.url);
+  const isSameOrigin = requestUrl.origin === self.location.origin;
+  const isNavigation = event.request.mode === 'navigate';
+
   event.respondWith(
-    caches.match(event.request).then((cached) => {
+    (async () => {
+      // Keep HTML fresh so new deployments are visible immediately.
+      if (isNavigation) {
+        try {
+          const networkResponse = await fetch(event.request);
+          if (networkResponse && networkResponse.status === 200 && isSameOrigin) {
+            const cache = await caches.open(CACHE_NAME);
+            cache.put(event.request, networkResponse.clone());
+          }
+          return networkResponse;
+        } catch {
+          return (await caches.match(event.request)) || (await caches.match('/index.html')) || Response.error();
+        }
+      }
+
+      const cached = await caches.match(event.request);
       if (cached) return cached;
 
-      return fetch(event.request)
-        .then((response) => {
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-
-          const responseToCache = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
-          return response;
-        })
-        .catch(() => {
-          // Only HTML navigations should fall back to index.html.
-          if (event.request.mode === 'navigate') {
-            return caches.match('/index.html');
-          }
-          return Response.error();
-        });
-    })
+      try {
+        const networkResponse = await fetch(event.request);
+        if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic' && isSameOrigin) {
+          const cache = await caches.open(CACHE_NAME);
+          cache.put(event.request, networkResponse.clone());
+        }
+        return networkResponse;
+      } catch {
+        return Response.error();
+      }
+    })()
   );
 });
