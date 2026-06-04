@@ -56,6 +56,18 @@
             font-weight: 700;
         }
 
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .header-logo {
+            height: 70px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
         .header-actions {
             display: flex;
             gap: 12px;
@@ -200,6 +212,24 @@
         .category-item.active .category-count {
             background: var(--primary);
             color: white;
+        }
+
+        .category-add-item {
+            margin: 12px 14px 0;
+            padding: 10px 14px;
+            border-radius: 10px;
+            border: 1px dashed #b7c5b8;
+            color: var(--primary);
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s;
+            background: #f7fbf7;
+        }
+
+        .category-add-item:hover {
+            background: #edf7ee;
+            border-color: var(--primary-light);
         }
 
         /* Main Content */
@@ -446,6 +476,23 @@
                 padding: 16px;
             }
 
+            .header-brand {
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+            }
+
+            .header-logo {
+                height: 58px;
+            }
+
+            .header h1 {
+                font-size: 34px;
+                text-align: center;
+            }
+
             .header-actions {
                 width: 100%;
                 flex-wrap: wrap;
@@ -480,6 +527,18 @@
             .category-item.active {
                 background: var(--primary);
                 color: white;
+            }
+
+            .category-add-item {
+                margin: 0;
+                white-space: nowrap;
+                border-radius: 20px;
+                padding: 8px 14px;
+                font-size: 13px;
+                min-height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .products-grid {
@@ -681,8 +740,8 @@
 
     <!-- Header -->
     <div class="header">
-        <div style="display:flex;align-items:center;gap:14px;">
-            <img src="logo-white.png" alt="צנובר" style="height:70px;object-fit:contain;" />
+        <div class="header-brand">
+            <img src="logo-white.png" alt="צנובר" class="header-logo" onclick="goHomeFromLogo()" />
             <h1>קטלוג מוצרים</h1>
         </div>
         <div class="header-actions">
@@ -793,13 +852,16 @@
         let searchQuery = '';
         let uploadedImageData = null;
         let deferredInstallPrompt = null;
+        let customCategories = [];
         const ACCESS_PIN = '4423';
         const ACCESS_KEY = 'tznobar_access_granted';
         const STORAGE_KEY = 'tznobar_catalog_products';
+        const CUSTOM_CATEGORIES_KEY = 'tznobar_custom_categories';
 
         // ========== Initialize ==========
         async function init() {
             await requireAccess();
+            loadCustomCategories();
 
             // Try loading from localStorage first (user modifications)
             const stored = localStorage.getItem(STORAGE_KEY);
@@ -897,11 +959,29 @@
             localStorage.setItem(STORAGE_KEY, JSON.stringify(allProducts));
         }
 
+        function loadCustomCategories() {
+            try {
+                const data = JSON.parse(localStorage.getItem(CUSTOM_CATEGORIES_KEY) || '[]');
+                customCategories = Array.isArray(data)
+                    ? data.filter(c => typeof c === 'string' && c.trim())
+                    : [];
+            } catch {
+                customCategories = [];
+            }
+        }
+
+        function saveCustomCategories() {
+            localStorage.setItem(CUSTOM_CATEGORIES_KEY, JSON.stringify(customCategories));
+        }
+
         // ========== Categories ==========
         function getCategories() {
             const cats = {};
             allProducts.forEach(p => {
                 cats[p.category] = (cats[p.category] || 0) + 1;
+            });
+            customCategories.forEach((cat) => {
+                if (!cats[cat]) cats[cat] = 0;
             });
             return cats;
         }
@@ -931,6 +1011,12 @@
                 sidebar.appendChild(div);
             });
 
+            const addCategoryBtn = document.createElement('div');
+            addCategoryBtn.className = 'category-add-item';
+            addCategoryBtn.textContent = '+ הוסף קטגוריה';
+            addCategoryBtn.onclick = openAddCategoryFromSidebar;
+            sidebar.appendChild(addCategoryBtn);
+
             // Populate category select in modal
             const select = document.getElementById('productCategory');
             select.innerHTML = sortedCats.map(([cat]) => 
@@ -943,10 +1029,37 @@
         function filterCategory(category, el) {
             currentFilter = category;
             document.querySelectorAll('.category-item').forEach(item => item.classList.remove('active'));
-            if (el) el.classList.add('active');
+            const targetEl = el || document.querySelector(`.category-item[data-category="${category}"]`);
+            if (targetEl) targetEl.classList.add('active');
             document.getElementById('currentCategory').textContent = 
                 category === 'all' ? 'כל המוצרים' : category;
             renderProducts();
+        }
+
+        function openAddCategoryFromSidebar() {
+            const newCategory = prompt('הזן שם קטגוריה חדשה:');
+            if (!newCategory || !newCategory.trim()) return;
+
+            const name = newCategory.trim();
+            const existsInProducts = allProducts.some(p => p.category === name);
+            const existsInCustom = customCategories.includes(name);
+
+            if (!existsInProducts && !existsInCustom) {
+                customCategories.push(name);
+                customCategories = customCategories.sort((a, b) => a.localeCompare(b, 'he'));
+                saveCustomCategories();
+            }
+
+            buildCategoryList();
+            filterCategory(name);
+            showToast('הקטגוריה נוספה');
+        }
+
+        function goHomeFromLogo() {
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput) searchInput.value = '';
+            searchQuery = '';
+            filterCategory('all');
         }
 
         // ========== Search ==========
