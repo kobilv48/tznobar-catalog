@@ -90,7 +90,7 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
     c.setFont(font_name, 28)
     c.drawCentredString(page_w / 2, page_h - 320, _rtl('קטלוג מוצרים'))
     c.setFont(font_name, 12)
-    subtitle = f"{len(products)} מוצרים" + (f" | קטגוריה: {selected_category}" if (not export_all and selected_category) else '')
+    subtitle = (f"קטגוריה: {selected_category}" if (not export_all and selected_category) else '')
     c.drawCentredString(page_w / 2, page_h - 345, _rtl(subtitle))
     c.drawCentredString(page_w / 2, page_h - 365, datetime.now().strftime('%Y-%m-%d'))
     c.showPage()
