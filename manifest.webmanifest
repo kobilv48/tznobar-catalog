@@ -11,19 +11,19 @@
   "description": "קטלוג מוצרים של צנובר",
   "icons": [
     {
-      "src": "/icon-gold-192.png",
+      "src": "/icon-wg-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-gold-512.png",
+      "src": "/icon-wg-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icon-white-512-maskable.png",
+      "src": "/icon-wg-512-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
