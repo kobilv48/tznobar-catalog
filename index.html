@@ -1591,18 +1591,9 @@
                     : `קטלוג_צנובר_${selectedCategory}_${dateStr}_${timeStr}.pdf`;
                 const pdfFile = new File([pdfBlob], fileName, { type: 'application/pdf' });
 
-                // Try native share (works on mobile with WhatsApp)
-                if (navigator.canShare && navigator.canShare({ files: [pdfFile] })) {
+                const fallbackToManualWhatsApp = () => {
                     hideLoading();
-                    await navigator.share({
-                        title: 'קטלוג צנובר',
-                        text: 'קטלוג מוצרי צנובר',
-                        files: [pdfFile]
-                    });
-                    showToast('הקטלוג שותף בהצלחה');
-                } else {
-                    hideLoading();
-                    
+
                     const url = URL.createObjectURL(pdfBlob);
                     const a = document.createElement('a');
                     a.href = url;
@@ -1612,8 +1603,31 @@
 
                     const waText = encodeURIComponent('קטלוג מוצרי צנובר 🌿\nמצורף קובץ PDF עם הקטלוג');
                     window.open(`https://wa.me/?text=${waText}`, '_blank');
-                    
-                    showToast('ה-PDF הורד - צרף אותו בוואטסאפ');
+
+                    showToast('השיתוף הישיר לא זמין במכשיר זה. ה-PDF הורד - צרף אותו בוואטסאפ');
+                };
+
+                // Try native share (works on mobile with WhatsApp)
+                if (navigator.canShare && navigator.canShare({ files: [pdfFile] })) {
+                    hideLoading();
+                    try {
+                        await navigator.share({
+                            title: 'קטלוג צנובר',
+                            text: 'קטלוג מוצרי צנובר',
+                            files: [pdfFile]
+                        });
+                        showToast('הקטלוג שותף בהצלחה');
+                    } catch (shareErr) {
+                        // Some platforms deny Web Share if the user gesture timed out or permission is blocked.
+                        if (shareErr && shareErr.name === 'AbortError') {
+                            showToast('השיתוף בוטל');
+                        } else {
+                            console.warn('Native share failed, switching to manual WhatsApp flow:', shareErr);
+                            fallbackToManualWhatsApp();
+                        }
+                    }
+                } else {
+                    fallbackToManualWhatsApp();
                 }
             } catch (e) {
                 console.error('PDF generation failed:', e);
