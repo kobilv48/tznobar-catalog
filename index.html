@@ -1683,7 +1683,7 @@
             // Decide whether to export all products or a specific category
             let exportAll = true;
             let selectedCategory = null;
-            let pdfMode = 'fast';
+            const pdfMode = 'quality';
             if (currentFilter === 'all') {
                 const choice = await showChoiceDialog(
                     'ייצור קטלוג PDF',
@@ -1709,15 +1709,6 @@
                 exportAll = choice;
                 if (!exportAll) selectedCategory = currentFilter;
             }
-
-            const modeChoice = await showChoiceDialog(
-                'מצב יצירת PDF',
-                'בחר מצב יצוא: מהיר מאוד או איכותי יותר',
-                '⚡ מהיר מאוד',
-                '🖼️ איכותי יותר'
-            );
-            if (modeChoice === null) return;
-            pdfMode = modeChoice ? 'fast' : 'quality';
 
             showLoading('מייצר קובץ PDF...');
 

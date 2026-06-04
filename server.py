@@ -9,8 +9,9 @@ import html as html_lib
 import re
 import os
 import sys
-from io import BytesIO
 from datetime import datetime
+import tempfile
+from io import BytesIO
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
@@ -18,6 +19,7 @@ from reportlab.lib.utils import ImageReader
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
+from PIL import Image, ImageOps
 
 PORT = int(os.environ.get('PORT', '8080'))
 PRODUCTS_FILE = 'products.json'
@@ -48,16 +50,14 @@ def _pick_font_name():
     return 'Helvetica'
 
 
-def generate_catalog_pdf(products, export_all=True, selected_category=None, pdf_mode='fast'):
-    """Create a catalog PDF in-memory and return raw bytes."""
+def generate_catalog_pdf(products, output_path, export_all=True, selected_category=None, pdf_mode='fast'):
+    """Create a catalog PDF on disk to keep RAM usage low."""
     if not products:
         raise ValueError('No products to export')
 
     font_name = _pick_font_name()
-    buf = BytesIO()
     page_w, page_h = A4
-    c = canvas.Canvas(buf, pagesize=A4)
-    image_cache = {}
+    c = canvas.Canvas(output_path, pagesize=A4)
 
     # Group products by category
     grouped = {}
@@ -97,7 +97,23 @@ def generate_catalog_pdf(products, export_all=True, selected_category=None, pdf_
     max_rows = int((top_y - 28) // row_h)
     rows_per_page = max(1, max_rows)
     page_capacity = cols * rows_per_page
-    include_images = (pdf_mode == 'quality') or len(products) <= 260
+    # Per request: always include images in the generated PDF.
+    include_images = True
+
+    def build_image_reader(local_img_path, target_w_pt, target_h_pt):
+        """Resize/compress images before embedding to reduce memory pressure."""
+        max_w_px = max(140, int(target_w_pt * 1.7))
+        max_h_px = max(140, int(target_h_pt * 1.7))
+        with Image.open(local_img_path) as img:
+            img = ImageOps.exif_transpose(img)
+            if img.mode not in ('RGB', 'L'):
+                img = img.convert('RGB')
+            img.thumbnail((max_w_px, max_h_px), Image.Resampling.LANCZOS)
+
+            compressed = BytesIO()
+            img.save(compressed, format='JPEG', quality=58, optimize=True)
+            compressed.seek(0)
+            return ImageReader(compressed), compressed
 
     for category, items in grouped.items():
         for page_idx in range(0, len(items), page_capacity):
@@ -136,10 +152,7 @@ def generate_catalog_pdf(products, export_all=True, selected_category=None, pdf_
                         local_img = img_src.lstrip('/')
                         if os.path.exists(local_img):
                             try:
-                                reader = image_cache.get(local_img)
-                                if reader is None:
-                                    reader = ImageReader(local_img)
-                                    image_cache[local_img] = reader
+                                reader, compressed_buf = build_image_reader(local_img, card_w - 12, img_h - 4)
                                 c.drawImage(
                                     reader,
                                     x + 6,
@@ -150,6 +163,7 @@ def generate_catalog_pdf(products, export_all=True, selected_category=None, pdf_
                                     anchor='c',
                                     mask='auto'
                                 )
+                                compressed_buf.close()
                             except Exception:
                                 pass
 
@@ -163,9 +177,6 @@ def generate_catalog_pdf(products, export_all=True, selected_category=None, pdf_
             c.showPage()
 
     c.save()
-    pdf_bytes = buf.getvalue()
-    buf.close()
-    return pdf_bytes
 
 class CatalogHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
@@ -213,6 +224,7 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(response)
 
     def handle_generate_pdf(self):
+        tmp_path = None
         try:
             content_length = int(self.headers.get('Content-Length', '0'))
             raw = self.rfile.read(content_length) if content_length > 0 else b'{}'
@@ -233,24 +245,41 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
             else:
                 products = [p for p in all_products if p.get('category') == selected_category]
 
-            pdf_bytes = generate_catalog_pdf(
+            with tempfile.NamedTemporaryFile(prefix='catalog_', suffix='.pdf', delete=False) as tmp:
+                tmp_path = tmp.name
+
+            generate_catalog_pdf(
                 products=products,
+                output_path=tmp_path,
                 export_all=export_all,
                 selected_category=selected_category,
                 pdf_mode=pdf_mode,
             )
 
             filename = 'catalog.pdf' if export_all else 'catalog-category.pdf'
+            file_size = os.path.getsize(tmp_path)
             self.send_response(200)
             self.send_header('Content-Type', 'application/pdf')
             self.send_header('Content-Disposition', f'attachment; filename="{filename}"')
             self.send_header('Access-Control-Allow-Origin', '*')
-            self.send_header('Content-Length', str(len(pdf_bytes)))
+            self.send_header('Content-Length', str(file_size))
             self.end_headers()
-            self.wfile.write(pdf_bytes)
+
+            with open(tmp_path, 'rb') as pdf_file:
+                while True:
+                    chunk = pdf_file.read(64 * 1024)
+                    if not chunk:
+                        break
+                    self.wfile.write(chunk)
         except Exception as e:
             print(f"PDF generation error: {e}", file=sys.stderr)
             self.send_json(500, {'error': str(e)})
+        finally:
+            if tmp_path and os.path.exists(tmp_path):
+                try:
+                    os.remove(tmp_path)
+                except Exception:
+                    pass
 
     def log_message(self, format, *args):
         # Only log API calls, not static file requests
