@@ -1255,6 +1255,11 @@
                 categories[p.category].push(p);
             });
 
+            if (products.length === 0) {
+                document.body.removeChild(container);
+                throw new Error('לא נמצאו מוצרים לייצוא');
+            }
+
             // Title page with logo
             const titlePage = createPdfPage(container, '#2c5530');
             titlePage.style.cssText += 'text-align:center;color:white;padding-top:350px;';
@@ -1268,12 +1273,15 @@
 
             // Layout constants
             const PAGE_H = 1123;
-            const CARD_W = 170;
-            const CARD_H = 188; // 140 img + ~48 text
-            const GAP = 12;
+            const compactMode = products.length > 250;
+            const CARD_W = compactMode ? 145 : 170;
+            const IMAGE_H = compactMode ? 116 : 140;
+            const INFO_H = compactMode ? 38 : 44;
+            const CARD_H = IMAGE_H + INFO_H;
+            const GAP = compactMode ? 8 : 12;
             const PADDING = 20;
             const HEADER_H = 60;
-            const COLS = 4;
+            const COLS = compactMode ? 5 : 4;
             const ROW_H = CARD_H + GAP;
 
             for (const [category, catProducts] of Object.entries(categories)) {
@@ -1309,7 +1317,7 @@
                     card.style.cssText = `width:${CARD_W}px;border:1px solid #e0e0e0;border-radius:8px;overflow:hidden;background:white;`;
 
                     const imgDiv = document.createElement('div');
-                    imgDiv.style.cssText = `width:${CARD_W}px;height:140px;display:flex;align-items:center;justify-content:center;background:#f8f8f8;overflow:hidden;`;
+                    imgDiv.style.cssText = `width:${CARD_W}px;height:${IMAGE_H}px;display:flex;align-items:center;justify-content:center;background:#f8f8f8;overflow:hidden;`;
                     
                     if (p.image && !p.image.startsWith('data:image/svg') && !p.image.endsWith('logo-black.png')) {
                         const img = document.createElement('img');
@@ -1323,7 +1331,7 @@
                     card.appendChild(imgDiv);
 
                     const info = document.createElement('div');
-                    info.style.cssText = 'padding:8px 10px;font-size:11px;line-height:1.3;text-align:center;color:#333;height:44px;overflow:hidden;direction:rtl;';
+                    info.style.cssText = `padding:${compactMode ? '6px 8px' : '8px 10px'};font-size:${compactMode ? '10px' : '11px'};line-height:1.3;text-align:center;color:#333;height:${INFO_H}px;overflow:hidden;direction:rtl;`;
                     info.textContent = p.name;
                     card.appendChild(info);
 
@@ -1335,7 +1343,8 @@
             // Render each page to PDF
             const pages = container.querySelectorAll('.pdf-page');
             const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
-            const renderScale = pages.length > 20 ? 1.0 : pages.length > 10 ? 1.15 : 1.3;
+            const renderScale = pages.length > 30 ? 0.78 : pages.length > 20 ? 0.9 : pages.length > 10 ? 1.05 : 1.2;
+            const jpegQuality = pages.length > 30 ? 0.58 : pages.length > 20 ? 0.65 : 0.72;
 
             for (let i = 0; i < pages.length; i++) {
                 if (i > 0) doc.addPage();
@@ -1344,7 +1353,7 @@
                 const pageImgs = pages[i].querySelectorAll('img');
                 await Promise.all(Array.from(pageImgs).map(img => {
                     if (img.complete) return Promise.resolve();
-                    return new Promise(r => { img.onload = r; img.onerror = r; setTimeout(r, 1200); });
+                    return new Promise(r => { img.onload = r; img.onerror = r; setTimeout(r, 350); });
                 }));
 
                 const canvas = await html2canvas(pages[i], {
@@ -1356,7 +1365,7 @@
                     height: 1123,
                     windowWidth: 794
                 });
-                const imgData = canvas.toDataURL('image/jpeg', 0.72);
+                const imgData = canvas.toDataURL('image/jpeg', jpegQuality);
                 doc.addImage(imgData, 'JPEG', 0, 0, 210, 297);
 
                 // Let the browser breathe between pages on mobile devices.
