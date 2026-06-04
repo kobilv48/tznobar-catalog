@@ -3,6 +3,6 @@ services:
     name: tznobar-catalog
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python3 server.py
     autoDeploy: true

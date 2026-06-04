@@ -1659,15 +1659,27 @@
             return doc;
         }
 
-        async function shareCatalogWhatsApp() {
-            try {
-                await ensurePdfLibraries();
-            } catch (e) {
-                console.error('PDF libraries load failed:', e);
-                showToast('שגיאה: ספריות PDF לא נטענו. נסה שוב בעוד רגע.');
-                return;
+        async function generateCatalogPDFServer(options = {}) {
+            const { exportAll = true, selectedCategory = null, pdfMode = 'fast' } = options;
+            const response = await fetch('/api/generate-pdf', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ exportAll, selectedCategory, pdfMode })
+            });
+
+            if (!response.ok) {
+                let errText = `HTTP ${response.status}`;
+                try {
+                    const data = await response.json();
+                    if (data && data.error) errText = data.error;
+                } catch (_) {}
+                throw new Error(errText);
             }
 
+            return response.blob();
+        }
+
+        async function shareCatalogWhatsApp() {
             // Decide whether to export all products or a specific category
             let exportAll = true;
             let selectedCategory = null;
@@ -1710,8 +1722,27 @@
             showLoading('מייצר קובץ PDF...');
 
             try {
-                const doc = await generateCatalogPDF({ exportAll, selectedCategory, pdfMode });
-                const pdfBlob = doc.output('blob');
+                let pdfBlob;
+                let usedServer = true;
+                try {
+                    showLoading('מייצר קובץ PDF בשרת...');
+                    pdfBlob = await generateCatalogPDFServer({ exportAll, selectedCategory, pdfMode });
+                } catch (serverErr) {
+                    usedServer = false;
+                    console.warn('Server-side PDF failed, falling back to client mode:', serverErr);
+
+                    try {
+                        await ensurePdfLibraries();
+                    } catch (libsErr) {
+                        console.error('PDF libraries load failed:', libsErr);
+                        throw new Error('לא ניתן לייצר PDF כרגע (שרת וגם מצב מקומי נכשלו)');
+                    }
+
+                    showLoading('שרת PDF לא זמין, מייצר מקומית...');
+                    const doc = await generateCatalogPDF({ exportAll, selectedCategory, pdfMode });
+                    pdfBlob = doc.output('blob');
+                }
+
                 const now = new Date();
                 const dateStr = now.toLocaleDateString('he-IL').replace(/\./g, '-');
                 const timeStr = now.toLocaleTimeString('he-IL', {hour:'2-digit',minute:'2-digit'}).replace(':','-');
@@ -1745,7 +1776,7 @@
                             text: 'קטלוג מוצרי צנובר',
                             files: [pdfFile]
                         });
-                        showToast('הקטלוג שותף בהצלחה');
+                        showToast(usedServer ? 'הקטלוג שותף בהצלחה (PDF מהשרת)' : 'הקטלוג שותף בהצלחה');
                     } catch (shareErr) {
                         // Some platforms deny Web Share if the user gesture timed out or permission is blocked.
                         if (shareErr && shareErr.name === 'AbortError') {
