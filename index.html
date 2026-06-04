@@ -1428,6 +1428,26 @@
                 }));
             };
 
+            const renderPageCanvas = async (page, scale, attemptName) => {
+                const renderPromise = html2canvas(page, {
+                    scale,
+                    useCORS: false,
+                    allowTaint: false,
+                    backgroundColor: '#ffffff',
+                    width: 794,
+                    height: 1123,
+                    windowWidth: 794,
+                    imageTimeout: 2800,
+                    logging: false
+                });
+
+                const timeoutPromise = new Promise((_, reject) => {
+                    setTimeout(() => reject(new Error(`render timeout (${attemptName})`)), 14000);
+                });
+
+                return Promise.race([renderPromise, timeoutPromise]);
+            };
+
             for (const [category, catProducts] of Object.entries(categories)) {
                 let page = createPdfPage(container, 'white');
                 addCategoryHeader(page, category);
@@ -1496,20 +1516,24 @@
 
                 await loadPageImages(pages[i]);
 
-                const canvas = await html2canvas(pages[i], {
-                    scale: renderScale,
-                    useCORS: true,
-                    allowTaint: true,
-                    backgroundColor: null,
-                    width: 794,
-                    height: 1123,
-                    windowWidth: 794
-                });
+                let canvas;
+                try {
+                    canvas = await renderPageCanvas(pages[i], renderScale, 'normal');
+                } catch (firstErr) {
+                    console.warn('Primary page render failed, retrying in safe mode:', firstErr);
+                    canvas = await renderPageCanvas(pages[i], 0.62, 'safe');
+                }
+
                 const imgData = canvas.toDataURL('image/jpeg', jpegQuality);
                 doc.addImage(imgData, 'JPEG', 0, 0, 210, 297);
 
+                // Release per-page image memory before moving on.
+                pages[i].querySelectorAll('img[data-src]').forEach((img) => {
+                    img.removeAttribute('src');
+                });
+
                 // Let the browser breathe between pages on mobile devices.
-                await new Promise(r => setTimeout(r, 0));
+                await new Promise(r => setTimeout(r, 10));
             }
 
             document.body.removeChild(container);
