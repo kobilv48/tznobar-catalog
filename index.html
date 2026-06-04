@@ -1410,6 +1410,24 @@
             const COLS = compactMode ? 5 : 4;
             const ROW_H = CARD_H + GAP;
 
+            const loadPageImages = async (page) => {
+                const pageImgs = page.querySelectorAll('img[data-src]');
+                pageImgs.forEach((img) => {
+                    if (!img.getAttribute('src')) {
+                        img.src = img.dataset.src;
+                    }
+                });
+
+                await Promise.all(Array.from(pageImgs).map((img) => {
+                    if (img.complete) return Promise.resolve();
+                    return new Promise((resolve) => {
+                        img.onload = () => resolve();
+                        img.onerror = () => resolve();
+                        setTimeout(resolve, 450);
+                    });
+                }));
+            };
+
             for (const [category, catProducts] of Object.entries(categories)) {
                 let page = createPdfPage(container, 'white');
                 addCategoryHeader(page, category);
@@ -1447,9 +1465,9 @@
                     
                     if (p.image && !p.image.startsWith('data:image/svg') && !p.image.endsWith('logo-black.png')) {
                         const img = document.createElement('img');
-                        img.src = p.image;
+                        img.dataset.src = p.image;
                         img.style.cssText = 'max-width:100%;max-height:100%;object-fit:contain;';
-                        img.crossOrigin = 'anonymous';
+                        img.loading = 'lazy';
                         imgDiv.appendChild(img);
                     } else {
                         imgDiv.innerHTML = '<img src="logo-black.png" style="max-width:70%;max-height:70%;object-fit:contain;opacity:0.5;" />';
@@ -1476,11 +1494,7 @@
                 if (i > 0) doc.addPage();
                 showLoading(`מייצר PDF... עמוד ${i + 1} מתוך ${pages.length}`);
 
-                const pageImgs = pages[i].querySelectorAll('img');
-                await Promise.all(Array.from(pageImgs).map(img => {
-                    if (img.complete) return Promise.resolve();
-                    return new Promise(r => { img.onload = r; img.onerror = r; setTimeout(r, 350); });
-                }));
+                await loadPageImages(pages[i]);
 
                 const canvas = await html2canvas(pages[i], {
                     scale: renderScale,
