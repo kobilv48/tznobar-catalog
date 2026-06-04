@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tznobar-cache-v2';
+const CACHE_NAME = 'tznobar-cache-v3';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -47,7 +47,13 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
           return response;
         })
-        .catch(() => caches.match('/index.html'));
+        .catch(() => {
+          // Only HTML navigations should fall back to index.html.
+          if (event.request.mode === 'navigate') {
+            return caches.match('/index.html');
+          }
+          return Response.error();
+        });
     })
   );
 });
