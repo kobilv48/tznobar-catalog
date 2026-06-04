@@ -595,9 +595,90 @@
             color: var(--text-light);
             margin-top: 6px;
         }
+
+        /* Access Gate */
+        .lock-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at 20% 20%, #3a7340, #1a3a1e 60%);
+            padding: 20px;
+        }
+
+        .lock-card {
+            width: 100%;
+            max-width: 360px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 16px;
+            padding: 22px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+            text-align: center;
+        }
+
+        .lock-card h2 {
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .lock-card p {
+            color: #4d4d4d;
+            margin-bottom: 14px;
+            font-size: 14px;
+        }
+
+        .lock-input {
+            width: 100%;
+            border: 1px solid #cfd8cf;
+            border-radius: 10px;
+            padding: 12px 14px;
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            outline: none;
+        }
+
+        .lock-input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(44, 85, 48, 0.14);
+        }
+
+        .lock-error {
+            min-height: 18px;
+            color: #c9302c;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .lock-overlay.hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
+    <div class="lock-overlay" id="lockOverlay">
+        <div class="lock-card">
+            <img src="logo-white.png" alt="צנובר" style="height:58px;object-fit:contain;background:#1f4a27;border-radius:12px;padding:8px;margin-bottom:8px;" />
+            <h2>כניסה לקטלוג</h2>
+            <p>יש להזין קוד גישה</p>
+            <input
+                type="password"
+                id="lockCodeInput"
+                class="lock-input"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                maxlength="4"
+                placeholder="••••"
+            />
+            <div class="lock-error" id="lockError"></div>
+            <button class="btn btn-primary" style="width:100%;justify-content:center;" id="unlockBtn">כניסה</button>
+        </div>
+    </div>
+
     <!-- Header -->
     <div class="header">
         <div style="display:flex;align-items:center;gap:14px;">
@@ -712,10 +793,14 @@
         let searchQuery = '';
         let uploadedImageData = null;
         let deferredInstallPrompt = null;
+        const ACCESS_PIN = '4423';
+        const ACCESS_KEY = 'tznobar_access_granted';
         const STORAGE_KEY = 'tznobar_catalog_products';
 
         // ========== Initialize ==========
         async function init() {
+            await requireAccess();
+
             // Try loading from localStorage first (user modifications)
             const stored = localStorage.getItem(STORAGE_KEY);
             const storedVersion = localStorage.getItem(STORAGE_KEY + '_version');
@@ -764,6 +849,47 @@
             buildCategoryList();
             renderProducts();
             setupSearch();
+        }
+
+        function requireAccess() {
+            return new Promise((resolve) => {
+                const overlay = document.getElementById('lockOverlay');
+                const input = document.getElementById('lockCodeInput');
+                const button = document.getElementById('unlockBtn');
+                const error = document.getElementById('lockError');
+
+                const grantAccess = () => {
+                    sessionStorage.setItem(ACCESS_KEY, '1');
+                    overlay.classList.add('hidden');
+                    resolve();
+                };
+
+                if (sessionStorage.getItem(ACCESS_KEY) === '1') {
+                    grantAccess();
+                    return;
+                }
+
+                const validate = () => {
+                    const code = (input.value || '').trim();
+                    if (code === ACCESS_PIN) {
+                        grantAccess();
+                        return;
+                    }
+                    error.textContent = 'קוד שגוי, נסה שוב';
+                    input.value = '';
+                    input.focus();
+                };
+
+                button.onclick = validate;
+                input.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        validate();
+                    }
+                });
+
+                setTimeout(() => input.focus(), 80);
+            });
         }
 
         // ========== Storage ==========
