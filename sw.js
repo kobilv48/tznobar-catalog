@@ -1,10 +1,13 @@
-const CACHE_NAME = 'tznobar-cache-v4';
+const CACHE_NAME = 'tznobar-cache-v5';
 const APP_SHELL = [
   '/',
   '/index.html',
   '/products.json',
   '/products_clean.json',
   '/manifest.webmanifest',
+  '/icon-gold-192.png',
+  '/icon-gold-512.png',
+  '/icon-white-512-maskable.png',
   '/logo-white.png',
   '/logo-black.png',
   '/logo.png',
