@@ -21,15 +21,27 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from PIL import Image, ImageOps
 
+try:
+    from bidi.algorithm import get_display as bidi_get_display
+except Exception:
+    bidi_get_display = None
+
 PORT = int(os.environ.get('PORT', '8080'))
 PRODUCTS_FILE = 'products.json'
 
 
 def _rtl(text):
-    """Naive RTL helper for reportlab text drawing."""
+    """RTL helper for reportlab text drawing."""
     if not text:
         return ''
-    return str(text)[::-1]
+    value = str(text)
+    if bidi_get_display is not None:
+        try:
+            return bidi_get_display(value)
+        except Exception:
+            pass
+    # Fallback for environments without python-bidi.
+    return value[::-1]
 
 
 def _pick_font_name():
@@ -80,7 +92,7 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
     c.setFont(font_name, 12)
     subtitle = f"{len(products)} מוצרים" + (f" | קטגוריה: {selected_category}" if (not export_all and selected_category) else '')
     c.drawCentredString(page_w / 2, page_h - 345, _rtl(subtitle))
-    c.drawCentredString(page_w / 2, page_h - 365, datetime.now().strftime('%Y-%m-%d %H:%M'))
+    c.drawCentredString(page_w / 2, page_h - 365, datetime.now().strftime('%Y-%m-%d'))
     c.showPage()
 
     # Grid layout tuning
@@ -91,7 +103,7 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
     gap = 8 if compact else 12
     card_w = (page_w - (2 * margin_x) - (gap * (cols - 1))) / cols
     img_h = 82 if compact else 102
-    txt_h = 30 if compact else 38
+    txt_h = 36 if compact else 44
     card_h = img_h + txt_h + 8
     row_h = card_h + gap
     max_rows = int((top_y - 28) // row_h)
@@ -99,6 +111,35 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
     page_capacity = cols * rows_per_page
     # Per request: always include images in the generated PDF.
     include_images = True
+
+    def split_name_lines(name, max_chars=20, max_lines=2):
+        words = name.split()
+        if not words:
+            return ['']
+
+        lines = []
+        current = ''
+        for word in words:
+            candidate = f"{current} {word}".strip()
+            if len(candidate) <= max_chars:
+                current = candidate
+                continue
+
+            if current:
+                lines.append(current)
+            current = word
+
+            if len(lines) == max_lines - 1:
+                break
+
+        if len(lines) < max_lines and current:
+            lines.append(current)
+
+        consumed_words = len(' '.join(lines).split())
+        if consumed_words < len(words):
+            lines[-1] = (lines[-1][:max(1, max_chars - 1)] + '…') if lines[-1] else '…'
+
+        return lines[:max_lines]
 
     def build_image_reader(local_img_path, target_w_pt, target_h_pt):
         """Resize/compress images before embedding to reduce memory pressure."""
@@ -124,7 +165,7 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
             c.rect(0, page_h - 52, page_w, 52, fill=1, stroke=0)
             c.setFillColor(colors.white)
             c.setFont(font_name, 16)
-            header = category if page_idx == 0 else f'{category} (המשך)'
+            header = category if page_idx == 0 else f'המשך - {category}'
             c.drawCentredString(page_w / 2, page_h - 32, _rtl(header))
 
             c.setFillColor(colors.black)
@@ -170,9 +211,13 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
                 # Product name
                 c.setFillColor(colors.HexColor('#1f1f1f'))
                 name = (product.get('name') or '').strip()
-                if len(name) > 28:
-                    name = name[:27] + '…'
-                c.drawCentredString(x + card_w / 2, y + 12, _rtl(name))
+                lines = split_name_lines(name, max_chars=18 if compact else 22, max_lines=2)
+                c.setFont(font_name, 8.2 if compact else 9.2)
+                if len(lines) == 1:
+                    c.drawCentredString(x + card_w / 2, y + 12, _rtl(lines[0]))
+                else:
+                    c.drawCentredString(x + card_w / 2, y + 16, _rtl(lines[0]))
+                    c.drawCentredString(x + card_w / 2, y + 7, _rtl(lines[1]))
 
             c.showPage()
 

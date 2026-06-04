@@ -1517,7 +1517,7 @@
             const compactMode = products.length > 250 || pdfMode === 'fast';
             const CARD_W = compactMode ? 145 : 170;
             const IMAGE_H = compactMode ? 116 : 140;
-            const INFO_H = compactMode ? 38 : 44;
+            const INFO_H = compactMode ? 44 : 52;
             const CARD_H = IMAGE_H + INFO_H;
             const GAP = compactMode ? 8 : 12;
             const PADDING = 20;
@@ -1610,7 +1610,7 @@
                     card.appendChild(imgDiv);
 
                     const info = document.createElement('div');
-                    info.style.cssText = `padding:${compactMode ? '6px 8px' : '8px 10px'};font-size:${compactMode ? '10px' : '11px'};line-height:1.3;text-align:center;color:#333;height:${INFO_H}px;overflow:hidden;direction:rtl;`;
+                    info.style.cssText = `padding:${compactMode ? '6px 8px' : '8px 10px'};font-size:${compactMode ? '10px' : '11px'};line-height:1.3;text-align:center;color:#333;height:${INFO_H}px;overflow:hidden;direction:rtl;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;`;
                     info.textContent = p.name;
                     card.appendChild(info);
 
@@ -1736,10 +1736,9 @@
 
                 const now = new Date();
                 const dateStr = now.toLocaleDateString('he-IL').replace(/\./g, '-');
-                const timeStr = now.toLocaleTimeString('he-IL', {hour:'2-digit',minute:'2-digit'}).replace(':','-');
                 const fileName = exportAll 
-                    ? `קטלוג_צנובר_${dateStr}_${timeStr}.pdf`
-                    : `קטלוג_צנובר_${selectedCategory}_${dateStr}_${timeStr}.pdf`;
+                    ? `קטלוג_צנובר_${dateStr}.pdf`
+                    : `קטלוג_צנובר_${selectedCategory}_${dateStr}.pdf`;
                 const pdfFile = new File([pdfBlob], fileName, { type: 'application/pdf' });
 
                 const fallbackToManualWhatsApp = () => {
