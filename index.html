@@ -1664,7 +1664,7 @@
             const response = await fetch('/api/generate-pdf', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ exportAll, selectedCategory, pdfMode })
+                body: JSON.stringify({ exportAll, selectedCategory, pdfMode, products: allProducts })
             });
 
             if (!response.ok) {

@@ -279,8 +279,12 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
             selected_category = payload.get('selectedCategory')
             pdf_mode = payload.get('pdfMode', 'fast')
 
-            with open(PRODUCTS_FILE, 'r', encoding='utf-8') as f:
-                all_products = json.load(f)
+            # Use products from request if provided (reflects user edits),
+            # otherwise fall back to products.json on disk.
+            all_products = payload.get('products')
+            if not all_products or not isinstance(all_products, list):
+                with open(PRODUCTS_FILE, 'r', encoding='utf-8') as f:
+                    all_products = json.load(f)
 
             if not isinstance(all_products, list):
                 raise ValueError('Invalid products payload')
