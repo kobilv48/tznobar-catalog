@@ -8,42 +8,42 @@
   },
   {
     "id": 2,
-    "name": "עגבניות רוטב גרם 680 לפסטה",
+    "name": "רוטב עגבניות לפסטה 680 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_2.jpeg",
     "page": 3
   },
   {
     "id": 3,
-    "name": "עם לפסטה בזיליקום גרם 680",
+    "name": "רוטב לפסטה עם בזיליקום 680 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_3.jpeg",
     "page": 3
   },
   {
     "id": 4,
-    "name": "עם לפסטה קלוי שום גרם 680",
+    "name": "רוטב לפסטה עם קלוי שום 680 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_4.jpeg",
     "page": 3
   },
   {
     "id": 5,
-    "name": "מעגבניות גרם 400 דטריני",
+    "name": "דטריני מעגבניות 400 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_5.jpeg",
     "page": 3
   },
   {
     "id": 6,
-    "name": "עגבניות רוטב מוטי לפסטה גרם 400",
+    "name": "רוטב עגבניות לפסטה מוטי 400 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_6.jpeg",
     "page": 3
   },
   {
     "id": 7,
-    "name": "רוטב שקשוקה גרם 375",
+    "name": "רוטב שקשוקה 375 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_7.png",
     "page": 3
@@ -57,210 +57,210 @@
   },
   {
     "id": 9,
-    "name": "עגבניות רסק גרם 210 מוטי",
+    "name": "רסק עגבניות מוטי 210 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_10.jpeg",
     "page": 4
   },
   {
     "id": 10,
-    "name": "עגבניות מוטי חתוכות גרם 690",
+    "name": "עגבניות חתוכות מוטי 690 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_11.jpeg",
     "page": 4
   },
   {
     "id": 11,
-    "name": "עגבניות מחית גרם 690 מוטי",
+    "name": "מחית עגבניות מוטי 690 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_12.jpeg",
     "page": 4
   },
   {
     "id": 12,
-    "name": "’ליח גרם 400 עגבניות מרוסקות שלישייה",
+    "name": "'ליח עגבניות מרוסקות שלישייה 400 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_13.jpeg",
     "page": 4
   },
   {
     "id": 13,
-    "name": "לפיצה רוטב גרם 400 מוטי",
+    "name": "רוטב לפיצה מוטי 400 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_14.jpeg",
     "page": 4
   },
   {
     "id": 14,
-    "name": "שלמות מקולפות גרם 400 עגבניות",
+    "name": "שלמות מקולפות עגבניות 400 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_15.jpeg",
     "page": 4
   },
   {
     "id": 15,
-    "name": "גרם 400 פומודורינו מוטי גרם 400",
+    "name": "פומודורינו מוטי 400 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_16.jpeg",
     "page": 4
   },
   {
     "id": 16,
-    "name": "עגבניות רכז בשפורפרת מוטי גרם 185",
+    "name": "עגבניות רכז בשפורפרת מוטי 185 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_17.jpeg",
     "page": 4
   },
   {
     "id": 17,
-    "name": "גרם 140 לימון כבוש",
+    "name": "לימון כבוש 140 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_20.jpeg",
     "page": 5
   },
   {
     "id": 18,
-    "name": "ממרח ארטישוק גרם 140",
+    "name": "ממרח ארטישוק 140 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_21.jpeg",
     "page": 5
   },
   {
     "id": 19,
-    "name": "ממרח פלפלים גרם 140",
+    "name": "ממרח פלפלים 140 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_22.jpeg",
     "page": 5
   },
   {
     "id": 20,
-    "name": "גרם 140 ממרח שום",
+    "name": "ממרח שום 140 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_23.jpeg",
     "page": 5
   },
   {
     "id": 21,
-    "name": "ממרח עגבניות מיובשות גרם 140",
+    "name": "ממרח עגבניות מיובשות 140 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_24.jpeg",
     "page": 5
   },
   {
     "id": 22,
-    "name": "פסטו בזיליקום גרם 140",
+    "name": "פסטו בזיליקום 140 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_25.jpeg",
     "page": 5
   },
   {
     "id": 23,
-    "name": "גרם 140 זיתים ירוקים טפנד",
+    "name": "זיתים ירוקים טפנד 140 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_26.jpeg",
     "page": 5
   },
   {
     "id": 24,
-    "name": "נובזי’ג פסטו איטלקי גרם 180",
+    "name": "ג'נובזה פסטו איטלקי 180 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_27.jpeg",
     "page": 5
   },
   {
     "id": 25,
-    "name": "חצילים ממרח גרם 480 קלויים",
+    "name": "ממרח חצילים קלויים 480 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_30.jpeg",
     "page": 6
   },
   {
     "id": 26,
-    "name": "גרם 90 מחית כמהין",
+    "name": "מחית כמהין 90 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_31.jpeg",
     "page": 6
   },
   {
     "id": 27,
-    "name": "ממרח בצל ריבת ממרח אנשובי איטלקי גרם 60",
+    "name": "ממרח בצל אנשובי איטלקי 60 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_32.jpeg",
     "page": 6
   },
   {
     "id": 28,
-    "name": "בצל ריבת ממרח קלמנטה זיתי גרם 135",
+    "name": "ממרח בצל זיתי קלמנטה 135 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_33.jpeg",
     "page": 6
   },
   {
     "id": 29,
-    "name": "ממרח בצל ריבת גרם 240",
+    "name": "ממרח בצל ריבת 240 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_34.png",
     "page": 6
   },
   {
     "id": 30,
-    "name": "בצל ריבת גרם 300 אדום",
+    "name": "ריבת בצל אדום 300 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_35.jpeg",
     "page": 6
   },
   {
     "id": 31,
-    "name": "ממרח ורי’ימיצ’צ ל”מ 145",
+    "name": "ממרח צ'ימיצ'ורי 145 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_36.jpeg",
     "page": 6
   },
   {
     "id": 32,
-    "name": "גרם 250 ממרח פסטו",
+    "name": "ממרח פסטו 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_37.jpeg",
     "page": 6
   },
   {
     "id": 33,
-    "name": "בורניבוס גרם 245",
+    "name": "בורניבוס 245 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_38.png",
     "page": 7
   },
   {
     "id": 34,
-    "name": "בורניבוס גרם 250",
+    "name": "בורניבוס 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_39.png",
     "page": 7
   },
   {
     "id": 35,
-    "name": "איולי בורניבוס גרם 220",
+    "name": "איולי בורניבוס 220 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_40.png",
     "page": 7
   },
   {
     "id": 36,
-    "name": "הולנדי מיונז רמיה לחיץ גרם 500",
+    "name": "מיונז הולנדי רמיה לחיץ 500 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_41.png",
     "page": 7
   },
   {
     "id": 37,
-    "name": "טחינה ברכה הר גרם 500 קטן",
+    "name": "טחינה הר ברכה קטן 500 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_42.jpeg",
     "page": 7
   },
   {
     "id": 38,
-    "name": "גרם 500 גדול",
+    "name": "גדול 500 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_43.jpeg",
     "page": 7
@@ -281,168 +281,168 @@
   },
   {
     "id": 41,
-    "name": "אל טחינה שומשום ארז גרם 500 מלא",
+    "name": "טחינה אל ארז שומשום מלא 500 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_46.png",
     "page": 8
   },
   {
     "id": 42,
-    "name": "גולמית טחינה לחיץ מעודנת גרם 300",
+    "name": "טחינה גולמית מעודנת לחיץ 300 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_47.jpeg",
     "page": 8
   },
   {
     "id": 43,
-    "name": "גולמית טחינה מלטה לחיץ מעודנת גרם 300",
+    "name": "טחינה גולמית מלטה מעודנת לחיץ 300 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_48.jpeg",
     "page": 8
   },
   {
     "id": 44,
-    "name": "גולמית טחינה גרם 500 קרואן",
+    "name": "טחינה גולמית קרואן 500 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_49.jpeg",
     "page": 8
   },
   {
     "id": 45,
-    "name": "מיונז גרם 265 ממרחי",
+    "name": "ממרחי מיונז 265 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_51.jpeg",
     "page": 8
   },
   {
     "id": 46,
-    "name": "איטלקי רוטב ל”מ 473 לסלט",
+    "name": "רוטב איטלקי לסלט 473 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_52.jpeg",
     "page": 9
   },
   {
     "id": 47,
-    "name": "אלף רוטב ל”מ 473 האיים",
+    "name": "רוטב אלף האיים 473 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_53.jpeg",
     "page": 9
   },
   {
     "id": 48,
-    "name": "חרדל רוטב לסלט ודבש ל”מ 473",
+    "name": "רוטב חרדל ודבש לסלט 473 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_54.png",
     "page": 9
   },
   {
     "id": 49,
-    "name": "דבש רוטב גרם 320 שום",
+    "name": "רוטב דבש שום 320 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_55.png",
     "page": 9
   },
   {
     "id": 50,
-    "name": "שום רוטב טבעוני שמיר גרם 275",
+    "name": "רוטב שום שמיר טבעוני 275 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_56.png",
     "page": 9
   },
   {
     "id": 51,
-    "name": "אלף רוטב טבעוני האיים גרם 275",
+    "name": "רוטב אלף האיים טבעוני 275 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_57.png",
     "page": 9
   },
   {
     "id": 52,
-    "name": "טריאקי רוטב גרם 350 רימון ברטה",
+    "name": "רוטב טריאקי רימון ברטה 350 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_58.png",
     "page": 10
   },
   {
     "id": 53,
-    "name": "ילי’צ רוטב גרם 340 שום ברטה",
+    "name": "רוטב צ'ילי שום ברטה 340 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_59.png",
     "page": 10
   },
   {
     "id": 54,
-    "name": "אלף רוטב ברטה האיים גרם 275",
+    "name": "רוטב אלף האיים ברטה 275 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_60.png",
     "page": 10
   },
   {
     "id": 55,
-    "name": "שום רוטב גרם 275 שמיר ברטה",
+    "name": "רוטב שום שמיר ברטה 275 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_61.png",
     "page": 10
   },
   {
     "id": 56,
-    "name": "שזיף רוטב פיקנטי רימון גרם 330 ברטה",
+    "name": "רוטב שזיף רימון פיקנטי ברטה 330 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_62.png",
     "page": 10
   },
   {
     "id": 57,
-    "name": "ויין בצל רוטב גרם 350 אדום ברטה",
+    "name": "רוטב בצל ויין אדום ברטה 350 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_63.png",
     "page": 10
   },
   {
     "id": 58,
-    "name": "מרינדה טריאקי ל”מ 473 מתוק",
+    "name": "מרינדה טריאקי מתוק 473 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_64.jpeg",
     "page": 11
   },
   {
     "id": 59,
-    "name": "מרינדה לכנפיים ל”מ 473 באפלו",
+    "name": "מרינדה לכנפיים באפלו 473 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_65.jpeg",
     "page": 11
   },
   {
     "id": 60,
-    "name": "רוטב ברביקיו אורגינל גרם 510",
+    "name": "רוטב ברביקיו אורגינל 510 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_66.jpeg",
     "page": 11
   },
   {
     "id": 61,
-    "name": "רוטב ברביקיו גרם 510 דבש",
+    "name": "רוטב ברביקיו דבש 510 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_67.jpeg",
     "page": 11
   },
   {
     "id": 62,
-    "name": "ברביקיו רוטב דבש יפוטלה’צ גרם 510",
+    "name": "רוטב ברביקיו דבש צ'יפוטלה 510 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_68.jpeg",
     "page": 11
   },
   {
     "id": 63,
-    "name": "סוכר מעושן גרם 510 חום",
+    "name": "סוכר חום מעושן 510 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_69.jpeg",
     "page": 11
   },
   {
     "id": 64,
-    "name": "גרם 510 ל:מ 700 רוטב ילי’צ מתוק",
+    "name": "רוטב צ'ילי מתוק 700 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_70.jpeg",
     "page": 11
@@ -456,175 +456,175 @@
   },
   {
     "id": 66,
-    "name": "ועשבי לימון גרם 250 תיבול",
+    "name": "תיבול לימון ועשבי 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_72.jpeg",
     "page": 12
   },
   {
     "id": 67,
-    "name": "רוטב פרי-פרי גרם 250 פלפל",
+    "name": "רוטב פרי-פרי פלפל 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_73.jpeg",
     "page": 12
   },
   {
     "id": 68,
-    "name": "רוטב פרי-פרי רוטב פרי-פרי שום מדיום גרם 250",
+    "name": "רוטב פרי-פרי שום מדיום 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_74.jpeg",
     "page": 12
   },
   {
     "id": 69,
-    "name": "רוטב פרי-פרי גרם 250 מדיום",
+    "name": "רוטב פרי-פרי מדיום 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_75.jpeg",
     "page": 12
   },
   {
     "id": 70,
-    "name": "רוטב פרי-פרי גרם 250 חריף",
+    "name": "רוטב פרי-פרי חריף 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_76.jpeg",
     "page": 12
   },
   {
     "id": 71,
-    "name": "אקסטרה גרם 250 חריף",
+    "name": "אקסטרה חריף 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_77.jpeg",
     "page": 12
   },
   {
     "id": 72,
-    "name": "רוטב פרי-פרי חריף XX גרם 250",
+    "name": "רוטב פרי-פרי חריף XX 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_78.jpeg",
     "page": 12
   },
   {
     "id": 73,
-    "name": "ל”מ 60 אדום חריף",
+    "name": "רוטב טבסקו אדום חריף 60 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_79.png",
     "page": 13
   },
   {
     "id": 74,
-    "name": "טבסקו רוטב ל”מ 60 ירוק חריף",
+    "name": "רוטב טבסקו ירוק חריף 60 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_80.png",
     "page": 13
   },
   {
     "id": 75,
-    "name": "רוטב ה’סריראצ חריף מיונז ל”מ 455",
+    "name": "רוטב סריראצ'ה מיונז חריף 455 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_81.jpeg",
     "page": 13
   },
   {
     "id": 76,
-    "name": "שדה תות גרם 340 ברטה",
+    "name": "ברטה שדה תות 340 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_82.png",
     "page": 14
   },
   {
     "id": 77,
-    "name": "יער פירות גרם 340 ברטה",
+    "name": "ברטה פירות יער 340 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_83.png",
     "page": 14
   },
   {
     "id": 78,
-    "name": "קונפיטורת ברטה דובדבן גרם 340",
+    "name": "קונפיטורת דובדבן ברטה 340 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_84.png",
     "page": 14
   },
   {
     "id": 79,
-    "name": "חלב ריבת מקורית גרם 450",
+    "name": "ריבת חלב מקורית 450 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_85.jpeg",
     "page": 14
   },
   {
     "id": 80,
-    "name": "אמרנה דובדבני גרם 400 בסירופ",
+    "name": "דובדבני אמרנה בסירופ 400 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_86.jpeg",
     "page": 14
   },
   {
     "id": 81,
-    "name": "סומסומיה ,טחינה ממרח ואגוזים דבש גרם 250",
+    "name": "ממרח טחינה, דבש ואגוזים סומסומיה 250 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_87.jpeg",
     "page": 14
   },
   {
     "id": 82,
-    "name": "טהור דבש בר מפרחי חרוד עין גרם 350",
+    "name": "דבש טהור מפרחי בר עין חרוד 350 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_88.jpeg",
     "page": 15
   },
   {
     "id": 83,
-    "name": "טהור דבש מפרחי לחיץ חרוד עין בר גרם 400",
+    "name": "דבש טהור מפרחי בר עין חרוד לחיץ 400 גרם",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_89.jpeg",
     "page": 15
   },
   {
     "id": 84,
-    "name": "מייפל זירופ ל”מ 150 טהור",
+    "name": "זירופ מייפל טהור 150 מ\"ל",
     "category": "רטבים וממרחים",
     "image": "images_clean/product_90.jpeg",
     "page": 15
   },
   {
     "id": 85,
-    "name": "תמרים סילאן סוכר בתוספת גרם 900",
+    "name": "סילאן תמרים בתוספת סוכר 900 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_93.png",
     "page": 16
   },
   {
     "id": 86,
-    "name": "תמרים סילאן טבעי 100% גרם 900",
+    "name": "סילאן תמרים טבעי 100% 900 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_94.jpeg",
     "page": 16
   },
   {
     "id": 87,
-    "name": "תמרים סילאן בתוספת לחיץ גרם 650 סוכר",
+    "name": "סילאן תמרים בתוספת סוכר לחיץ 650 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_95.jpeg",
     "page": 16
   },
   {
     "id": 88,
-    "name": "100% לחיץ גרם 650 טבעי",
+    "name": "100% לחיץ טבעי 650 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_96.jpeg",
     "page": 16
   },
   {
     "id": 89,
-    "name": "תמרים סילאן בתוספת לחיץ גרם 400 סוכר",
+    "name": "סילאן תמרים בתוספת סוכר לחיץ 400 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_97.jpeg",
     "page": 16
   },
   {
     "id": 90,
-    "name": "100% לחיץ גרם 400 טבעי",
+    "name": "100% לחיץ טבעי 400 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_98.jpeg",
     "page": 16
@@ -638,189 +638,189 @@
   },
   {
     "id": 92,
-    "name": "זית שמן אחיה משק ליטר 1",
+    "name": "שמן זית אחיה משק 1 ליטר",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_100.png",
     "page": 17
   },
   {
     "id": 93,
-    "name": "קנולה שמן מזוכך ליטר 1",
+    "name": "שמן קנולה מזוכך 1 ליטר",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_101.jpeg",
     "page": 17
   },
   {
     "id": 94,
-    "name": "זית שמן מעולה כתית אוליטליה ל”מ 750",
+    "name": "שמן זית כתית מעולה אוליטליה 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_102.jpeg",
     "page": 17
   },
   {
     "id": 95,
-    "name": "זית שמן מעולה כתית ל”מ 750 באסו",
+    "name": "שמן זית כתית מעולה באסו 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_103.jpeg",
     "page": 17
   },
   {
     "id": 96,
-    "name": "זית שמן מעולה כתית ל”מ 750 פרג",
+    "name": "שמן זית כתית מעולה פרג 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_104.jpeg",
     "page": 17
   },
   {
     "id": 97,
-    "name": "זית שמן מעולה כתית ל”מ 500 פרג",
+    "name": "שמן זית כתית מעולה פרג 500 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_105.png",
     "page": 17
   },
   {
     "id": 98,
-    "name": "זית שמן חביב סבא ל”מ 750",
+    "name": "שמן זית סבא חביב 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_106.jpeg",
     "page": 18
   },
   {
     "id": 99,
-    "name": "זית שמן ל”מ 750 השאן’ג",
+    "name": "שמן זית ג'השאן 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_107.jpeg",
     "page": 18
   },
   {
     "id": 100,
-    "name": "פיקואל אחיה משק זית שמן ל”מ 500",
+    "name": "שמן זית משק אחיה פיקואל 500 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_108.png",
     "page": 18
   },
   {
     "id": 101,
-    "name": "פיקואל אחיה משק זית שמן קורנייקי אחיה משק ל”מ 750",
+    "name": "שמן זית משק אחיה קורנייקי 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_109.png",
     "page": 18
   },
   {
     "id": 102,
-    "name": "סורי אחיה משק זית שמן ל”מ 750",
+    "name": "שמן זית משק אחיה סורי 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_110.png",
     "page": 18
   },
   {
     "id": 103,
-    "name": "סורי אחיה משק זית שמן ארבקינה אחיה משק ל”מ 750",
+    "name": "שמן זית משק אחיה ארבקינה 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_111.png",
     "page": 18
   },
   {
     "id": 104,
-    "name": "ענבים ליטר 1 באסו",
+    "name": "ענבים באסו 1 ליטר",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_112.jpeg",
     "page": 19
   },
   {
     "id": 105,
-    "name": "ענבים דאורו קוסטה זרעי שמן ליטר 1",
+    "name": "שמן זרעי ענבים קוסטה דאורו 1 ליטר",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_113.jpeg",
     "page": 19
   },
   {
     "id": 106,
-    "name": "ל”מ 500 אורגני",
+    "name": "500 מ\"ל אורגני",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_114.jpeg",
     "page": 19
   },
   {
     "id": 107,
-    "name": "קוקוס שמן ל”מ 300 אורגני",
+    "name": "שמן קוקוס אורגני 300 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_115.jpeg",
     "page": 19
   },
   {
     "id": 108,
-    "name": "מתובל שמן פטריות בטעם ל”מ 250 כמהין",
+    "name": "שמן פטריות כמהין מתובל בטעם 250 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_116.jpeg",
     "page": 19
   },
   {
     "id": 109,
-    "name": "חומץ תפוחים ל”מ 500",
+    "name": "חומץ תפוחים 500 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_117.jpeg",
     "page": 20
   },
   {
     "id": 110,
-    "name": "בלסמי חומץ ל”מ 500 לבן",
+    "name": "חומץ בלסמי לבן 500 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_118.jpeg",
     "page": 20
   },
   {
     "id": 111,
-    "name": "יין בן חומץ ל”מ 500 לבן",
+    "name": "חומץ בן יין לבן 500 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_119.jpeg",
     "page": 20
   },
   {
     "id": 112,
-    "name": "יין בן חומץ ל”מ 500 חומץ בלסמי",
+    "name": "חומץ בן יין בלסמי 500 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_120.jpeg",
     "page": 20
   },
   {
     "id": 113,
-    "name": "יין בן חומץ ל”מ 500 אדום",
+    "name": "חומץ בן יין אדום 500 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_121.jpeg",
     "page": 20
   },
   {
     "id": 114,
-    "name": "אורגני טבעי נטורפוד ל”מ 750",
+    "name": "נטורפוד טבעי אורגני 750 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_122.jpeg",
     "page": 21
   },
   {
     "id": 115,
-    "name": "תפוחים חומץ ל”מ 946 גלה",
+    "name": "חומץ תפוחים גלה 946 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_123.png",
     "page": 21
   },
   {
     "id": 116,
-    "name": "מצומצם גרם 500 פונטי",
+    "name": "מצומצם פונטי 500 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_124.jpeg",
     "page": 21
   },
   {
     "id": 117,
-    "name": "חומץ רוטב בלסמי מצומצם ל”מ 250",
+    "name": "רוטב בלסמי מצומצם 250 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_125.jpeg",
     "page": 21
   },
   {
     "id": 118,
-    "name": "לבן בלסמי מצומצם ל”מ 250",
+    "name": "בלסמי לבן מצומצם 250 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_126.jpeg",
     "page": 21
@@ -834,77 +834,77 @@
   },
   {
     "id": 120,
-    "name": "בסיס על רוטב עם בלסמי חומץ גרם 180 תאנים",
+    "name": "רוטב על בסיס חומץ בלסמי עם תאנים 180 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_128.png",
     "page": 21
   },
   {
     "id": 121,
-    "name": "עם בלסמי שדה תות גרם 180",
+    "name": "בלסמי עם שדה תות 180 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_129.jpeg",
     "page": 21
   },
   {
     "id": 122,
-    "name": "של מימי מיצוי שזיפים מיובשים ל”מ 946",
+    "name": "מימי של מיצוי שזיפים מיובשים 946 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_130.jpeg",
     "page": 22
   },
   {
     "id": 123,
-    "name": "של מימי מיצוי סירופ רימונים ל”מ 235",
+    "name": "מימי של מיצוי סירופ רימונים 235 מ\"ל",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_131.jpeg",
     "page": 22
   },
   {
     "id": 124,
-    "name": "הבייגל על תיבול תבלין לסטייק",
+    "name": "תיבול על הבייגל לסטייק",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_132.png",
     "page": 23
   },
   {
     "id": 125,
-    "name": "על תיבול גרם 120 הבייגל",
+    "name": "תיבול על הבייגל 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_133.jpeg",
     "page": 23
   },
   {
     "id": 126,
-    "name": "על תיבול גרם 120 תבלין לסטייק",
+    "name": "תיבול לסטייק 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_134.jpeg",
     "page": 23
   },
   {
     "id": 127,
-    "name": "עוף תבלין גרם 120 בגריל",
+    "name": "תבלין לעוף בגריל 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_135.jpeg",
     "page": 23
   },
   {
     "id": 128,
-    "name": "תבלין לשווארמה גרם 120 ופרגית",
+    "name": "תבלין לשווארמה ופרגית 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_136.jpeg",
     "page": 23
   },
   {
     "id": 129,
-    "name": "תבלין לקציצות ראס ומפרום חנות אל גרם 120",
+    "name": "תבלין לקציצות אל חנות ראס ומפרום 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_137.jpeg",
     "page": 23
   },
   {
     "id": 130,
-    "name": "גרם 120 תבלין לדגים",
+    "name": "תבלין לדגים 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_138.jpeg",
     "page": 23
@@ -918,49 +918,49 @@
   },
   {
     "id": 132,
-    "name": "גרם 60 גרם 40 רוזמרין",
+    "name": "רוזמרין 60 גרם 40 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_140.jpeg",
     "page": 24
   },
   {
     "id": 133,
-    "name": "גרם 120 קצח",
+    "name": "קצח 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_141.jpeg",
     "page": 24
   },
   {
     "id": 134,
-    "name": "גרם 150 שום גבישי",
+    "name": "שום גבישי 150 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_142.jpeg",
     "page": 24
   },
   {
     "id": 135,
-    "name": "גרם 120 קינמון טחון",
+    "name": "קינמון טחון 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_143.jpeg",
     "page": 24
   },
   {
     "id": 136,
-    "name": "גרם 120 קימל טחון",
+    "name": "קימל טחון 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_144.jpeg",
     "page": 24
   },
   {
     "id": 137,
-    "name": "שחור פלפל גרם 100 גרוס",
+    "name": "פלפל שחור גרוס 100 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_145.jpeg",
     "page": 24
   },
   {
     "id": 138,
-    "name": "שוחר פלפל גרם 100 טחון",
+    "name": "פלפל שחור טחון 100 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_146.jpeg",
     "page": 24
@@ -974,49 +974,49 @@
   },
   {
     "id": 140,
-    "name": "גרם 60 גרם 40 אורגנו",
+    "name": "אורגנו 60 גרם 40 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_148.jpeg",
     "page": 25
   },
   {
     "id": 141,
-    "name": "טימין עלי גרם 40",
+    "name": "עלי טימין 40 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_149.jpeg",
     "page": 25
   },
   {
     "id": 142,
-    "name": "כוסברה גרם 100 טחונה",
+    "name": "כוסברה טחונה 100 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_150.jpeg",
     "page": 25
   },
   {
     "id": 143,
-    "name": "גרם 120 זעתר בלאדי",
+    "name": "זעתר בלאדי 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_151.jpeg",
     "page": 25
   },
   {
     "id": 144,
-    "name": "גרם 100 זנגביל טחון",
+    "name": "זנגביל טחון 100 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_152.jpeg",
     "page": 25
   },
   {
     "id": 145,
-    "name": "ילי’צ מקסיקני גרם 80",
+    "name": "צ'ילי מקסיקני 80 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_153.jpeg",
     "page": 25
   },
   {
     "id": 146,
-    "name": "עלי כוסברה גרם 20",
+    "name": "עלי כוסברה 20 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_154.jpeg",
     "page": 25
@@ -1030,105 +1030,105 @@
   },
   {
     "id": 148,
-    "name": "גרם 150 גרם 20 כורכום",
+    "name": "כורכום 150 גרם 20 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_156.jpeg",
     "page": 26
   },
   {
     "id": 149,
-    "name": "פפריקה גרם 150 חריפה",
+    "name": "פפריקה חריפה 150 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_157.jpeg",
     "page": 26
   },
   {
     "id": 150,
-    "name": "פפריקה גרם 120 כמון טחון",
+    "name": "פפריקה כמון טחון 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_158.jpeg",
     "page": 26
   },
   {
     "id": 151,
-    "name": "גרם 120 חריפה בשמן",
+    "name": "חריפה בשמן 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_159.jpeg",
     "page": 26
   },
   {
     "id": 152,
-    "name": "גרם 120 חריפה בשמן",
+    "name": "חריפה בשמן 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_160.jpeg",
     "page": 26
   },
   {
     "id": 153,
-    "name": "פפריקה גרם 150 מתוקה",
+    "name": "פפריקה מתוקה 150 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_161.jpeg",
     "page": 26
   },
   {
     "id": 154,
-    "name": "מתוקה מעושנת פפריקה גרם 120",
+    "name": "פפריקה מתוקה מעושנת 120 גרם",
     "category": "שמנים ותיבול",
     "image": "images_clean/product_162.jpeg",
     "page": 26
   },
   {
     "id": 155,
-    "name": "ון’קייג",
+    "name": "קייג'ן",
     "category": "תבלינים",
     "image": "images_clean/product_163.jpeg",
     "page": 27
   },
   {
     "id": 156,
-    "name": "גרם 120 גרם 150 הודי קארי",
+    "name": "קארי הודי 150 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_164.jpeg",
     "page": 27
   },
   {
     "id": 157,
-    "name": "גרם 120 סומק",
+    "name": "סומק 120 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_165.jpeg",
     "page": 27
   },
   {
     "id": 158,
-    "name": "דפנה עלי אנגלי ופלפל גרם 40",
+    "name": "עלי דפנה ופלפל אנגלי 40 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_166.jpeg",
     "page": 27
   },
   {
     "id": 159,
-    "name": "גרם 120 ’חוויג למרק",
+    "name": "חוויג' למרק 120 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_167.jpeg",
     "page": 27
   },
   {
     "id": 160,
-    "name": "גרם 100 ’חוויג לקפה",
+    "name": "חוויג' לקפה 100 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_168.jpeg",
     "page": 27
   },
   {
     "id": 161,
-    "name": "טוסקנה גרם 160",
+    "name": "טוסקנה 160 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_169.jpeg",
     "page": 27
   },
   {
     "id": 162,
-    "name": "גרם 100 בהרט לקובה",
+    "name": "בהרט לקובה 100 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_170.jpeg",
     "page": 27
@@ -1142,329 +1142,329 @@
   },
   {
     "id": 164,
-    "name": "גרם 120 גרם 80 פילדלפיה",
+    "name": "פילדלפיה 120 גרם 80 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_172.jpeg",
     "page": 28
   },
   {
     "id": 165,
-    "name": "דק מלח האדום מהים גרם 300",
+    "name": "מלח אדום מהים דק 300 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_173.jpeg",
     "page": 28
   },
   {
     "id": 166,
-    "name": "דק מלח האדום מהים גס מלח האדום מהים גרם 300",
+    "name": "מלח אדום מהים דק וגס 300 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_174.jpeg",
     "page": 28
   },
   {
     "id": 167,
-    "name": "ציפורן גרם 200 מלח לימון",
+    "name": "מלח לימון ציפורן 200 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_175.jpeg",
     "page": 28
   },
   {
     "id": 168,
-    "name": "שחור פלפל דק גרוס גרם 100",
+    "name": "פלפל שחור דק גרוס 100 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_176.jpeg",
     "page": 28
   },
   {
     "id": 169,
-    "name": "ציפורן גרם 40 טחונה",
+    "name": "ציפורן טחונה 40 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_177.jpeg",
     "page": 28
   },
   {
     "id": 170,
-    "name": "ציפורן שלמה גרם 40",
+    "name": "ציפורן שלמה 40 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_178.jpeg",
     "page": 28
   },
   {
     "id": 171,
-    "name": "מוסקט אגוז גרם 40 טחון",
+    "name": "אגוז מוסקט טחון 40 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_179.jpeg",
     "page": 29
   },
   {
     "id": 172,
-    "name": "שולחן מלח גרם 650 דק",
+    "name": "מלח שולחן דק 650 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_180.jpeg",
     "page": 29
   },
   {
     "id": 173,
-    "name": "גרם 120 תבלין פוטטו",
+    "name": "תבלין פוטטו 120 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_181.jpeg",
     "page": 29
   },
   {
     "id": 174,
-    "name": "יולו פיצה תבלינים תערובת מלח לפופקורן חמאה בטעם גרם 250",
+    "name": "תבלינים יולו פיצה מלח לפופקורן בטעם חמאה 250 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_182.jpeg",
     "page": 29
   },
   {
     "id": 175,
-    "name": "יולו פיצה תבלינים תערובת גרם 120 לפיצה",
+    "name": "תבלינים יולו פיצה לפיצה 120 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_183.jpeg",
     "page": 29
   },
   {
     "id": 176,
-    "name": "לתיבול תבלין גרם 198 סלמון",
+    "name": "תבלין לתיבול סלמון 198 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_184.jpeg",
     "page": 29
   },
   {
     "id": 177,
-    "name": "לא פז ציפוי גרם 600 מתובל",
+    "name": "ציפוי מתובל לא פז 600 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_185.jpeg",
     "page": 29
   },
   {
     "id": 178,
-    "name": "פז ציפוי גרם 500 מתובל",
+    "name": "ציפוי מתובל פז 500 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_186.jpeg",
     "page": 29
   },
   {
     "id": 179,
-    "name": "לחם פירורי מוזהבים גרם 300",
+    "name": "פירורי לחם מוזהבים 300 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_187.png",
     "page": 30
   },
   {
     "id": 180,
-    "name": "לחם פירורי עם מוזהבים שומשום גרם 300",
+    "name": "פירורי לחם מוזהבים עם שומשום 300 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_188.png",
     "page": 30
   },
   {
     "id": 181,
-    "name": "לחם פירורי מוזהבים קילו 1",
+    "name": "פירורי לחם מוזהבים 1 קילו",
     "category": "תבלינים",
     "image": "images_clean/product_189.png",
     "page": 30
   },
   {
     "id": 182,
-    "name": "לחם פירורי עם מוזהבים שומשום קילו 1",
+    "name": "פירורי לחם מוזהבים עם שומשום 1 קילו",
     "category": "תבלינים",
     "image": "images_clean/product_190.png",
     "page": 30
   },
   {
     "id": 183,
-    "name": "לחם פירורי גרם 200 גרסיני",
+    "name": "פירורי לחם גרסיני 200 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_191.jpeg",
     "page": 30
   },
   {
     "id": 184,
-    "name": "לחם פירורי זהב גרסיני גרם 200",
+    "name": "פירורי לחם זהב גרסיני 200 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_192.jpeg",
     "page": 30
   },
   {
     "id": 185,
-    "name": "תיבול תערובת מאודים לירקות גרם 60",
+    "name": "תערובת תיבול לירקות מאודים 60 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_193.jpeg",
     "page": 30
   },
   {
     "id": 186,
-    "name": "תערובת לירקות תיבול צלויים גרם 95",
+    "name": "תערובת תיבול לירקות צלויים 95 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_194.jpeg",
     "page": 30
   },
   {
     "id": 187,
-    "name": "לשניצל תיבול אמריקאי גרם 400",
+    "name": "תיבול לשניצל אמריקאי 400 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_195.jpeg",
     "page": 31
   },
   {
     "id": 188,
-    "name": "לשניצל תיבול גרם 400 וינאי",
+    "name": "תיבול לשניצל וינאי 400 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_196.jpeg",
     "page": 31
   },
   {
     "id": 189,
-    "name": "מקסיקני גרם 400 פיקנטי",
+    "name": "תיבול לשניצל מקסיקני פיקנטי 400 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_197.jpeg",
     "page": 31
   },
   {
     "id": 190,
-    "name": "לשניצל תיבול גרם 400 קלאסי",
+    "name": "תיבול לשניצל קלאסי 400 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_198.jpeg",
     "page": 31
   },
   {
     "id": 191,
-    "name": "גס פנקו גרם 260",
+    "name": "פנקו גס 260 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_199.jpeg",
     "page": 31
   },
   {
     "id": 192,
-    "name": "עדין פנקו גרם 260",
+    "name": "פנקו עדין 260 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_200.jpeg",
     "page": 31
   },
   {
     "id": 193,
-    "name": "לחם פירורי מוזהבים גרם 400",
+    "name": "פירורי לחם מוזהבים 400 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_201.jpeg",
     "page": 31
   },
   {
     "id": 194,
-    "name": "ים מלח גרם 125 מעושן",
+    "name": "ים מלח מעושן 125 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_202.jpeg",
     "page": 31
   },
   {
     "id": 195,
-    "name": "ים מלח גרם 70 טבעי",
+    "name": "ים מלח טבעי 70 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_203.jpeg",
     "page": 32
   },
   {
     "id": 196,
-    "name": "ים מלח שום בטעם ים מלח רוזמרין בטעם גרם 70",
+    "name": "מלח ים בטעם שום ורוזמרין 70 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_204.jpeg",
     "page": 32
   },
   {
     "id": 197,
-    "name": "ים מלח לימון בטעם גרם 70",
+    "name": "מלח ים בטעם לימון 70 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_205.jpeg",
     "page": 32
   },
   {
     "id": 198,
-    "name": "ים מלח שום בטעם גרם 70",
+    "name": "מלח ים בטעם שום 70 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_206.jpeg",
     "page": 32
   },
   {
     "id": 199,
-    "name": "תערובת בצל ,פיסטוק ושקדים גרם 200",
+    "name": "תערובת בצל, פיסטוק ושקדים 200 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_207.jpeg",
     "page": 32
   },
   {
     "id": 200,
-    "name": ",בצל תערובת שקדים וצימוקים גרם 200",
+    "name": "תערובת בצל, שקדים וצימוקים 200 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_208.jpeg",
     "page": 32
   },
   {
     "id": 201,
-    "name": "תערובת לסלט גרעינים גרם 200 עלה’ג",
+    "name": "תערובת ג'עלה לסלט גרעינים 200 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_209.jpeg",
     "page": 32
   },
   {
     "id": 202,
-    "name": ",שקדים ושמיר חמוציות תערובת גרם 200",
+    "name": "תערובת חמוציות, שקדים ושמיר 200 גרם",
     "category": "תבלינים",
     "image": "images_clean/product_210.jpeg",
     "page": 32
   },
   {
     "id": 203,
-    "name": "בצל שבבי גרם 200 מטוגן",
+    "name": "שבבי בצל מטוגן 200 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_211.jpeg",
     "page": 33
   },
   {
     "id": 204,
-    "name": "פלפלים חריפים גרם 120",
+    "name": "פלפלים חריפים 120 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_212.png",
     "page": 33
   },
   {
     "id": 205,
-    "name": "פלפלים מתוקים גרם 120",
+    "name": "פלפלים מתוקים 120 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_213.png",
     "page": 33
   },
   {
     "id": 206,
-    "name": "כורכום גרם 80",
+    "name": "כורכום 80 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_214.jpeg",
     "page": 33
   },
   {
     "id": 207,
-    "name": "גרם 80 כמון",
+    "name": "כמון 80 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_215.jpeg",
     "page": 33
   },
   {
     "id": 208,
-    "name": "פפריקה חריפה גרם 80",
+    "name": "פפריקה חריפה 80 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_216.jpeg",
     "page": 33
   },
   {
     "id": 209,
-    "name": "פפריקה מתוקה גרם 80",
+    "name": "פפריקה מתוקה 80 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_217.jpeg",
     "page": 33
   },
   {
     "id": 210,
-    "name": "תבלין לשווארמה גרם 80",
+    "name": "תבלין לשווארמה 80 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_218.jpeg",
     "page": 33
@@ -1478,42 +1478,42 @@
   },
   {
     "id": 212,
-    "name": "עלי דפנה גרם 80 גרם 50 קינמון",
+    "name": "עלי דפנה קינמון 80 גרם 50 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_220.jpeg",
     "page": 34
   },
   {
     "id": 213,
-    "name": "גרם 80 פלפל שחור",
+    "name": "פלפל שחור 80 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_221.jpeg",
     "page": 34
   },
   {
     "id": 214,
-    "name": "גרם 30 עלי דפנה",
+    "name": "עלי דפנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_222.jpeg",
     "page": 34
   },
   {
     "id": 215,
-    "name": "מלח לימון גרם 50 זעתר",
+    "name": "מלח לימון זעתר 50 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_223.jpeg",
     "page": 34
   },
   {
     "id": 216,
-    "name": "’חוויאג גרם 80 למרק",
+    "name": "חוויג' למרק 80 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_224.jpeg",
     "page": 34
   },
   {
     "id": 217,
-    "name": "גרם 80 מלח לימון",
+    "name": "מלח לימון 80 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_225.jpeg",
     "page": 34
@@ -1527,238 +1527,238 @@
   },
   {
     "id": 219,
-    "name": "ילי’וצ שום במטחנה גרם 30",
+    "name": "צ'ילי שום במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_227.jpeg",
     "page": 35
   },
   {
     "id": 220,
-    "name": "שחור פלפל במטחנה גרם 30",
+    "name": "פלפל שחור במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_228.jpeg",
     "page": 35
   },
   {
     "id": 221,
-    "name": "העונות במטחנה 4 פלפל גרם 30",
+    "name": "4 פלפל העונות במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_229.jpeg",
     "page": 35
   },
   {
     "id": 222,
-    "name": "אפור מלח אטלנטי במטחנה גרם 30",
+    "name": "מלח אטלנטי אפור במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_230.jpeg",
     "page": 35
   },
   {
     "id": 223,
-    "name": "ים מלח במטחנה גרם 30",
+    "name": "מלח ים במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_231.jpeg",
     "page": 35
   },
   {
     "id": 224,
-    "name": "אטלנטי במטחנה שום במטחנה גרם 30",
+    "name": "שום אטלנטי במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_232.jpeg",
     "page": 35
   },
   {
     "id": 225,
-    "name": "שולחן מלח הימלאיה ורוד במטחנה גרם 30",
+    "name": "מלח שולחן הימלאיה ורוד במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_233.jpeg",
     "page": 35
   },
   {
     "id": 226,
-    "name": "עשבי תערובת פרובנס במטחנה גרם 30",
+    "name": "תערובת עשבי פרובנס במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_234.png",
     "page": 36
   },
   {
     "id": 227,
-    "name": "ילי’צ במטחנה 4 פלפל גרם 30",
+    "name": "4 פלפל צ'ילי במטחנה 30 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_235.jpeg",
     "page": 36
   },
   {
     "id": 228,
-    "name": "שחור פלפל במטחנה גרם 85",
+    "name": "פלפל שחור במטחנה 85 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_236.jpeg",
     "page": 36
   },
   {
     "id": 229,
-    "name": "העונות במטחנה 4 פלפל גרם 85",
+    "name": "4 פלפל העונות במטחנה 85 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_237.jpeg",
     "page": 36
   },
   {
     "id": 230,
-    "name": "שחור פלפל במטחנה גרם 185",
+    "name": "פלפל שחור במטחנה 185 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_238.jpeg",
     "page": 36
   },
   {
     "id": 231,
-    "name": "ופלפל מלח במטחנה גרם 310",
+    "name": "מלח ופלפל במטחנה 310 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_239.jpeg",
     "page": 36
   },
   {
     "id": 232,
-    "name": "אטלנטי ים מלח במטחנה גרם 360",
+    "name": "מלח ים אטלנטי במטחנה 360 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_240.jpeg",
     "page": 36
   },
   {
     "id": 233,
-    "name": "הימלאיה מלח במטחנה ורוד גרם 390",
+    "name": "מלח הימלאיה ורוד במטחנה 390 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_241.jpeg",
     "page": 36
   },
   {
     "id": 234,
-    "name": "מתובל מלח במטחנה גרם 240",
+    "name": "מלח מתובל במטחנה 240 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_242.jpeg",
     "page": 37
   },
   {
     "id": 235,
-    "name": "ילי’וצ שום במטחנה גרם 190",
+    "name": "שום צ'ילי במטחנה 190 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_243.jpeg",
     "page": 37
   },
   {
     "id": 236,
-    "name": "תערובת לבריי תיבול גרם 265 וגריל",
+    "name": "תערובת תיבול לבריי וגריל 265 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_244.jpeg",
     "page": 37
   },
   {
     "id": 237,
-    "name": "לתפוח תבלין גרם 200 אדמה",
+    "name": "תבלין לתפוח אדמה 200 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_245.jpeg",
     "page": 37
   },
   {
     "id": 238,
-    "name": "שום תבלין תיבול ועשבי תבלין וגריל בריי גרם 200",
+    "name": "תבלין שום ועשבי תיבול לבריי וגריל 200 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_246.jpeg",
     "page": 37
   },
   {
     "id": 239,
-    "name": "גרם 200 תבלין ון’קייג",
+    "name": "תבלין קייג'ן 200 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_247.jpeg",
     "page": 37
   },
   {
     "id": 240,
-    "name": "שום תבלין תיבול ועשבי גרם 200",
+    "name": "תבלין שום ועשבי תיבול 200 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_248.jpeg",
     "page": 37
   },
   {
     "id": 241,
-    "name": "ה’סרירצ גרם 75 ילי’צ",
+    "name": "צ'ילי סריראצ'ה 75 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_249.jpeg",
     "page": 37
   },
   {
     "id": 242,
-    "name": "תערובת קוריאנית לברביקיו גרם 100",
+    "name": "תערובת קוריאנית לברביקיו 100 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_250.jpeg",
     "page": 38
   },
   {
     "id": 243,
-    "name": "תערובת תערובת סטייק טקסס גרם 100",
+    "name": "תערובת סטייק טקסס 100 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_251.jpeg",
     "page": 38
   },
   {
     "id": 244,
-    "name": "גראם תערובת מסאלה גרם 100",
+    "name": "תערובת גראם מסאלה 100 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_252.jpeg",
     "page": 38
   },
   {
     "id": 245,
-    "name": "ון’קייג לואיזיאנה תערובת גרם 100",
+    "name": "תערובת קייג'ן לואיזיאנה 100 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_253.jpeg",
     "page": 38
   },
   {
     "id": 246,
-    "name": "תערובת מעושן ברביקיו גרם 100",
+    "name": "תערובת ברביקיו מעושן 100 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_254.jpeg",
     "page": 38
   },
   {
     "id": 247,
-    "name": "פפריקה מעושנת גרם 75",
+    "name": "פפריקה מעושנת 75 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_255.jpeg",
     "page": 38
   },
   {
     "id": 248,
-    "name": "תיבול עשבי גרם 100 ולימון",
+    "name": "תיבול עשבי ולימון 100 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_256.jpeg",
     "page": 38
   },
   {
     "id": 249,
-    "name": "יוונית תערובת גרם 75 ילי’צ חריף",
+    "name": "תערובת צ'ילי חריף יוונית 75 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_257.jpeg",
     "page": 38
   },
   {
     "id": 250,
-    "name": "ציר אבקת גרם 150 בקר",
+    "name": "ציר אבקת בקר 150 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_258.jpeg",
     "page": 39
   },
   {
     "id": 251,
-    "name": "ציר אבקת גרם 150 ירקות",
+    "name": "ציר אבקת ירקות 150 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_259.jpeg",
     "page": 39
   },
   {
     "id": 252,
-    "name": "ציר אבקת גרם 150 עוף",
+    "name": "ציר אבקת עוף 150 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_260.jpeg",
     "page": 39
@@ -1772,343 +1772,343 @@
   },
   {
     "id": 254,
-    "name": "עם סרדינים ירוקים זיתים פילה שימורי גרם 100",
+    "name": "שימורי סרדינים פילה עם זיתים ירוקים 100 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_262.jpeg",
     "page": 40
   },
   {
     "id": 255,
-    "name": "שימורי סרדינים מלח במי גרם 125",
+    "name": "שימורי סרדינים מלח במי 125 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_263.jpeg",
     "page": 40
   },
   {
     "id": 256,
-    "name": "שימורי סרדינים זית בשמן גרם 125",
+    "name": "שימורי סרדינים זית בשמן 125 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_264.jpeg",
     "page": 40
   },
   {
     "id": 257,
-    "name": "טונה פילה זית בשמן גרם 200",
+    "name": "פילה טונה בשמן זית 200 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_265.jpeg",
     "page": 40
   },
   {
     "id": 258,
-    "name": "טונה פילה מלח במי גרם 200",
+    "name": "פילה טונה במי מלח 200 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_266.jpeg",
     "page": 40
   },
   {
     "id": 259,
-    "name": "טונה פילה פילה אנשובי זית בשמן גרם 75",
+    "name": "פילה טונה אנשובי בשמן זית 75 גרם",
     "category": "חמוצים ושימורים",
     "image": "images_clean/product_267.jpeg",
     "page": 40
   },
   {
     "id": 260,
-    "name": "גרם 190 לימון",
+    "name": "לימון 190 גרם",
     "category": "פסטות",
     "image": "images_clean/product_268.jpeg",
     "page": 41
   },
   {
     "id": 261,
-    "name": "גרם 190 חמניות",
+    "name": "חמניות 190 גרם",
     "category": "פסטות",
     "image": "images_clean/product_269.jpeg",
     "page": 41
   },
   {
     "id": 262,
-    "name": "זית בשמן גרם 100",
+    "name": "בשמן זית 100 גרם",
     "category": "פסטות",
     "image": "images_clean/product_270.jpeg",
     "page": 41
   },
   {
     "id": 263,
-    "name": "אנשובי פילה אנשובי פילה חמניות בשמן גרם 75",
+    "name": "פילה אנשובי בשמן חמניות 75 גרם",
     "category": "פסטות",
     "image": "images_clean/product_271.jpeg",
     "page": 41
   },
   {
     "id": 264,
-    "name": "צלוי מקרל פילה זית בשמן בגריל גרם 150",
+    "name": "פילה מקרל צלוי בגריל בשמן זית 150 גרם",
     "category": "פסטות",
     "image": "images_clean/product_272.png",
     "page": 41
   },
   {
     "id": 265,
-    "name": "מקרל פילה זית בשמן גרם 150",
+    "name": "פילה מקרל בשמן זית 150 גרם",
     "category": "פסטות",
     "image": "images_clean/product_273.png",
     "page": 41
   },
   {
     "id": 266,
-    "name": "טונה נתחי במים לבנה גרם 190",
+    "name": "נתחי טונה לבנה במים 190 גרם",
     "category": "פסטות",
     "image": "images_clean/product_274.jpeg",
     "page": 41
   },
   {
     "id": 267,
-    "name": "קילקה דג ברוטב שלמים עגבניות גרם 280",
+    "name": "דג קילקה שלמים ברוטב עגבניות 280 גרם",
     "category": "פסטות",
     "image": "images_clean/product_275.jpeg",
     "page": 41
   },
   {
     "id": 268,
-    "name": "אנשובי פילה חמניות בשמן צלפים עם גרם 80",
+    "name": "פילה אנשובי בשמן חמניות עם צלפים 80 גרם",
     "category": "פסטות",
     "image": "images_clean/product_276.png",
     "page": 42
   },
   {
     "id": 269,
-    "name": "אנשובי פילה חמניות בשמן פטרווזליה עם גרם 80 ושום",
+    "name": "פילה אנשובי בשמן חמניות עם שום ופטרוזיליה 80 גרם",
     "category": "פסטות",
     "image": "images_clean/product_277.png",
     "page": 42
   },
   {
     "id": 270,
-    "name": "אנשובי פילה חמניות בשמן חריף ילי’צ עם גרם 80",
+    "name": "פילה אנשובי בשמן חמניות עם צ'ילי חריף 80 גרם",
     "category": "פסטות",
     "image": "images_clean/product_278.png",
     "page": 42
   },
   {
     "id": 271,
-    "name": "אנשובי פילה חמניות בשמן גרם 80",
+    "name": "פילה אנשובי בשמן חמניות 80 גרם",
     "category": "פסטות",
     "image": "images_clean/product_279.png",
     "page": 42
   },
   {
     "id": 272,
-    "name": "אנשובי פילה עם חמניות בשמן גרם 80 לימון",
+    "name": "פילה אנשובי בשמן חמניות עם לימון 80 גרם",
     "category": "פסטות",
     "image": "images_clean/product_280.png",
     "page": 42
   },
   {
     "id": 273,
-    "name": "סרדינים מעושנים צמחי בשמן גרם 120",
+    "name": "סרדינים מעושנים בשמן צמחי 120 גרם",
     "category": "פסטות",
     "image": "images_clean/product_281.jpeg",
     "page": 42
   },
   {
     "id": 274,
-    "name": "סרדינים מעושנים גרם 250",
+    "name": "סרדינים מעושנים 250 גרם",
     "category": "פסטות",
     "image": "images_clean/product_282.jpeg",
     "page": 42
   },
   {
     "id": 275,
-    "name": "גרם 100 ממרח דגים",
+    "name": "ממרח דגים 100 גרם",
     "category": "פסטות",
     "image": "images_clean/product_283.png",
     "page": 42
   },
   {
     "id": 276,
-    "name": "דג נתחי במי סלמון גרם 140 מלח",
+    "name": "נתחי דג סלמון במי מלח 140 גרם",
     "category": "פסטות",
     "image": "images_clean/product_284.png",
     "page": 43
   },
   {
     "id": 277,
-    "name": "דג נתחי במי סלמון דג נתחי במי שלמון ולימון מלח גרם 140",
+    "name": "נתחי דג סלמון ולימון במי מלח 140 גרם",
     "category": "פסטות",
     "image": "images_clean/product_285.png",
     "page": 43
   },
   {
     "id": 278,
-    "name": "דג נתחי ברוטב סלמון טריאקי גרם 120",
+    "name": "נתחי דג סלמון ברוטב טריאקי 120 גרם",
     "category": "פסטות",
     "image": "images_clean/product_286.png",
     "page": 43
   },
   {
     "id": 279,
-    "name": "טונה נתחי בשמן בהירה גרם 160 זית",
+    "name": "נתחי טונה בהירה בשמן זית 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_287.jpeg",
     "page": 43
   },
   {
     "id": 280,
-    "name": "טונה נתחי בהירה מלח במי גרם 160",
+    "name": "נתחי טונה בהירה במי מלח 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_288.jpeg",
     "page": 43
   },
   {
     "id": 281,
-    "name": "גריל נתחי בשמן מקרל טונה נתחי בשמן בהירה זית גרם 100",
+    "name": "גריל נתחי בשמן מקרל טונה נתחי בשמן בהירה זית 100 גרם",
     "category": "פסטות",
     "image": "images_clean/product_289.jpeg",
     "page": 43
   },
   {
     "id": 282,
-    "name": "פילה נתחי שלם מקרל גרם 120",
+    "name": "פילה מקרל נתחי שלם 120 גרם",
     "category": "פסטות",
     "image": "images_clean/product_290.jpeg",
     "page": 43
   },
   {
     "id": 283,
-    "name": "גריל נתחי בשמן מקרל גרם 120 זית",
+    "name": "נתחי מקרל גריל בשמן זית 120 גרם",
     "category": "פסטות",
     "image": "images_clean/product_291.jpeg",
     "page": 43
   },
   {
     "id": 284,
-    "name": ",לימון עם ופלפל אורגנו גרם 160 שחור",
+    "name": ",לימון עם ופלפל אורגנו שחור 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_292.png",
     "page": 44
   },
   {
     "id": 285,
-    "name": "פילה נתחי מעושנת טונה ילי’וצ בשמן גרם 160",
+    "name": "פילה טונה מעושנת בשמן צ'ילי 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_293.png",
     "page": 44
   },
   {
     "id": 286,
-    "name": "פילה נתחי מעושנת טונה מלח במי גרם 160",
+    "name": "פילה טונה מעושנת במי מלח 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_294.png",
     "page": 44
   },
   {
     "id": 287,
-    "name": "פילה נתחי מעושנת טונה גרם 160 בשמן",
+    "name": "פילה טונה מעושנת בשמן 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_295.png",
     "page": 44
   },
   {
     "id": 288,
-    "name": "ירקות עם טונה איטלקי בטעם גרם 185",
+    "name": "טונה בטעם איטלקי עם ירקות 185 גרם",
     "category": "פסטות",
     "image": "images_clean/product_296.png",
     "page": 44
   },
   {
     "id": 289,
-    "name": "עם טונה בטעם ירקות מקסיקני גרם 185",
+    "name": "טונה בטעם מקסיקני עם ירקות 185 גרם",
     "category": "פסטות",
     "image": "images_clean/product_297.png",
     "page": 44
   },
   {
     "id": 290,
-    "name": "שפרוטים בשמן מעושנים גרם 160",
+    "name": "שפרוטים מעושנים בשמן 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_298.png",
     "page": 44
   },
   {
     "id": 291,
-    "name": "שפרוטים בשמן מעושנים פיש גפילטע להגשה מוכן גרם 400",
+    "name": "שפרוטים בשמן מעושנים פיש גפילטע להגשה מוכן 400 גרם",
     "category": "פסטות",
     "image": "images_clean/product_299.jpeg",
     "page": 44
   },
   {
     "id": 292,
-    "name": "הרינג בצל עם גרם 260",
+    "name": "הרינג עם בצל 260 גרם",
     "category": "פסטות",
     "image": "images_clean/product_300.png",
     "page": 45
   },
   {
     "id": 293,
-    "name": "גרם 260 הרינג מלוח",
+    "name": "הרינג מלוח 260 גרם",
     "category": "פסטות",
     "image": "images_clean/product_301.png",
     "page": 45
   },
   {
     "id": 294,
-    "name": "גרם 260 הרינג מתובל",
+    "name": "הרינג מתובל 260 גרם",
     "category": "פסטות",
     "image": "images_clean/product_302.png",
     "page": 45
   },
   {
     "id": 295,
-    "name": "גרם 160 איקרה לבנה",
+    "name": "איקרה לבנה 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_303.jpeg",
     "page": 45
   },
   {
     "id": 296,
-    "name": "ורודה גרם 160 איקרה",
+    "name": "איקרה ורודה 160 גרם",
     "category": "פסטות",
     "image": "images_clean/product_304.jpeg",
     "page": 45
   },
   {
     "id": 297,
-    "name": "ורודה גרם 160 גרם 150 פילה סלמון",
+    "name": "פילה סלמון ורודה 150 גרם",
     "category": "פסטות",
     "image": "images_clean/product_305.jpeg",
     "page": 45
   },
   {
     "id": 298,
-    "name": "פורל דג כדורי קוויאר בסגנון גרם 200 אדום",
+    "name": "קוויאר כדורי בסגנון דג פורל אדום 200 גרם",
     "category": "פסטות",
     "image": "images_clean/product_306.jpeg",
     "page": 46
   },
   {
     "id": 299,
-    "name": "פורל דג כדורי קוויאר בסגנון גרם 200 שחור",
+    "name": "קוויאר כדורי בסגנון דג פורל שחור 200 גרם",
     "category": "פסטות",
     "image": "images_clean/product_307.jpeg",
     "page": 46
   },
   {
     "id": 300,
-    "name": "על סרדין בשמן הגריל גרם 190 זית",
+    "name": "סרדין על הגריל בשמן זית 190 גרם",
     "category": "פסטות",
     "image": "images_clean/product_308.jpeg",
     "page": 46
   },
   {
     "id": 301,
-    "name": "על סרדין בשמן הגריל על סרדין בשמן הגריל לימון עם זית גרם 190",
+    "name": "סרדין על הגריל בשמן זית עם לימון 190 גרם",
     "category": "פסטות",
     "image": "images_clean/product_309.jpeg",
     "page": 46
   },
   {
     "id": 302,
-    "name": "הגריל על סרדין עם זית בשמן ילי’צ גרם 190",
+    "name": "סרדין על הגריל בשמן זית עם צ'ילי 190 גרם",
     "category": "פסטות",
     "image": "images_clean/product_310.jpeg",
     "page": 46
@@ -2122,343 +2122,343 @@
   },
   {
     "id": 304,
-    "name": "ה'קסרצ גרם 500 27 ’מס",
+    "name": "צרסקה מס' 27 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_312.jpeg",
     "page": 47
   },
   {
     "id": 305,
-    "name": "גרם 500 פרפלה 30 ’מס",
+    "name": "פרפלה מס' 30 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_313.jpeg",
     "page": 47
   },
   {
     "id": 306,
-    "name": "ליגורי פסטה י‘גנוצ 33 ’מס גרם 500",
+    "name": "פסטה ליגורי צנוג'י מס' 33 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_314.jpeg",
     "page": 47
   },
   {
     "id": 307,
-    "name": "ליגורי פסטה גרם 500 פוסילי 31 ’מס",
+    "name": "פסטה ליגורי פוסילי מס' 31 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_315.jpeg",
     "page": 47
   },
   {
     "id": 308,
-    "name": "לזניה דפי 102 ’מס גרם 500",
+    "name": "דפי לזניה מס' 102 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_316.jpeg",
     "page": 47
   },
   {
     "id": 309,
-    "name": "ריגטה פנה גרם 500 42 ’מס",
+    "name": "פנה ריגטה מס' 42 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_317.jpeg",
     "page": 47
   },
   {
     "id": 310,
-    "name": "גרם 500 ספגטי 3 ’מס",
+    "name": "ספגטי מס' 3 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_318.png",
     "page": 48
   },
   {
     "id": 311,
-    "name": "לינגוויני גרם 500 4 ’מס",
+    "name": "לינגוויני מס' 4 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_319.png",
     "page": 48
   },
   {
     "id": 312,
-    "name": "פסטה לאמוליזנה 20 ’מס פנה גרם 500",
+    "name": "פסטה לאמוליזנה פנה מס' 20 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_320.jpeg",
     "page": 48
   },
   {
     "id": 313,
-    "name": "פסטה לאמוליזנה 80 ’מס מלי’ג פסטה לאמוליזנה 23 ’מס פוסילי גרם 500",
+    "name": "פסטה לאמוליזנה 80 'מס מלי'ג פסטה לאמוליזנה 23 'מס פוסילי 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_321.jpeg",
     "page": 48
   },
   {
     "id": 314,
-    "name": "לאמוליזנה פסטה כמרים חונקי 29 ’מס גרם 500",
+    "name": "פסטה לאמוליזנה חונקי כמרים מס' 29 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_322.jpeg",
     "page": 48
   },
   {
     "id": 315,
-    "name": "לאמוליזנה פסטה פסטה לאמוליזנה 80 ’מס מלי’ג גרם 500",
+    "name": "פסטה לאמוליזנה ג'מלי מס' 80 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_323.jpeg",
     "page": 48
   },
   {
     "id": 316,
-    "name": "לאמוליזנה פסטה 15 ’מס ספגטי גרם 500",
+    "name": "פסטה לאמוליזנה ספגטי מס' 15 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_324.jpeg",
     "page": 48
   },
   {
     "id": 317,
-    "name": "לאמוליזנה פסטה פסטה לאמוליזנה ניוקי קונכיות 26 ’מס גרם 500",
+    "name": "פסטה לאמוליזנה ניוקי קונכיות מס' 26 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_325.png",
     "page": 48
   },
   {
     "id": 318,
-    "name": "גרם 500 פנה 66 ’מס",
+    "name": "פנה מס' 66 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_326.jpeg",
     "page": 49
   },
   {
     "id": 319,
-    "name": "רדיאטורי 137 ’מס גרם 500",
+    "name": "רדיאטורי מס' 137 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_327.png",
     "page": 49
   },
   {
     "id": 320,
-    "name": "גרם 500 88 ’מס",
+    "name": "מס' 88 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_328.jpeg",
     "page": 49
   },
   {
     "id": 321,
-    "name": "יני’פטוצ גרם 500 89 ’מס",
+    "name": "פטוצ'יני מס' 89 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_329.jpeg",
     "page": 49
   },
   {
     "id": 322,
-    "name": "רומו פסטה פוסילי 48 ’מס גרם 500",
+    "name": "פסטה רומו פוסילי מס' 48 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_330.jpeg",
     "page": 49
   },
   {
     "id": 323,
-    "name": "רומו פסטה גרם 500 ריקולי 54 ’מס",
+    "name": "פסטה רומו ריקולי מס' 54 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_331.jpeg",
     "page": 49
   },
   {
     "id": 324,
-    "name": "רומו פסטה גרם 500 פרפלה 85 ’מס",
+    "name": "פסטה רומו פרפלה מס' 85 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_332.png",
     "page": 49
   },
   {
     "id": 325,
-    "name": "רומו פסטה פתיתים גרם 500",
+    "name": "פסטה רומו פתיתים 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_333.png",
     "page": 49
   },
   {
     "id": 326,
-    "name": "טעמים 4 גרם 500 פרחים",
+    "name": "פרחים 4 טעמים 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_334.jpeg",
     "page": 50
   },
   {
     "id": 327,
-    "name": "פיורי פסטה טעמים 4 קונקיליוני גרם 500",
+    "name": "פסטה פיורי קונקיליוני 4 טעמים 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_335.jpeg",
     "page": 50
   },
   {
     "id": 328,
-    "name": "פסטה לבבות דאורטי וסלק רגיל גרם 500",
+    "name": "פסטה לבבות וסלק דאורטי רגיל 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_336.jpeg",
     "page": 50
   },
   {
     "id": 329,
-    "name": "לזניה דפי גרם 500 ארמנדו",
+    "name": "דפי לזניה ארמנדו 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_337.jpeg",
     "page": 50
   },
   {
     "id": 330,
-    "name": "ביצים אטריות דורום מחיטת גרם 500",
+    "name": "אטריות ביצים מחיטת דורום 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_338.png",
     "page": 51
   },
   {
     "id": 331,
-    "name": "ביצים אטריות דורום מחיטת גרם 500",
+    "name": "אטריות ביצים מחיטת דורום 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_339.png",
     "page": 51
   },
   {
     "id": 332,
-    "name": "ביצים אטריות דורום מחיטת גרם 500",
+    "name": "אטריות ביצים מחיטת דורום 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_340.png",
     "page": 51
   },
   {
     "id": 333,
-    "name": "ביצים אטריות דורום מחיטת גרם 500",
+    "name": "אטריות ביצים מחיטת דורום 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_341.png",
     "page": 51
   },
   {
     "id": 334,
-    "name": "ביצים אטריות דורום מחיטת גרם 500",
+    "name": "אטריות ביצים מחיטת דורום 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_342.png",
     "page": 51
   },
   {
     "id": 335,
-    "name": "דורום מחיטת גרם 500 עבה",
+    "name": "מחיטת דורום עבה 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_343.png",
     "page": 51
   },
   {
     "id": 336,
-    "name": "דורום מחיטת גרם 500 דק",
+    "name": "מחיטת דורום דק 500 גרם",
     "category": "פסטות",
     "image": "images_clean/product_344.png",
     "page": 51
   },
   {
     "id": 337,
-    "name": "א”תפו ניוקי גרם 300 דניאל",
+    "name": "ניוקי תפו\"א דניאל 300 גרם",
     "category": "דגים",
     "image": "images_clean/product_345.jpeg",
     "page": 52
   },
   {
     "id": 338,
-    "name": "דלעת עם גרם 300 דניאל",
+    "name": "דניאל עם דלעת 300 גרם",
     "category": "דגים",
     "image": "images_clean/product_346.jpeg",
     "page": 52
   },
   {
     "id": 339,
-    "name": "א”תפו ניקי עגבניות עם גרם 300 דניאל",
+    "name": "ניוקי תפו\"א עם עגבניות דניאל 300 גרם",
     "category": "דגים",
     "image": "images_clean/product_347.jpeg",
     "page": 52
   },
   {
     "id": 340,
-    "name": "גרם 300 כמהין דניאל",
+    "name": "דניאל כמהין 300 גרם",
     "category": "דגים",
     "image": "images_clean/product_348.jpeg",
     "page": 52
   },
   {
     "id": 341,
-    "name": "א”תפו ניוקי ערמונים עם דניאל גרם 300",
+    "name": "ניוקי תפו\"א עם ערמונים דניאל 300 גרם",
     "category": "דגים",
     "image": "images_clean/product_349.jpeg",
     "page": 52
   },
   {
     "id": 342,
-    "name": "בצורות פסטה מאוס מיקי גרם 250",
+    "name": "פסטה בצורות מיקי מאוס 250 גרם",
     "category": "דגים",
     "image": "images_clean/product_350.jpeg",
     "page": 53
   },
   {
     "id": 343,
-    "name": "בצורות פסטה גרם 250 נסיכות",
+    "name": "פסטה בצורות נסיכות 250 גרם",
     "category": "דגים",
     "image": "images_clean/product_351.jpeg",
     "page": 53
   },
   {
     "id": 344,
-    "name": "בצורות פסטה מכוניות גרם 250",
+    "name": "פסטה בצורות מכוניות 250 גרם",
     "category": "דגים",
     "image": "images_clean/product_352.jpeg",
     "page": 53
   },
   {
     "id": 345,
-    "name": "פסטות בצורות גרם 400 כוכבים",
+    "name": "פסטות בצורות כוכבים 400 גרם",
     "category": "דגים",
     "image": "images_clean/product_353.jpeg",
     "page": 53
   },
   {
     "id": 346,
-    "name": "פסטות בצורות גרם 400 ABC",
+    "name": "פסטות בצורות ABC 400 גרם",
     "category": "דגים",
     "image": "images_clean/product_354.jpeg",
     "page": 53
   },
   {
     "id": 347,
-    "name": "פסטה סקיני נודלס אטריות גרם 270",
+    "name": "פסטה סקיני אטריות נודלס 270 גרם",
     "category": "דגים",
     "image": "images_clean/product_355.jpeg",
     "page": 54
   },
   {
     "id": 348,
-    "name": "אטריות גרם 270 ספגטי",
+    "name": "אטריות ספגטי 270 גרם",
     "category": "דגים",
     "image": "images_clean/product_356.jpeg",
     "page": 54
   },
   {
     "id": 349,
-    "name": "פסטה סקיני פתיתים גרם 270",
+    "name": "פסטה סקיני פתיתים 270 גרם",
     "category": "דגים",
     "image": "images_clean/product_357.jpeg",
     "page": 54
   },
   {
     "id": 350,
-    "name": "פסטה סקיני אטריות יני’פטוצ גרם 270",
+    "name": "פסטה סקיני אטריות פטוצ'יני 270 גרם",
     "category": "דגים",
     "image": "images_clean/product_358.jpeg",
     "page": 54
   },
   {
     "id": 351,
-    "name": "פסטה סקיני בתוספת נודלס שועל שיבולת גרם 270",
+    "name": "פסטה סקיני נודלס בתוספת שיבולת שועל 270 גרם",
     "category": "דגים",
     "image": "images_clean/product_359.jpeg",
     "page": 54
   },
   {
     "id": 352,
-    "name": "יני’פטוצ בתוספת שועל שיבולת פסטה סקיני גרם 270",
+    "name": "פסטה סקיני פטוצ'יני בתוספת שיבולת שועל 270 גרם",
     "category": "דגים",
     "image": "images_clean/product_360.jpeg",
     "page": 54
@@ -2486,147 +2486,147 @@
   },
   {
     "id": 356,
-    "name": "בסמטי אורז פרימיום קילו 1",
+    "name": "אורז בסמטי פרימיום 1 קילו",
     "category": "דגים",
     "image": "images_clean/product_364.jpeg",
     "page": 55
   },
   {
     "id": 357,
-    "name": "גרם 800 כוסמת",
+    "name": "כוסמת 800 גרם",
     "category": "דגים",
     "image": "images_clean/product_365.jpeg",
     "page": 55
   },
   {
     "id": 358,
-    "name": "פשתן זרעי גרם 500",
+    "name": "פשתן זרעי 500 גרם",
     "category": "דגים",
     "image": "images_clean/product_366.jpeg",
     "page": 55
   },
   {
     "id": 359,
-    "name": "שומשום גרם 100",
+    "name": "שומשום 100 גרם",
     "category": "דגים",
     "image": "images_clean/product_367.jpeg",
     "page": 55
   },
   {
     "id": 360,
-    "name": "בסמטי טילדה קילו 1",
+    "name": "בסמטי טילדה 1 קילו",
     "category": "דגים",
     "image": "images_clean/product_368.jpeg",
     "page": 56
   },
   {
     "id": 361,
-    "name": "לבן אורז יסמין טילדה קילו 1",
+    "name": "אורז יסמין לבן טילדה 1 קילו",
     "category": "דגים",
     "image": "images_clean/product_369.jpeg",
     "page": 56
   },
   {
     "id": 362,
-    "name": "לבן אורז פרסי טילדה קילו 1",
+    "name": "אורז פרסי לבן טילדה 1 קילו",
     "category": "דגים",
     "image": "images_clean/product_370.jpeg",
     "page": 56
   },
   {
     "id": 363,
-    "name": "כפרי מרק גרם 400 ביתי",
+    "name": "מרק כפרי ביתי 400 גרם",
     "category": "דגים",
     "image": "images_clean/product_371.jpeg",
     "page": 57
   },
   {
     "id": 364,
-    "name": "עם אורז גרם 500 ירקות",
+    "name": "ירקות עם אורז 500 גרם",
     "category": "דגים",
     "image": "images_clean/product_372.jpeg",
     "page": 57
   },
   {
     "id": 365,
-    "name": "עם בורגול גרם 500 עדשים",
+    "name": "עדשים עם בורגול 500 גרם",
     "category": "דגים",
     "image": "images_clean/product_373.jpeg",
     "page": 57
   },
   {
     "id": 366,
-    "name": "אורז דרה’מג עדשים עם גרם 500",
+    "name": "עדשים עם אורז מג'דרה 500 גרם",
     "category": "דגים",
     "image": "images_clean/product_374.jpeg",
     "page": 57
   },
   {
     "id": 367,
-    "name": "עם קינואה ירקות גרם 400",
+    "name": "ירקות עם קינואה 400 גרם",
     "category": "דגים",
     "image": "images_clean/product_375.jpeg",
     "page": 57
   },
   {
     "id": 368,
-    "name": "עם קינואה גרם 500 עדשים",
+    "name": "עדשים עם קינואה 500 גרם",
     "category": "דגים",
     "image": "images_clean/product_376.jpeg",
     "page": 57
   },
   {
     "id": 369,
-    "name": "שועל שיבולת גרם 500 מהירה להכנה",
+    "name": "שיבולת שועל להכנה מהירה 500 גרם",
     "category": "דגים",
     "image": "images_clean/product_377.jpeg",
     "page": 58
   },
   {
     "id": 370,
-    "name": "מן מיקס גרם 400 הטבע",
+    "name": "מיקס מן הטבע 400 גרם",
     "category": "דגים",
     "image": "images_clean/product_378.jpeg",
     "page": 58
   },
   {
     "id": 371,
-    "name": "מיקס מוזלי אגוזים בתוספת גרם 900 ושקדים",
+    "name": "מיקס מוזלי אגוזים ושקדים בתוספת 900 גרם",
     "category": "דגים",
     "image": "images_clean/product_379.jpeg",
     "page": 58
   },
   {
     "id": 372,
-    "name": "גרם 900",
+    "name": "900 גרם",
     "category": "דגים",
     "image": "images_clean/product_380.jpeg",
     "page": 58
   },
   {
     "id": 373,
-    "name": "גרנולה בתוספת גרם 500 פירות",
+    "name": "גרנולה בתוספת פירות 500 גרם",
     "category": "דגים",
     "image": "images_clean/product_381.jpeg",
     "page": 58
   },
   {
     "id": 374,
-    "name": "י’קראנצ גרנולה מריר שוקולד עם לוז ואגוזי גרם 300",
+    "name": "גרנולה קראנצ'י עם שוקולד מריר ואגוזי לוז 300 גרם",
     "category": "דגים",
     "image": "images_clean/product_382.jpeg",
     "page": 58
   },
   {
     "id": 375,
-    "name": "י’קראנצ גרנולה ופקאן בננה עם גרם 300",
+    "name": "גרנולה קראנצ'י עם בננה ופקאן 300 גרם",
     "category": "דגים",
     "image": "images_clean/product_383.jpeg",
     "page": 58
   },
   {
     "id": 376,
-    "name": "חמוציות עם גרם 300 וקשיו",
+    "name": "עם חמוציות וקשיו 300 גרם",
     "category": "דגים",
     "image": "images_clean/product_384.jpeg",
     "page": 58
@@ -2640,98 +2640,98 @@
   },
   {
     "id": 378,
-    "name": "חמוץ בטעם גרם 530 מתוק",
+    "name": "חמוץ בטעם מתוק 530 גרם",
     "category": "דגים",
     "image": "images_clean/product_386.png",
     "page": 59
   },
   {
     "id": 379,
-    "name": "חמוץ בטעם גרם 530 מתוק",
+    "name": "חמוץ בטעם מתוק 530 גרם",
     "category": "דגים",
     "image": "images_clean/product_387.png",
     "page": 59
   },
   {
     "id": 380,
-    "name": "רצועות בטעם מלפפון מתוק חמוץ גרם 530",
+    "name": "רצועות מלפפון בטעם מתוק חמוץ 530 גרם",
     "category": "דגים",
     "image": "images_clean/product_388.png",
     "page": 59
   },
   {
     "id": 381,
-    "name": "קורנישונים חמוץ בטעם גרם 530 מתוק",
+    "name": "קורנישונים בטעם מתוק חמוץ 530 גרם",
     "category": "דגים",
     "image": "images_clean/product_389.png",
     "page": 59
   },
   {
     "id": 382,
-    "name": "גרם 670 כבושים בחומץ",
+    "name": "כבושים בחומץ 670 גרם",
     "category": "דגים",
     "image": "images_clean/product_390.jpeg",
     "page": 59
   },
   {
     "id": 383,
-    "name": "סורי זית זית בשמן גרם 541",
+    "name": "זית סורי בשמן 541 גרם",
     "category": "דגים",
     "image": "images_clean/product_391.png",
     "page": 59
   },
   {
     "id": 384,
-    "name": "ירוקים זיתים זיתי קלמנטה גרם 250",
+    "name": "זיתים ירוקים קלמנטה 250 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_392.jpeg",
     "page": 60
   },
   {
     "id": 385,
-    "name": "ירוקים זיתים מתובלים גרם 250",
+    "name": "זיתים ירוקים מתובלים 250 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_393.jpeg",
     "page": 60
   },
   {
     "id": 386,
-    "name": "ירוקים זיתים שום עם גרם 250",
+    "name": "זיתים ירוקים עם שום 250 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_394.jpeg",
     "page": 60
   },
   {
     "id": 387,
-    "name": "ירוקים זיתים זיתי קלמנטה גרם 370",
+    "name": "זיתים ירוקים קלמנטה 370 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_395.jpeg",
     "page": 60
   },
   {
     "id": 388,
-    "name": "קלמנטה זיתי זיתים מעורבים גרם 500",
+    "name": "זיתים מעורבים קלמנטה 500 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_396.jpeg",
     "page": 60
   },
   {
     "id": 389,
-    "name": "זיתים מעורבים זיתי קלמנטה גרם 250",
+    "name": "זיתים מעורבים קלמנטה 250 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_397.jpeg",
     "page": 60
   },
   {
     "id": 390,
-    "name": "קלמנטה זיתי מגולענים גרם 250",
+    "name": "זיתי קלמנטה מגולענים 250 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_398.jpeg",
     "page": 60
   },
   {
     "id": 391,
-    "name": "שחורים זיתים זית בשמן גרם 250",
+    "name": "זיתים שחורים בשמן זית 250 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_399.jpeg",
     "page": 60
@@ -2766,259 +2766,259 @@
   },
   {
     "id": 396,
-    "name": "חמוצים להמבורגר מלפפונים גרם 670",
+    "name": "מלפפונים חמוצים להמבורגר 670 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_404.jpeg",
     "page": 61
   },
   {
     "id": 397,
-    "name": "קלמנטה זיתי גלעין עם גרם 215",
+    "name": "זיתי קלמנטה עם גלעין 215 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_405.jpeg",
     "page": 62
   },
   {
     "id": 398,
-    "name": "ירוק זית מיקס וקלמנטה גרם 190",
+    "name": "מיקס זית ירוק וקלמנטה 190 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_406.jpeg",
     "page": 62
   },
   {
     "id": 399,
-    "name": "קלמנטה זיתי מגולענים גרם 190",
+    "name": "זיתי קלמנטה מגולענים 190 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_407.jpeg",
     "page": 62
   },
   {
     "id": 400,
-    "name": "עם ירוק זית תיבול עשבי גרם 215",
+    "name": "זית ירוק עם עשבי תיבול 215 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_408.jpeg",
     "page": 62
   },
   {
     "id": 401,
-    "name": "עם ירוק זית חריף ילי’צ גרם 215",
+    "name": "זית ירוק עם צ'ילי חריף 215 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_409.jpeg",
     "page": 62
   },
   {
     "id": 402,
-    "name": "פלפל גרעיני כבושים ירוק גרם 115",
+    "name": "גרעיני פלפל ירוק כבושים 115 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_410.jpeg",
     "page": 63
   },
   {
     "id": 403,
-    "name": "קוקטייל בצלצלים גרם 210 כבושים",
+    "name": "בצלצלים כבושים קוקטייל 210 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_411.jpeg",
     "page": 63
   },
   {
     "id": 404,
-    "name": "קטנים צלפים מוחמצים גרם 65",
+    "name": "צלפים מוחמצים קטנים 65 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_412.jpeg",
     "page": 63
   },
   {
     "id": 405,
-    "name": "קוקטייל בצלצלים כבושים גרם 370",
+    "name": "בצלצלים כבושים קוקטייל 370 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_413.jpeg",
     "page": 63
   },
   {
     "id": 406,
-    "name": "קטנים צלפים במלח גרם 75",
+    "name": "צלפים במלח קטנים 75 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_414.jpeg",
     "page": 63
   },
   {
     "id": 407,
-    "name": "קטנים צלפים צלפים מוחמצים גרם 240",
+    "name": "צלפים מוחמצים קטנים 240 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_415.jpeg",
     "page": 63
   },
   {
     "id": 408,
-    "name": "צלפים מינייטוריים גרם 540",
+    "name": "צלפים מינייטוריים 540 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_416.jpeg",
     "page": 63
   },
   {
     "id": 409,
-    "name": "עגבניות מיובשות גרם 285 בשמן",
+    "name": "עגבניות מיובשות בשמן 285 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_417.jpeg",
     "page": 63
   },
   {
     "id": 410,
-    "name": "לבנה שעועית מלח במי גרם 400",
+    "name": "שעועית לבנה במי מלח 400 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_418.jpeg",
     "page": 64
   },
   {
     "id": 411,
-    "name": "שעועית במי שחורה גרם 400 מלח",
+    "name": "שעועית שחורה במי מלח 400 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_419.jpeg",
     "page": 64
   },
   {
     "id": 412,
-    "name": "שעועית במי אדומה גרם 400 מלח",
+    "name": "שעועית אדומה במי מלח 400 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_420.jpeg",
     "page": 64
   },
   {
     "id": 413,
-    "name": "ברוטב אפויה עגבניות גרם 400",
+    "name": "עגבניות אפויה ברוטב 400 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_421.jpeg",
     "page": 64
   },
   {
     "id": 414,
-    "name": "דקל גרם 400 לבבות",
+    "name": "דקל לבבות 400 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_422.jpeg",
     "page": 64
   },
   {
     "id": 415,
-    "name": "דקל לבבות גרם 400 שלמים",
+    "name": "דקל לבבות שלמים 400 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_423.jpeg",
     "page": 64
   },
   {
     "id": 416,
-    "name": "תחתיות במי ארטישוק מלח גרם 400",
+    "name": "תחתיות ארטישוק במי מלח 400 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_424.jpeg",
     "page": 64
   },
   {
     "id": 417,
-    "name": "תחתיות במי ארטישוק ארטישוק לה-א בסגנון רומנה גרם 290",
+    "name": "תחתיות ארטישוק בסגנון רומנה א-לה 290 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_425.jpeg",
     "page": 64
   },
   {
     "id": 418,
-    "name": "לבבנות שעועית כהה אדומה גרם 439",
+    "name": "לבבנות שעועית אדומה כהה 439 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_426.jpeg",
     "page": 65
   },
   {
     "id": 419,
-    "name": "שעועית גרם 439 שחורה",
+    "name": "שעועית שחורה 439 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_427.jpeg",
     "page": 65
   },
   {
     "id": 420,
-    "name": "שלמים בצנצנת לבבנות גרם 410",
+    "name": "לבבנות שלמים בצנצנת 410 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_428.jpeg",
     "page": 65
   },
   {
     "id": 421,
-    "name": "אדומים גרם 450 קלויים",
+    "name": "אדומים קלויים 450 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_429.jpeg",
     "page": 65
   },
   {
     "id": 422,
-    "name": "גרם 450 צהובים קלויים",
+    "name": "צהובים קלויים 450 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_430.jpeg",
     "page": 65
   },
   {
     "id": 423,
-    "name": "סלק פרוסות גרם 700 מאודה",
+    "name": "פרוסות סלק מאודה 700 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_431.jpeg",
     "page": 65
   },
   {
     "id": 424,
-    "name": "קלויים פלפלים בחומץ מקולפים גרם 680",
+    "name": "פלפלים קלויים מקולפים בחומץ 680 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_432.jpeg",
     "page": 65
   },
   {
     "id": 425,
-    "name": "עגבניות מיובשות גרם 285 בשמן",
+    "name": "עגבניות מיובשות בשמן 285 גרם",
     "category": "אורז, קטניות ודגנים",
     "image": "images_clean/product_433.jpeg",
     "page": 65
   },
   {
     "id": 426,
-    "name": "חצאי אפרסקים קל בסירופ גרם 365",
+    "name": "חצאי אפרסקים קל בסירופ 365 גרם",
     "category": "משקאות",
     "image": "images_clean/product_434.jpeg",
     "page": 66
   },
   {
     "id": 427,
-    "name": "חצאי שזיפים קל בסירופ גרם 370",
+    "name": "חצאי שזיפים קל בסירופ 370 גרם",
     "category": "משקאות",
     "image": "images_clean/product_435.jpeg",
     "page": 66
   },
   {
     "id": 428,
-    "name": "חצאי משמשים קל בסירופ גרם 365",
+    "name": "חצאי משמשים קל בסירופ 365 גרם",
     "category": "משקאות",
     "image": "images_clean/product_436.jpeg",
     "page": 66
   },
   {
     "id": 429,
-    "name": "דובדבנים מגולענים קל בסירופ גרם 720",
+    "name": "דובדבנים מגולענים קל בסירופ 720 גרם",
     "category": "משקאות",
     "image": "images_clean/product_437.jpeg",
     "page": 66
   },
   {
     "id": 430,
-    "name": "גרם 1,140",
+    "name": "1.140 גרם",
     "category": "משקאות",
     "image": "images_clean/product_438.jpeg",
     "page": 66
   },
   {
     "id": 431,
-    "name": "גרם 1,790",
+    "name": "1.790 גרם",
     "category": "משקאות",
     "image": "images_clean/product_439.jpeg",
     "page": 66
   },
   {
     "id": 432,
-    "name": "גרם 250",
+    "name": "250 גרם",
     "category": "משקאות",
     "image": "images_clean/product_440.jpeg",
     "page": 66
@@ -3039,140 +3039,140 @@
   },
   {
     "id": 435,
-    "name": "יבש אדום יין טפרברג יקב מלבק",
+    "name": "יין אדום יבש יקב טפרברג מלבק",
     "category": "משקאות",
     "image": "images_clean/product_443.jpeg",
     "page": 67
   },
   {
     "id": 436,
-    "name": "יבש אדום יין טפרברג יקב ’שיראז",
+    "name": "יין אדום יבש יקב טפרברג שיראז'",
     "category": "משקאות",
     "image": "images_clean/product_444.jpeg",
     "page": 67
   },
   {
     "id": 437,
-    "name": "יבש אדום יין טפרברג יקב מרלו",
+    "name": "יין אדום יבש יקב טפרברג מרלו",
     "category": "משקאות",
     "image": "images_clean/product_445.jpeg",
     "page": 67
   },
   {
     "id": 438,
-    "name": "יבש אדום יין טפרברג יקב קברנה סובניון",
+    "name": "יין אדום יבש יקב טפרברג קברנה סובניון",
     "category": "משקאות",
     "image": "images_clean/product_446.jpeg",
     "page": 67
   },
   {
     "id": 439,
-    "name": "יבש אדום יין סירה טפרברג יקב",
+    "name": "יין אדום יבש יקב טפרברג סירה",
     "category": "משקאות",
     "image": "images_clean/product_447.jpeg",
     "page": 67
   },
   {
     "id": 440,
-    "name": "קברנה סובניון טפרברג יקב אדום יין יבש חצי",
+    "name": "יין אדום יבש חצי קברנה סובניון יקב טפרברג",
     "category": "משקאות",
     "image": "images_clean/product_448.jpeg",
     "page": 67
   },
   {
     "id": 441,
-    "name": "טפרברג יקב לבן יין יבש חצי",
+    "name": "יין לבן יבש חצי יקב טפרברג",
     "category": "משקאות",
     "image": "images_clean/product_449.jpeg",
     "page": 68
   },
   {
     "id": 442,
-    "name": "טפרברג יקב רוזה יין",
+    "name": "יין רוזה יקב טפרברג",
     "category": "משקאות",
     "image": "images_clean/product_450.jpeg",
     "page": 68
   },
   {
     "id": 443,
-    "name": "טפרברג יקב יין יבש רוזה",
+    "name": "יין רוזה יבש יקב טפרברג",
     "category": "משקאות",
     "image": "images_clean/product_451.jpeg",
     "page": 68
   },
   {
     "id": 444,
-    "name": "קברנה יין פטיט סובניון טפרברג יקב סירה",
+    "name": "יין פטיט סירה קברנה סובניון יקב טפרברג",
     "category": "משקאות",
     "image": "images_clean/product_452.png",
     "page": 68
   },
   {
     "id": 445,
-    "name": "ל”מ 700 ערק יודה",
+    "name": "ערק יודה 700 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_453.jpeg",
     "page": 69
   },
   {
     "id": 446,
-    "name": "ל”מ 700 מחייה",
+    "name": "מחייה 700 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_454.jpeg",
     "page": 69
   },
   {
     "id": 447,
-    "name": "ל”מ 330 בירה סטלה",
+    "name": "בירה סטלה 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_455.jpeg",
     "page": 69
   },
   {
     "id": 448,
-    "name": "ל”מ 330 בירה קורונה",
+    "name": "בירה קורונה 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_456.jpeg",
     "page": 69
   },
   {
     "id": 449,
-    "name": "בירה ויינשטפן ל”מ 500",
+    "name": "בירה ויינשטפן 500 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_457.jpeg",
     "page": 69
   },
   {
     "id": 450,
-    "name": "ל”מ 330 בירה הייניקן",
+    "name": "בירה הייניקן 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_458.jpeg",
     "page": 69
   },
   {
     "id": 451,
-    "name": "בירה גולדסטאר ל”מ 330",
+    "name": "בירה גולדסטאר 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_459.jpeg",
     "page": 69
   },
   {
     "id": 452,
-    "name": "קוקטייל מרגריטה ל”מ 330",
+    "name": "קוקטייל מרגריטה 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_460.jpeg",
     "page": 70
   },
   {
     "id": 453,
-    "name": "קוקטייל דה און סקס ל”מ 330 ביץ",
+    "name": "קוקטייל סקס און דה ביץ 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_461.jpeg",
     "page": 70
   },
   {
     "id": 454,
-    "name": "קוקטייל ל”מ 330 מוחיטו",
+    "name": "קוקטייל מוחיטו 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_462.jpeg",
     "page": 70
@@ -3186,105 +3186,105 @@
   },
   {
     "id": 456,
-    "name": "קוקטייל קולדה פינה ל”מ 330",
+    "name": "קוקטייל פינה קולדה 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_464.jpeg",
     "page": 70
   },
   {
     "id": 457,
-    "name": "קוקטייל לאגון בלו ל”מ 330",
+    "name": "קוקטייל בלו לאגון 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_465.jpeg",
     "page": 70
   },
   {
     "id": 458,
-    "name": "קוקטייל קולינס טומי ל”מ 330",
+    "name": "קוקטייל טומי קולינס 330 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_466.jpeg",
     "page": 70
   },
   {
     "id": 459,
-    "name": "תפוחים מיץ אורגני ר’ינג’וג ל”מ 250",
+    "name": "מיץ תפוחים וג'ינג'ר אורגני 250 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_467.jpeg",
     "page": 71
   },
   {
     "id": 460,
-    "name": "ואוכמניות אורגני כחולות תפוחים מיץ ל”מ 250",
+    "name": "מיץ תפוחים ואוכמניות כחולות אורגני 250 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_468.jpeg",
     "page": 71
   },
   {
     "id": 461,
-    "name": "תפוזים מיץ אורגני וגזר ל”מ 250",
+    "name": "מיץ תפוזים וגזר אורגני 250 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_469.jpeg",
     "page": 71
   },
   {
     "id": 462,
-    "name": "גזר מיץ ל”מ 750 אורגני",
+    "name": "מיץ גזר אורגני 750 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_470.jpeg",
     "page": 71
   },
   {
     "id": 463,
-    "name": "סלק מיץ אורגני ל”מ 750",
+    "name": "מיץ סלק אורגני 750 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_471.jpeg",
     "page": 71
   },
   {
     "id": 464,
-    "name": "תפוח מיץ אורגני מנגו ל”מ 750",
+    "name": "מיץ תפוח ומנגו אורגני 750 מ\"ל",
     "category": "משקאות",
     "image": "images_clean/product_472.jpeg",
     "page": 71
   },
   {
     "id": 465,
-    "name": "תפוחים מיץ אורגני ליטר 1",
+    "name": "מיץ תפוחים אורגני 1 ליטר",
     "category": "משקאות",
     "image": "images_clean/product_473.jpeg",
     "page": 71
   },
   {
     "id": 466,
-    "name": "מיץ עגבניות ליטר 1",
+    "name": "מיץ עגבניות 1 ליטר",
     "category": "משקאות",
     "image": "images_clean/product_474.jpeg",
     "page": 71
   },
   {
     "id": 467,
-    "name": "עם אננס לי’ג חתיכות ל”מ 320 קוקוס",
+    "name": "קוקוס עם אננס ג'לי חתיכות 320 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_475.jpeg",
     "page": 72
   },
   {
     "id": 468,
-    "name": "עם אבטיח לי’ג חתיכות ל”מ 320 קוקוס",
+    "name": "קוקוס עם אבטיח ג'לי חתיכות 320 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_476.jpeg",
     "page": 72
   },
   {
     "id": 469,
-    "name": "עם י’ליצ לי’ג חתיכות ל”מ 320 קוקוס",
+    "name": "קוקוס עם צ'ילי ג'לי חתיכות 320 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_477.jpeg",
     "page": 72
   },
   {
     "id": 470,
-    "name": "עם מנגו לי’ג חתיכות ל”מ 320 קוקוס",
+    "name": "קוקוס עם מנגו ג'לי חתיכות 320 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_478.jpeg",
     "page": 72
@@ -3298,224 +3298,224 @@
   },
   {
     "id": 472,
-    "name": "עם תות לי’ג חתיכות ל”מ 320 קוקוס",
+    "name": "קוקוס עם תות ג'לי חתיכות 320 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_480.jpeg",
     "page": 72
   },
   {
     "id": 473,
-    "name": "קוקוס מי ל”מ 330",
+    "name": "מי קוקוס 330 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_481.jpeg",
     "page": 72
   },
   {
     "id": 474,
-    "name": "קוקוס מי ליטר 1",
+    "name": "מי קוקוס 1 ליטר",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_482.jpeg",
     "page": 72
   },
   {
     "id": 475,
-    "name": "קוקוס משקה אננס עם ל”מ 330",
+    "name": "משקה קוקוס עם אננס 330 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_483.png",
     "page": 73
   },
   {
     "id": 476,
-    "name": "קוקוס משקה גויאבה עם ל”מ 330",
+    "name": "משקה קוקוס עם גויאבה 330 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_484.png",
     "page": 73
   },
   {
     "id": 477,
-    "name": "קוקוס משקה י’ליצ עם ל”מ 330",
+    "name": "משקה קוקוס עם צ'ילי 330 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_485.png",
     "page": 73
   },
   {
     "id": 478,
-    "name": "קוקוס משקה מנגו עם ל”מ 330",
+    "name": "משקה קוקוס עם מנגו 330 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_486.png",
     "page": 73
   },
   {
     "id": 479,
-    "name": "קוקוס משקה רימון עם ל”מ 330",
+    "name": "משקה קוקוס עם רימון 330 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_487.png",
     "page": 73
   },
   {
     "id": 480,
-    "name": "ווניל בטעם ל”מ 325 קווסט",
+    "name": "קווסט בטעם ווניל 325 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_488.png",
     "page": 73
   },
   {
     "id": 481,
-    "name": "קרמל בטעם קווסט מלוח ל”מ 325",
+    "name": "קווסט בטעם קרמל מלוח 325 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_489.png",
     "page": 73
   },
   {
     "id": 482,
-    "name": "חלבון משקה שוקולד בטעם קווסט ל”מ 325",
+    "name": "משקה חלבון קווסט בטעם שוקולד 325 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_490.png",
     "page": 73
   },
   {
     "id": 483,
-    "name": "בטעם יה’צ ל”מ 290 קווי",
+    "name": "קווי בטעם צ'יה 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_491.png",
     "page": 74
   },
   {
     "id": 484,
-    "name": "בטעם יה’צ פירות קוקטייל זרעי משקה ל”מ 290",
+    "name": "משקה זרעי צ'יה בטעם קוקטייל פירות 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_492.png",
     "page": 74
   },
   {
     "id": 485,
-    "name": "בטעם יה’צ ל”מ 290 מנגו",
+    "name": "בטעם צ'יה מנגו 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_493.png",
     "page": 74
   },
   {
     "id": 486,
-    "name": "בטעם יה’צ אפרסק ל”מ 290",
+    "name": "בטעם צ'יה אפרסק 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_494.png",
     "page": 74
   },
   {
     "id": 487,
-    "name": "זרעי משקה בטעם יה’צ אננס ל”מ 290",
+    "name": "משקה זרעי צ'יה בטעם אננס 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_495.png",
     "page": 74
   },
   {
     "id": 488,
-    "name": "קוקוס משקה תות בטעם ל”מ 290",
+    "name": "משקה קוקוס בטעם תות 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_496.jpeg",
     "page": 74
   },
   {
     "id": 489,
-    "name": "קוקוס משקה מנגו בטעם ל”מ 290",
+    "name": "משקה קוקוס בטעם מנגו 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_497.jpeg",
     "page": 74
   },
   {
     "id": 490,
-    "name": "קוקוס משקה מלון בטעם ל”מ 290",
+    "name": "משקה קוקוס בטעם מלון 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_498.jpeg",
     "page": 74
   },
   {
     "id": 491,
-    "name": "קוקוס משקה בננה בטעם ל”מ 290",
+    "name": "משקה קוקוס בטעם בננה 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_499.jpeg",
     "page": 75
   },
   {
     "id": 492,
-    "name": "קוקוס משקה אננס בטעם ל”מ 290",
+    "name": "משקה קוקוס בטעם אננס 290 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_500.jpeg",
     "page": 75
   },
   {
     "id": 493,
-    "name": "טבעי מיץ עץ תפוחי טבעי מיץ עץ תפוחי שחור ופטל ל”מ 750",
+    "name": "מיץ תפוחי עץ טבעי שחור ופטל 750 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_501.jpeg",
     "page": 75
   },
   {
     "id": 494,
-    "name": "טבעי מיץ עץ תפוחי ל”מ 750 וסלק",
+    "name": "מיץ תפוחי עץ טבעי וסלק 750 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_502.jpeg",
     "page": 75
   },
   {
     "id": 495,
-    "name": "טבעי מיץ עץ תפוחי ומשמש ל”מ 750",
+    "name": "מיץ תפוחי עץ טבעי ומשמש 750 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_503.jpeg",
     "page": 75
   },
   {
     "id": 496,
-    "name": "טבעי מיץ עץ תפוחי טבעי מיץ עץ תפוחי ליים ולימון ל”מ 750",
+    "name": "מיץ תפוחי עץ טבעי ליים ולימון 750 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_504.jpeg",
     "page": 75
   },
   {
     "id": 497,
-    "name": "עץ תפוחי ודובדבנים טבעי מיץ ל”מ 750",
+    "name": "מיץ תפוחי עץ טבעי ודובדבנים 750 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_505.jpeg",
     "page": 75
   },
   {
     "id": 498,
-    "name": "עץ תפוחי ודובדבנים טבעי מיץ עץ תפוחי ואגס ל”מ 750",
+    "name": "מיץ תפוחי עץ טבעי ואגס 750 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_506.jpeg",
     "page": 75
   },
   {
     "id": 499,
-    "name": "משקה שועל שיבולת ויטריז אורגני ליטר 1",
+    "name": "משקה שיבולת שועל ויטריז אורגני 1 ליטר",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_507.jpeg",
     "page": 76
   },
   {
     "id": 500,
-    "name": "סויה משקה ויטריז אורגני ליטר 1",
+    "name": "משקה סויה ויטריז אורגני 1 ליטר",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_508.jpeg",
     "page": 76
   },
   {
     "id": 501,
-    "name": "אורז משקה ויטריז אורגני ליטר 1",
+    "name": "משקה אורז ויטריז אורגני 1 ליטר",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_509.jpeg",
     "page": 76
   },
   {
     "id": 502,
-    "name": "שקדים משקה ויטריז אורגני ליטר 1",
+    "name": "משקה שקדים ויטריז אורגני 1 ליטר",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_510.jpeg",
     "page": 76
   },
   {
     "id": 503,
-    "name": "אוויאן ל”מ 750",
+    "name": "אוויאן 750 מ\"ל",
     "category": "משקאות בטעמים",
     "image": "images_clean/product_511.png",
     "page": 76
@@ -3536,84 +3536,84 @@
   },
   {
     "id": 506,
-    "name": "תפוח י’סמוצ דלעת גזר גרם 100",
+    "name": "סמוצ'י תפוח דלעת גזר 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_514.jpeg",
     "page": 77
   },
   {
     "id": 507,
-    "name": "תפוח י’סמוצ בטטה אגס גרם 100",
+    "name": "סמוצ'י תפוח בטטה אגס 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_515.jpeg",
     "page": 77
   },
   {
     "id": 508,
-    "name": "תפוח י’סמוצ קוקוס אננס גרם 100",
+    "name": "סמוצ'י תפוח קוקוס אננס 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_516.jpeg",
     "page": 77
   },
   {
     "id": 509,
-    "name": "תפוח י’סמוצ תרד בננה גרם 100",
+    "name": "סמוצ'י תפוח תרד בננה 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_517.jpeg",
     "page": 77
   },
   {
     "id": 510,
-    "name": "תפוח י’סמוצ מנגו אפרסק גרם 100",
+    "name": "סמוצ'י תפוח מנגו אפרסק 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_518.jpeg",
     "page": 77
   },
   {
     "id": 511,
-    "name": "קיווי י’סמוצ גרם 100 תפוח",
+    "name": "סמוצ'י קיווי תפוח 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_519.jpeg",
     "page": 77
   },
   {
     "id": 512,
-    "name": "תות תפוח י’סמוצ גרם 100 בננה",
+    "name": "סמוצ'י תות תפוח בננה 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_520.jpeg",
     "page": 77
   },
   {
     "id": 513,
-    "name": "תפוח י’סמוצ גרם 100 בננה",
+    "name": "סמוצ'י תפוח בננה 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_521.jpeg",
     "page": 77
   },
   {
     "id": 514,
-    "name": "גרם 100 י’סמוצ שזיף",
+    "name": "סמוצ'י שזיף 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_522.jpeg",
     "page": 78
   },
   {
     "id": 515,
-    "name": "י’סמוצ תפוחים גרם 100",
+    "name": "סמוצ'י תפוחים 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_523.jpeg",
     "page": 78
   },
   {
     "id": 516,
-    "name": "גרם 100 י’סמוצ אגסים",
+    "name": "סמוצ'י אגסים 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_524.jpeg",
     "page": 78
   },
   {
     "id": 517,
-    "name": "פירות י’סמוצ גרם 100 אדומים",
+    "name": "סמוצ'י פירות אדומים 100 גרם",
     "category": "סמוצ'י",
     "image": "images_clean/product_525.jpeg",
     "page": 78
@@ -3634,196 +3634,196 @@
   },
   {
     "id": 520,
-    "name": "גרם 550",
+    "name": "550 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_528.png",
     "page": 79
   },
   {
     "id": 521,
-    "name": "גרם 300 צנימים עגולים",
+    "name": "צנימים עגולים 300 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_529.jpeg",
     "page": 79
   },
   {
     "id": 522,
-    "name": "עגולים צנימים קמח עם מלא חיטה גרם 300",
+    "name": "צנימים עגולים עם קמח חיטה מלא 300 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_530.jpeg",
     "page": 79
   },
   {
     "id": 523,
-    "name": "גרם 300 גרם 100 צנימים מלבנים",
+    "name": "צנימים מלבנים 300 גרם 100 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_531.png",
     "page": 79
   },
   {
     "id": 524,
-    "name": "צנימים מרובעים גרם 300",
+    "name": "צנימים מרובעים 300 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_532.png",
     "page": 79
   },
   {
     "id": 525,
-    "name": "טורטיה בתוספת מלאה חיטה גרם 320",
+    "name": "טורטיה חיטה מלאה בתוספת 320 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_533.jpeg",
     "page": 80
   },
   {
     "id": 526,
-    "name": "טורטיה מ”ס 25 גרם 420",
+    "name": "טורטיה 25 ס\"מ 420 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_534.jpeg",
     "page": 80
   },
   {
     "id": 527,
-    "name": "טורטיה מ”ס 20 גרם 320",
+    "name": "טורטיה 20 ס\"מ 320 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_535.jpeg",
     "page": 80
   },
   {
     "id": 528,
-    "name": "ללא טורטיה גרם 180 גלוטן",
+    "name": "טורטיה ללא גלוטן 180 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_536.jpeg",
     "page": 80
   },
   {
     "id": 529,
-    "name": "בסיס טורטיה גרם 420 לפיצה",
+    "name": "טורטיה בסיס לפיצה 420 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_537.jpeg",
     "page": 80
   },
   {
     "id": 530,
-    "name": "כוסמין מ”ס 20 טורטיה גרם 360",
+    "name": "טורטיה כוסמין 20 ס\"מ 360 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_538.png",
     "page": 80
   },
   {
     "id": 531,
-    "name": "תירס טורטיה מ”ס 20 גרם 320",
+    "name": "טורטיה תירס 20 ס\"מ 320 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_539.jpeg",
     "page": 80
   },
   {
     "id": 532,
-    "name": "עם אובלטים שומשום גרם 300",
+    "name": "אובלטים עם שומשום 300 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_540.png",
     "page": 80
   },
   {
     "id": 533,
-    "name": "זיתים עם שחורים גרם 200",
+    "name": "עם זיתים שחורים 200 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_541.jpeg",
     "page": 81
   },
   {
     "id": 534,
-    "name": "גרם 200 מקלות כוסמין",
+    "name": "מקלות כוסמין 200 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_542.jpeg",
     "page": 81
   },
   {
     "id": 535,
-    "name": "כוסמין מקלות ובצל תרד עם גרם 200",
+    "name": "מקלות כוסמין עם תרד ובצל 200 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_543.png",
     "page": 81
   },
   {
     "id": 536,
-    "name": "כוסמין קרקר גרם 225 מלא",
+    "name": "קרקר כוסמין מלא 225 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_544.jpeg",
     "page": 81
   },
   {
     "id": 537,
-    "name": "כוסמין קרקר גרם 225 קרקר חומוס",
+    "name": "קרקר כוסמין חומוס 225 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_545.jpeg",
     "page": 81
   },
   {
     "id": 538,
-    "name": "ועשבי שום גרם 225 תיבול",
+    "name": "שום ועשבי תיבול 225 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_546.jpeg",
     "page": 81
   },
   {
     "id": 539,
-    "name": "כוסמין קרקר גרם 225 סלק",
+    "name": "קרקר כוסמין סלק 225 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_547.jpeg",
     "page": 81
   },
   {
     "id": 540,
-    "name": "עם אובלטים גרם 300 קימל",
+    "name": "עם אובלטים קי גרם 300 מ\"ל",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_548.png",
     "page": 81
   },
   {
     "id": 541,
-    "name": "תירס פריכיות שומשום עם גרם 150",
+    "name": "פריכיות תירס עם שומשום 150 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_549.jpeg",
     "page": 82
   },
   {
     "id": 542,
-    "name": "תירס פריכיות וזרעי סויה עם גרם 150 פשתן",
+    "name": "פריכיות תירס עם פשתן וזרעי סויה 150 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_550.jpeg",
     "page": 82
   },
   {
     "id": 543,
-    "name": "תירס פריכיות דגנים עם גרם 150",
+    "name": "פריכיות תירס עם דגנים 150 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_551.jpeg",
     "page": 82
   },
   {
     "id": 544,
-    "name": "פריכיות גרם 150 תירס",
+    "name": "פריכיות תירס 150 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_552.png",
     "page": 82
   },
   {
     "id": 545,
-    "name": "פריכיות פריכיות ללא כוסמין מלח תוספת גרם 120",
+    "name": "פריכיות כוסמין ללא תוספת מלח 120 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_553.jpeg",
     "page": 82
   },
   {
     "id": 546,
-    "name": "פריכיות דקות כוסמת מלח בתוספת פריכיות ללא כוסמת מלח תוספת גרם 175",
+    "name": "פריכיות דקות כוסמת מלח בתוספת פריכיות ללא כוסמת מלח תוספת 175 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_554.jpeg",
     "page": 82
   },
   {
     "id": 547,
-    "name": "כוסמת מלח בתוספת פריכיות גרם 175",
+    "name": "פריכיות כוסמת בתוספת מלח 175 גרם",
     "category": "לחמים ונשנושים",
     "image": "images_clean/product_555.png",
     "page": 82
@@ -3844,49 +3844,49 @@
   },
   {
     "id": 550,
-    "name": "עדשים קמח גרם 500 אדומות",
+    "name": "קמח עדשים אדומות 500 גרם",
     "category": "קמח ואפייה",
     "image": "images_clean/product_558.jpeg",
     "page": 83
   },
   {
     "id": 551,
-    "name": "גרם 500 קמח חומוס",
+    "name": "קמח חומוס 500 גרם",
     "category": "קמח ואפייה",
     "image": "images_clean/product_559.jpeg",
     "page": 83
   },
   {
     "id": 552,
-    "name": "גרם 250 קמח שקדים",
+    "name": "קמח שקדים 250 גרם",
     "category": "קמח ואפייה",
     "image": "images_clean/product_560.jpeg",
     "page": 83
   },
   {
     "id": 553,
-    "name": "קנים סוכר גרם 500 אורגני",
+    "name": "סוכר קנים אורגני 500 גרם",
     "category": "קמח ואפייה",
     "image": "images_clean/product_561.jpeg",
     "page": 83
   },
   {
     "id": 554,
-    "name": "גרם 250 ווניל מקל ווניל מקלות 2",
+    "name": "2 מקלות ווניל 250 גרם",
     "category": "קמח ואפייה",
     "image": "images_clean/product_562.jpeg",
     "page": 83
   },
   {
     "id": 555,
-    "name": "גרם 400 קקאו בולרו",
+    "name": "קקאו בולרו 400 גרם",
     "category": "קמח ואפייה",
     "image": "images_clean/product_563.jpeg",
     "page": 84
   },
   {
     "id": 556,
-    "name": "קפואות גרם 500 לוינסקי",
+    "name": "לוינסקי קפואות 500 גרם",
     "category": "קמח ואפייה",
     "image": "images_clean/product_564.jpeg",
     "page": 84
@@ -3900,77 +3900,77 @@
   },
   {
     "id": 558,
-    "name": "ירקות ציר גרם 200 מרוכז",
+    "name": "ציר ירקות מרוכז 200 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_566.jpeg",
     "page": 85
   },
   {
     "id": 559,
-    "name": "בורקס עם לוינסקי גרם 790 חנון’ג לוינסקי",
+    "name": "בורקס לוינסקי עם ג'חנון 790 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_567.png",
     "page": 85
   },
   {
     "id": 560,
-    "name": "בורקס עם לוינסקי יחידות 8 תרד",
+    "name": "בורקס לוינסקי עם תרד 8 יחידות",
     "category": "הכנה מהירה",
     "image": "images_clean/product_568.png",
     "page": 85
   },
   {
     "id": 561,
-    "name": "גרם 790 יחידות 8 גבינה",
+    "name": "גבינה 8 יחידות 790 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_569.png",
     "page": 85
   },
   {
     "id": 562,
-    "name": "בורקס עם לוינסקי יחידות 8 א”תפו",
+    "name": "בורקס לוינסקי עם תפו\"א 8 יחידות",
     "category": "הכנה מהירה",
     "image": "images_clean/product_570.png",
     "page": 85
   },
   {
     "id": 563,
-    "name": "בורקס גבינה לוינסקי תרד עם יחידות 8",
+    "name": "בורקס לוינסקי גבינה עם תרד 8 יחידות",
     "category": "הכנה מהירה",
     "image": "images_clean/product_571.png",
     "page": 85
   },
   {
     "id": 564,
-    "name": "עם גזר מרק אורגני קוקוס גרם 400",
+    "name": "מרק אורגני עם גזר קוקוס 400 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_572.png",
     "page": 86
   },
   {
     "id": 565,
-    "name": "עם גזר מרק אורגני קוקוס דלורית מרק אורגני ובטטה גרם 400",
+    "name": "עם גזר מרק אורגני קוקוס דלורית מרק אורגני ובטטה 400 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_573.png",
     "page": 86
   },
   {
     "id": 566,
-    "name": "עגבניות מרק גרם 400 אורגני",
+    "name": "מרק אורגני עגבניות 400 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_574.png",
     "page": 86
   },
   {
     "id": 567,
-    "name": "פטריות מרק גרם 400 אורגני",
+    "name": "מרק אורגני פטריות 400 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_575.png",
     "page": 86
   },
   {
     "id": 568,
-    "name": "שעועית מרק אורגני ילי’צ גרם 400",
+    "name": "מרק אורגני שעועית צ'ילי 400 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_576.jpeg",
     "page": 86
@@ -3984,35 +3984,35 @@
   },
   {
     "id": 570,
-    "name": "עם קונכיות גרם 204 גבינה",
+    "name": "גבינה עם קונכיות 204 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_578.jpeg",
     "page": 87
   },
   {
     "id": 571,
-    "name": "ארוחת עם מקרוני גבינה רוטב גרם 206",
+    "name": "ארוחת מקרוני עם רוטב גבינה 206 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_579.png",
     "page": 87
   },
   {
     "id": 572,
-    "name": "פסטה ארוחת רוטב עם אלבו גרם 206 גבינה",
+    "name": "ארוחת פסטה אלבו עם רוטב גבינה 206 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_580.jpeg",
     "page": 87
   },
   {
     "id": 573,
-    "name": "פסטה ארוחת עם מסולסלים גבינה רוטב גרם 156",
+    "name": "ארוחת פסטה מסולסלים עם רוטב גבינה 156 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_581.jpeg",
     "page": 87
   },
   {
     "id": 574,
-    "name": "עם פסטה ארוחת גבינה רוטב גרם 156",
+    "name": "ארוחת פסטה עם רוטב גבינה 156 גרם",
     "category": "הכנה מהירה",
     "image": "images_clean/product_582.jpeg",
     "page": 87
@@ -4033,574 +4033,574 @@
   },
   {
     "id": 577,
-    "name": "קלוי קפה וטחון לה’נח אל גרם 250",
+    "name": "קפה קלוי וטחון אל נחלה 250 גרם",
     "category": "שונות",
     "image": "images_clean/product_585.jpeg",
     "page": 88
   },
   {
     "id": 578,
-    "name": "עלים מבצק גרם 350 גרם 250",
+    "name": "עלים מבצק 350 גרם 250 גרם",
     "category": "שונות",
     "image": "images_clean/product_586.jpeg",
     "page": 88
   },
   {
     "id": 579,
-    "name": "עלים מבצק קינמון עם גרם 350",
+    "name": "מבצק עלים עם קינמון 350 גרם",
     "category": "שונות",
     "image": "images_clean/product_587.jpeg",
     "page": 88
   },
   {
     "id": 580,
-    "name": "גרם 500 סלק מבושל",
+    "name": "סלק מבושל 500 גרם",
     "category": "שונות",
     "image": "images_clean/product_588.png",
     "page": 89
   },
   {
     "id": 581,
-    "name": "תירס קלחי מתוק מבושלים גרם 425",
+    "name": "קלחי תירס מתוק מבושלים 425 גרם",
     "category": "שונות",
     "image": "images_clean/product_589.png",
     "page": 89
   },
   {
     "id": 582,
-    "name": "תירס קלחי מתוק מבושלים גרם 485",
+    "name": "קלחי תירס מתוק מבושלים 485 גרם",
     "category": "שונות",
     "image": "images_clean/product_590.png",
     "page": 89
   },
   {
     "id": 583,
-    "name": "תפוחי מחית גרם 452 עץ",
+    "name": "מחית תפוחי עץ 452 גרם",
     "category": "שונות",
     "image": "images_clean/product_591.jpeg",
     "page": 89
   },
   {
     "id": 584,
-    "name": "אייק אנד מייק מחית עץ תפוחי ממותק לא גרם 500",
+    "name": "מחית תפוחי עץ לא ממותק אייק אנד מייק 500 גרם",
     "category": "שונות",
     "image": "images_clean/product_592.jpeg",
     "page": 89
   },
   {
     "id": 585,
-    "name": "תפוחונים גרם 88 ’יח 4",
+    "name": "תפוחונים 'יח 4 88 גרם",
     "category": "שונות",
     "image": "images_clean/product_593.png",
     "page": 89
   },
   {
     "id": 586,
-    "name": "אייק אנד מייק גרם 120 טרופי",
+    "name": "אייק אנד מייק טרופי 120 גרם",
     "category": "שונות",
     "image": "images_clean/product_594.jpeg",
     "page": 89
   },
   {
     "id": 587,
-    "name": "אייק אנד מייק יער פירות גרם 120",
+    "name": "אייק אנד מייק יער פירות 120 גרם",
     "category": "שונות",
     "image": "images_clean/product_595.jpeg",
     "page": 89
   },
   {
     "id": 588,
-    "name": "גרם 100 קלופים למאכל",
+    "name": "קלופים למאכל 100 גרם",
     "category": "שונות",
     "image": "images_clean/product_596.jpeg",
     "page": 90
   },
   {
     "id": 589,
-    "name": "גרם 100 קלופים למאכל",
+    "name": "קלופים למאכל 100 גרם",
     "category": "שונות",
     "image": "images_clean/product_597.png",
     "page": 90
   },
   {
     "id": 590,
-    "name": "גרם 100 קלופים למאכל",
+    "name": "קלופים למאכל 100 גרם",
     "category": "שונות",
     "image": "images_clean/product_598.jpeg",
     "page": 90
   },
   {
     "id": 591,
-    "name": "ערמונים קרם קוקוס ליטר 1",
+    "name": "ערמונים קרם קוקוס 1 ליטר",
     "category": "שונות",
     "image": "images_clean/product_599.jpeg",
     "page": 90
   },
   {
     "id": 592,
-    "name": "וניל חלווה גרם 400",
+    "name": "וניל חלווה 400 גרם",
     "category": "שונות",
     "image": "images_clean/product_600.png",
     "page": 90
   },
   {
     "id": 593,
-    "name": "גרם 25 מיובשות שיטאקי פטריות",
+    "name": "פטריות שיטאקי מיובשות 25 גרם",
     "category": "שונות",
     "image": "images_clean/product_601.png",
     "page": 91
   },
   {
     "id": 594,
-    "name": "גרם 25 מיובשות יני’פורצ פטריות",
+    "name": "פטריות פורצ'יני מיובשות 25 גרם",
     "category": "שונות",
     "image": "images_clean/product_602.png",
     "page": 91
   },
   {
     "id": 595,
-    "name": "גרם 25 מיובשות מורל פטריות מיובשות שיטאקי פטריות",
+    "name": "מיובשות מורל פטריות מיובשות שיטאקי פטריות 25 גרם",
     "category": "שונות",
     "image": "images_clean/product_603.png",
     "page": 91
   },
   {
     "id": 596,
-    "name": "מיובשות מורל פטריות גרם 15 מיובשות פונגי פטריות",
+    "name": "מיובשות מורל פטריות מיובשות פונגי פטריות 15 גרם",
     "category": "שונות",
     "image": "images_clean/product_604.jpeg",
     "page": 91
   },
   {
     "id": 597,
-    "name": "גרם 25 מיובשות מורל פטריות מיובשות שנטרל פטריות",
+    "name": "מיובשות מורל פטריות מיובשות שנטרל פטריות 25 גרם",
     "category": "שונות",
     "image": "images_clean/product_605.png",
     "page": 91
   },
   {
     "id": 598,
-    "name": "קלופים גרם 150 טבעי",
+    "name": "טבעי קלופים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_606.png",
     "page": 92
   },
   {
     "id": 599,
-    "name": "קלויים בוטנים קשיו אגוזי במלח קלויים גרם 150",
+    "name": "אגוזי קשיו קלויים במלח 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_607.png",
     "page": 92
   },
   {
     "id": 600,
-    "name": "קלויים בוטנים ממולחים גרם 150",
+    "name": "בוטנים קלויים ממולחים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_608.png",
     "page": 92
   },
   {
     "id": 601,
-    "name": "קלויים בוטנים בוטנים אמריקאיים גרם 150",
+    "name": "בוטנים קלויים אמריקאיים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_609.png",
     "page": 92
   },
   {
     "id": 602,
-    "name": "גרם 150 שקדים טבעי",
+    "name": "שקדים טבעי 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_610.png",
     "page": 92
   },
   {
     "id": 603,
-    "name": "קלויים שקדים וממולחים גרם 150",
+    "name": "שקדים קלויים וממולחים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_611.png",
     "page": 92
   },
   {
     "id": 604,
-    "name": "גרם 150 פקאן מקולף",
+    "name": "פקאן מקולף 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_612.png",
     "page": 92
   },
   {
     "id": 605,
-    "name": "גרם 150 פקאן סיני",
+    "name": "פקאן סיני 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_613.png",
     "page": 92
   },
   {
     "id": 606,
-    "name": "חמנייה גרעיני קלויים וממולחים גרם 150",
+    "name": "גרעיני חמנייה קלויים וממולחים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_614.png",
     "page": 93
   },
   {
     "id": 607,
-    "name": "פיסטוק ממולחים בקליפה גרם 150",
+    "name": "פיסטוק ממולחים בקליפה 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_615.png",
     "page": 93
   },
   {
     "id": 608,
-    "name": "דלעת גרעיני קלויים וממולחים גרם 150",
+    "name": "גרעיני דלעת קלויים וממולחים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_616.png",
     "page": 93
   },
   {
     "id": 609,
-    "name": "קלויים וממולחים בקליפה גרם 150",
+    "name": "קלויים וממולחים בקליפה 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_617.png",
     "page": 93
   },
   {
     "id": 610,
-    "name": "אפונה חטיף מלח עם גרם 150",
+    "name": "חטיף אפונה עם מלח 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_618.png",
     "page": 93
   },
   {
     "id": 611,
-    "name": "תערובת אגוזים ושקדים גרם 150",
+    "name": "תערובת אגוזים ושקדים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_619.png",
     "page": 93
   },
   {
     "id": 612,
-    "name": "קבוקים גרם 150",
+    "name": "קבוקים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_620.png",
     "page": 93
   },
   {
     "id": 613,
-    "name": "מצרי פול מלח עם גרם 150",
+    "name": "פול מצרי עם מלח 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_621.png",
     "page": 93
   },
   {
     "id": 614,
-    "name": "גרם 150 תירס קלוי",
+    "name": "תירס קלוי 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_622.png",
     "page": 94
   },
   {
     "id": 615,
-    "name": "תירס גרם 150 ס’מנצ",
+    "name": "תירס צ'מנ\"ס 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_623.png",
     "page": 94
   },
   {
     "id": 616,
-    "name": "תאנים גרם 150 רביולי",
+    "name": "רביולי תאנים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_624.png",
     "page": 94
   },
   {
     "id": 617,
-    "name": "פריכיות גרם 150 ילי’צ",
+    "name": "פריכיות צ'ילי 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_625.png",
     "page": 94
   },
   {
     "id": 618,
-    "name": "קבוקים גרם 150 תאנים",
+    "name": "קבוקים תאנים 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_626.png",
     "page": 94
   },
   {
     "id": 619,
-    "name": "תאנים חמוציות מיובשות מסוכרות גרם 150",
+    "name": "תאנים מסוכרות חמוציות מיובשות 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_627.png",
     "page": 94
   },
   {
     "id": 620,
-    "name": "גרם 230 גרם 150 תאנים",
+    "name": "תאנים 230 גרם 150 גרם",
     "category": "שונות",
     "image": "images_clean/product_628.jpeg",
     "page": 94
   },
   {
     "id": 621,
-    "name": "חמנייה גרעיני קלויים וממולחים גרם 240",
+    "name": "גרעיני חמנייה קלויים וממולחים 240 גרם",
     "category": "שונות",
     "image": "images_clean/product_629.jpeg",
     "page": 94
   },
   {
     "id": 622,
-    "name": ",אגוזים שקדים וחמוציות תערובת גרם 250",
+    "name": "תערובת אגוזים, שקדים וחמוציות 250 גרם",
     "category": "שונות",
     "image": "images_clean/product_630.jpeg",
     "page": 95
   },
   {
     "id": 623,
-    "name": "פיסטוק גרם 200 קלוי",
+    "name": "פיסטוק קלוי 200 גרם",
     "category": "שונות",
     "image": "images_clean/product_631.jpeg",
     "page": 95
   },
   {
     "id": 624,
-    "name": "גרם 250 מיקסים גרם 100",
+    "name": "מיקסים 250 גרם 100 גרם",
     "category": "שונות",
     "image": "images_clean/product_632.jpeg",
     "page": 95
   },
   {
     "id": 625,
-    "name": "קלויים וממולחים שקדים גרם 240",
+    "name": "שקדים קלויים וממולחים 240 גרם",
     "category": "שונות",
     "image": "images_clean/product_633.jpeg",
     "page": 95
   },
   {
     "id": 626,
-    "name": "מיקס טקסס גרם 180 ס’מנצ",
+    "name": "מיקס טקסס צ'מנ\"ס 180 גרם",
     "category": "שונות",
     "image": "images_clean/product_634.jpeg",
     "page": 95
   },
   {
     "id": 627,
-    "name": "סיני פקאן גרם 200 חצאים",
+    "name": "חצאי פקאן סיני 200 גרם",
     "category": "שונות",
     "image": "images_clean/product_635.jpeg",
     "page": 95
   },
   {
     "id": 628,
-    "name": "גרם 200 רביולי מיקס טקסס",
+    "name": "רביולי מיקס טקסס 200 גרם",
     "category": "שונות",
     "image": "images_clean/product_636.jpeg",
     "page": 95
   },
   {
     "id": 629,
-    "name": "מיקס טקסס גרם 180 גרם 200 רביולי",
+    "name": "רביולי מיקס טקסס 200 גרם",
     "category": "שונות",
     "image": "images_clean/product_637.jpeg",
     "page": 95
   },
   {
     "id": 630,
-    "name": "דלעת גרעיני מלך אגוזי גרם 200",
+    "name": "גרעיני דלעת אגוזי מלך 200 גרם",
     "category": "שונות",
     "image": "images_clean/product_638.jpeg",
     "page": 96
   },
   {
     "id": 631,
-    "name": "קשיו אגוזי קלויים וממולחים גרם 220",
+    "name": "אגוזי קשיו קלויים וממולחים 220 גרם",
     "category": "שונות",
     "image": "images_clean/product_639.jpeg",
     "page": 96
   },
   {
     "id": 632,
-    "name": "דלעת גרעיני קלויים וממולחים גרם 180",
+    "name": "גרעיני דלעת קלויים וממולחים 180 גרם",
     "category": "שונות",
     "image": "images_clean/product_640.jpeg",
     "page": 96
   },
   {
     "id": 633,
-    "name": "קלויים וממולחים בוטנים גרם 240",
+    "name": "בוטנים קלויים וממולחים 240 גרם",
     "category": "שונות",
     "image": "images_clean/product_641.jpeg",
     "page": 96
   },
   {
     "id": 634,
-    "name": "דלעת גרעיני גרם 180 גרם 200",
+    "name": "דלעת גרעיני 180 גרם 200 גרם",
     "category": "שונות",
     "image": "images_clean/product_642.png",
     "page": 96
   },
   {
     "id": 635,
-    "name": "גרם 240 גרם 200 גרעיני אבטיח",
+    "name": "גרעיני אבטיח 240 גרם 200 גרם",
     "category": "שונות",
     "image": "images_clean/product_643.png",
     "page": 96
   },
   {
     "id": 636,
-    "name": "גרם 200 גרעיני חמנייה",
+    "name": "גרעיני חמנייה 200 גרם",
     "category": "שונות",
     "image": "images_clean/product_644.png",
     "page": 96
   },
   {
     "id": 637,
-    "name": "גרם 200 גרם 400 גרעיני חמנייה",
+    "name": "גרעיני חמנייה 200 גרם 400 גרם",
     "category": "שונות",
     "image": "images_clean/product_645.png",
     "page": 96
   },
   {
     "id": 638,
-    "name": "קארי מחית גרם 400 צהוב",
+    "name": "מחית קארי צהוב 400 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_646.jpeg",
     "page": 97
   },
   {
     "id": 639,
-    "name": "קארי מחית אדום גרם 400",
+    "name": "מחית קארי אדום 400 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_647.jpeg",
     "page": 97
   },
   {
     "id": 640,
-    "name": "קארי מחית גרם 400 ירוק",
+    "name": "מחית קארי ירוק 400 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_648.jpeg",
     "page": 97
   },
   {
     "id": 641,
-    "name": "אגוזי נוזל ל”מ 400 קוקוס",
+    "name": "נוזל אגוזי קוקוס 400 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_649.jpeg",
     "page": 97
   },
   {
     "id": 642,
-    "name": "קוקוס קרם ל”מ 400",
+    "name": "קרם קוקוס 400 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_650.jpeg",
     "page": 97
   },
   {
     "id": 643,
-    "name": "גרם 250 ר’ינג’ג כבוש",
+    "name": "ג'ינג'ר כבוש 250 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_651.jpeg",
     "page": 97
   },
   {
     "id": 644,
-    "name": "שחור שומשום גרם 100 קלוי",
+    "name": "שומשום שחור קלוי 100 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_652.jpeg",
     "page": 97
   },
   {
     "id": 645,
-    "name": "אפונה חטיף בציפוי וואסאבי גרם 150",
+    "name": "חטיף אפונה בציפוי וואסאבי 150 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_653.jpeg",
     "page": 97
   },
   {
     "id": 646,
-    "name": "אורז מקלוני גרם 400 מ”ס 5",
+    "name": "מקלוני אורז 5 ס\"מ 400 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_654.jpeg",
     "page": 98
   },
   {
     "id": 647,
-    "name": "אורז מקלוני דקים גרם 400",
+    "name": "מקלוני אורז דקים 400 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_655.jpeg",
     "page": 98
   },
   {
     "id": 648,
-    "name": "אורז מקלוני גרם 400 מ”ס 3",
+    "name": "מקלוני אורז 3 ס\"מ 400 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_656.jpeg",
     "page": 98
   },
   {
     "id": 649,
-    "name": "מקלוני שעועית גרם 250 ירוקה",
+    "name": "מקלוני שעועית ירוקה 250 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_657.jpeg",
     "page": 98
   },
   {
     "id": 650,
-    "name": "לבן אורז לסושי עגול קלו 1",
+    "name": "אורז לבן עגול לסושי 1 קילו",
     "category": "אסייתי",
     "image": "images_clean/product_658.jpeg",
     "page": 98
   },
   {
     "id": 651,
-    "name": "אורז דפי גרם 300 מ”ס 22",
+    "name": "דפי אורז 22 ס\"מ 300 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_659.jpeg",
     "page": 98
   },
   {
     "id": 652,
-    "name": "מקלוני ירוקה שעועית חבילות 10 גרם 400",
+    "name": "מקלוני שעועית ירוקה 10 חבילות 400 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_660.jpeg",
     "page": 98
   },
   {
     "id": 653,
-    "name": "ראמן אטריות גרם 180 מוכנות",
+    "name": "אטריות ראמן מוכנות 180 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_661.jpeg",
     "page": 99
   },
   {
     "id": 654,
-    "name": "אטריות מוכנות גרם 200",
+    "name": "אטריות מוכנות 200 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_662.jpeg",
     "page": 99
   },
   {
     "id": 655,
-    "name": "אטריות גרם 450 ביצים",
+    "name": "אטריות ביצים 450 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_663.jpeg",
     "page": 99
   },
   {
     "id": 656,
-    "name": "אודון אטריות גרם 200 מוכנות",
+    "name": "אטריות אודון מוכנות 200 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_664.jpeg",
     "page": 99
   },
   {
     "id": 657,
-    "name": "תערובת טמפורה גרם 500",
+    "name": "תערובת טמפורה 500 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_665.jpeg",
     "page": 99
   },
   {
     "id": 658,
-    "name": "גרם 200 פנקו",
+    "name": "פנקו 200 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_666.jpeg",
     "page": 99
@@ -4614,49 +4614,49 @@
   },
   {
     "id": 660,
-    "name": "ל”מ 300 גרם 85 דגים רוטב",
+    "name": "רוטב דגים 300 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_668.jpeg",
     "page": 99
   },
   {
     "id": 661,
-    "name": "פאד רוטב ל”מ 300 תאי",
+    "name": "רוטב פאד תאי 300 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_669.jpeg",
     "page": 100
   },
   {
     "id": 662,
-    "name": "ילי’צ רוטב חריף ל”מ 300",
+    "name": "רוטב צ'ילי חריף 300 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_670.jpeg",
     "page": 100
   },
   {
     "id": 663,
-    "name": "ילי’צ רוטב ל”מ 300 מתוק",
+    "name": "רוטב צ'ילי מתוק 300 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_671.jpeg",
     "page": 100
   },
   {
     "id": 664,
-    "name": "ילי’צ רוטב ללא מתוק סוכר תוספת ל”מ 300",
+    "name": "רוטב צ'ילי מתוק ללא תוספת סוכר 300 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_672.jpeg",
     "page": 100
   },
   {
     "id": 665,
-    "name": "עם טריאקי רוטב שומשום ל”מ 300",
+    "name": "רוטב טריאקי עם שומשום 300 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_673.jpeg",
     "page": 100
   },
   {
     "id": 666,
-    "name": "סויה רוטב גלוטן ללא ל”מ 500",
+    "name": "רוטב סויה ללא גלוטן 500 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_674.jpeg",
     "page": 100
@@ -4670,133 +4670,133 @@
   },
   {
     "id": 668,
-    "name": "ל”מ 250 ל”מ 250 אורז חומץ",
+    "name": "חומץ אורז 250 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_676.jpeg",
     "page": 100
   },
   {
     "id": 669,
-    "name": "שומשום שמן מזוכך לא ל”מ 150",
+    "name": "שמן שומשום לא מזוכך 150 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_677.jpeg",
     "page": 101
   },
   {
     "id": 670,
-    "name": "אורגניות קלויות גרם 22",
+    "name": "אורגניות קלויות 22 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_678.jpeg",
     "page": 101
   },
   {
     "id": 671,
-    "name": "נורי אצות לסושי קלויות גרם 25",
+    "name": "אצות נורי לסושי קלויות 25 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_679.jpeg",
     "page": 101
   },
   {
     "id": 672,
-    "name": "נורי אצות לסושי קלויות גרם 25",
+    "name": "אצות נורי לסושי קלויות 25 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_680.jpeg",
     "page": 101
   },
   {
     "id": 673,
-    "name": "אצות חטיף קלויות ים ’יח 9",
+    "name": "אצות חטיף קלויות ים 'יח 9",
     "category": "אסייתי",
     "image": "images_clean/product_681.jpeg",
     "page": 101
   },
   {
     "id": 674,
-    "name": "בטעם קלויות ווסאבי ’יח 9",
+    "name": "בטעם קלויות ווסאבי 'יח 9",
     "category": "אסייתי",
     "image": "images_clean/product_682.jpeg",
     "page": 101
   },
   {
     "id": 675,
-    "name": "על תאילנדי בוטנים בסיס בסגנון רוטב גרם 566",
+    "name": "על תאילנדי בוטנים בסיס בסגנון רוטב 566 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_683.jpeg",
     "page": 102
   },
   {
     "id": 676,
-    "name": "טריאקי רוטב ר’ינג’ג עם גרם 566",
+    "name": "רוטב טריאקי עם ג'ינג'ר 566 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_684.jpeg",
     "page": 102
   },
   {
     "id": 677,
-    "name": "טריאקי רוטב שומשום עם גרם 566",
+    "name": "רוטב טריאקי עם שומשום 566 גרם",
     "category": "אסייתי",
     "image": "images_clean/product_685.jpeg",
     "page": 102
   },
   {
     "id": 678,
-    "name": "להכנת רוטב תאי פאד ל”מ 100",
+    "name": "רוטב פאד תאי להכנת 100 מ\"ל",
     "category": "אסייתי",
     "image": "images_clean/product_686.jpeg",
     "page": 102
   },
   {
     "id": 679,
-    "name": "ועוגיות חלב קרם",
+    "name": "קרם חלב ועוגיות",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_687.png",
     "page": 103
   },
   {
     "id": 680,
-    "name": "’פאדג שוקולד",
+    "name": "שוקולד פאדג'",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_688.png",
     "page": 103
   },
   {
     "id": 681,
-    "name": "בציפוי וניל לבן שוקולד",
+    "name": "שוקולד לבן בציפוי וניל",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_689.png",
     "page": 103
   },
   {
     "id": 682,
-    "name": "קרמל טופי ,בננה",
+    "name": "בננה, טופי קרמל",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_690.png",
     "page": 103
   },
   {
     "id": 683,
-    "name": "מריר שוקולד בוטנים וחמאת",
+    "name": "שוקולד מריר וחמאת בוטנים",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_691.png",
     "page": 104
   },
   {
     "id": 684,
-    "name": "לבן שוקולד",
+    "name": "שוקולד לבן",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_692.png",
     "page": 104
   },
   {
     "id": 685,
-    "name": "מלוח קרמל",
+    "name": "קרמל מלוח",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_693.png",
     "page": 104
   },
   {
     "id": 686,
-    "name": "ינו’קפוצ מוקה",
+    "name": "מוקה קפוצ'ינו",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_694.png",
     "page": 104
@@ -4810,35 +4810,35 @@
   },
   {
     "id": 688,
-    "name": "בוטנים חמאת",
+    "name": "חמאת בוטנים",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_696.png",
     "page": 104
   },
   {
     "id": 689,
-    "name": "ושוקלד בננה לבן",
+    "name": "לבן בננה ושוקולד",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_697.png",
     "page": 104
   },
   {
     "id": 690,
-    "name": "מריר לוז אגוזי שוקולד בציפוי",
+    "name": "בציפוי שוקולד אגוזי לוז מריר",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_698.png",
     "page": 105
   },
   {
     "id": 691,
-    "name": "לבן עוגיות שברי שוקולד בציפוי",
+    "name": "בציפוי שוקולד לבן שברי עוגיות",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_699.png",
     "page": 105
   },
   {
     "id": 692,
-    "name": "מריר שוקולד מלוח ובייגלה",
+    "name": "שוקולד מריר ובייגלה מלוח",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_700.png",
     "page": 105
@@ -4852,63 +4852,63 @@
   },
   {
     "id": 694,
-    "name": "חלב שוקולד מלוח ובייגלה בוטנים",
+    "name": "שוקולד חלב בוטנים ובייגלה מלוח",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_702.png",
     "page": 105
   },
   {
     "id": 695,
-    "name": "וחלב חלב עוגיות קרם",
+    "name": "קרם עוגיות חלב וחלב",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_703.png",
     "page": 105
   },
   {
     "id": 696,
-    "name": "וחלב עוגיות בוטנים",
+    "name": "עוגיות בוטנים וחלב",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_704.png",
     "page": 105
   },
   {
     "id": 697,
-    "name": "מותכת גבינה קירי וואש לה גרם 128",
+    "name": "גבינה מותכת לה וואש קירי 128 גרם",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_705.jpeg",
     "page": 106
   },
   {
     "id": 698,
-    "name": "מותכת גבינה גבינת נו’פרמז גרם 150",
+    "name": "גבינת פרמז'ן מותכת 150 גרם",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_706.jpeg",
     "page": 106
   },
   {
     "id": 699,
-    "name": "גבינת נו’פרמז מגורדת גרם 90",
+    "name": "גבינת פרמז'ן מגורדת 90 גרם",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_707.jpeg",
     "page": 106
   },
   {
     "id": 700,
-    "name": "9% זעתר גת מחלבת לאבנהעם גרם 200",
+    "name": "לאבנה עם זעתר מחלבת גת 9% 200 גרם",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_708.jpeg",
     "page": 106
   },
   {
     "id": 701,
-    "name": "לאבנה כדורי גת מחלבת גרם 360",
+    "name": "כדורי לאבנה מחלבת גת 360 גרם",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_709.jpeg",
     "page": 106
   },
   {
     "id": 702,
-    "name": "לאבנה כדורי ללא חמאה מלח תוספת גרם 200",
+    "name": "כדורי לאבנה ללא תוספת מלח חמאה 200 גרם",
     "category": "חטיפי חלבון",
     "image": "images_clean/product_710.jpeg",
     "page": 106
@@ -4946,6 +4946,979 @@
     "name": "פירות יבשים",
     "category": "פירות יבשים",
     "image": "images_clean/product_718.jpeg",
+    "page": 108
+  },
+  {
+    "id": 708,
+    "name": "שעועית לבנה, חומוס ועדשים מבושלים Liel 540 גרם",
+    "category": "אורז, קטניות ודגנים",
+    "image": "images_clean/new_20260623_001.jpeg",
+    "page": 108
+  },
+  {
+    "id": 709,
+    "name": "קוביות מרק Massel - בקר, עוף, ירקות ופו אסייתי 105 גרם",
+    "category": "הכנה מהירה",
+    "image": "images_clean/new_20260623_002.jpeg",
+    "page": 108
+  },
+  {
+    "id": 710,
+    "name": "מלח ים פתיתים Maldon",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_003.jpeg",
+    "page": 108
+  },
+  {
+    "id": 711,
+    "name": "עגבניות מקולפות סן מרצאנו Nulano",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_004.jpeg",
+    "page": 108
+  },
+  {
+    "id": 712,
+    "name": "קוסקוס תומר - דק ובינוני 350 גרם",
+    "category": "פסטות",
+    "image": "images_clean/new_20260623_005.jpeg",
+    "page": 108
+  },
+  {
+    "id": 713,
+    "name": "רטבי Master Chef - אלף האיים, מיו-קטשופ, מיונז הולנדי, ספייסי ושום",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_006.jpeg",
+    "page": 108
+  },
+  {
+    "id": 714,
+    "name": "גינגר כבוש פרוס לבן Chopsticks 250 גרם",
+    "category": "אסייתי",
+    "image": "images_clean/new_20260623_007.jpeg",
+    "page": 108
+  },
+  {
+    "id": 715,
+    "name": "אטריות Chopsticks - ביצים ודלעת",
+    "category": "אסייתי",
+    "image": "images_clean/new_20260623_008.jpeg",
+    "page": 108
+  },
+  {
+    "id": 716,
+    "name": "מרק נוזלי Massel - בקר, עוף וירקות 1 ליטר",
+    "category": "הכנה מהירה",
+    "image": "images_clean/new_20260623_009.jpeg",
+    "page": 108
+  },
+  {
+    "id": 717,
+    "name": "לימון כבוש רבעים Les Domaines des Oliviers 700 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_010.jpeg",
+    "page": 108
+  },
+  {
+    "id": 718,
+    "name": "חומץ בלסמי מודנה Molito 500 מ\"ל וגלייז בלסמי 250 מ\"ל",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_011.jpeg",
+    "page": 108
+  },
+  {
+    "id": 719,
+    "name": "פסטו Molito - עגבניות מיובשות ובזיליקום ירוק 190 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_012.jpeg",
+    "page": 108
+  },
+  {
+    "id": 720,
+    "name": "פסטה Molito - ספגטי, פוסילי, פנה, פרפלה וסטורטוני 500 גרם",
+    "category": "פסטות",
+    "image": "images_clean/new_20260623_013.jpeg",
+    "page": 108
+  },
+  {
+    "id": 721,
+    "name": "זיתים מגולענים Molito - ירוקים וקלמטה 350 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_014.jpeg",
+    "page": 108
+  },
+  {
+    "id": 722,
+    "name": "ביסקוטי איטלקי Molito - לימונצלו, תפוז ושוקולד, שוקולד ושקדים 250 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_015.jpeg",
+    "page": 108
+  },
+  {
+    "id": 723,
+    "name": "אטריות Chopsticks - תרד ודלעת",
+    "category": "אסייתי",
+    "image": "images_clean/new_20260623_016.jpeg",
+    "page": 108
+  },
+  {
+    "id": 724,
+    "name": "חומץ תפוחים אורגני Molito 500 מ\"ל",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_017.jpeg",
+    "page": 108
+  },
+  {
+    "id": 725,
+    "name": "חלווה שוקו וניל אל ארז 300 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_018.jpeg",
+    "page": 108
+  },
+  {
+    "id": 726,
+    "name": "חלווה ללא סוכר בטעם וניל אל ארז 300 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_019.jpeg",
+    "page": 108
+  },
+  {
+    "id": 727,
+    "name": "חלווה וניל אל ארז 300 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_020.jpeg",
+    "page": 108
+  },
+  {
+    "id": 728,
+    "name": "עלי גפן ממולאים באורז נירון 400 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_021.jpeg",
+    "page": 108
+  },
+  {
+    "id": 729,
+    "name": "פילה מקרל וסרדינים John West - בשמן זית, ברוטב עגבניות ובשמן חמניות",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_022.jpeg",
+    "page": 108
+  },
+  {
+    "id": 730,
+    "name": "זיתים מגולענים - ירוקים וקלמטה 350 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_023.jpeg",
+    "page": 108
+  },
+  {
+    "id": 731,
+    "name": "פריכיות תירס Slimdelis - עגבניות ועשבי תיבול, טבעי וזיתים ועירית",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_024.jpeg",
+    "page": 108
+  },
+  {
+    "id": 732,
+    "name": "רוטב HP אורגינל 250 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_025.jpeg",
+    "page": 108
+  },
+  {
+    "id": 733,
+    "name": "פילה טונה Callipo - במי מלח ובשמן זית 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_026.jpeg",
+    "page": 108
+  },
+  {
+    "id": 734,
+    "name": "זיתים שלמים קסטלוטרנו Verde Oro במלח 530 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_027.jpeg",
+    "page": 108
+  },
+  {
+    "id": 735,
+    "name": "ארטישוק Verde Oro בשמן - אלה רומנה עם גבעול ורבעים ללא עלים עם תבלינים 530 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_028.jpeg",
+    "page": 108
+  },
+  {
+    "id": 736,
+    "name": "כרוב כבוש אורגני נטופוד 680 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_029.jpeg",
+    "page": 108
+  },
+  {
+    "id": 737,
+    "name": "פילה הרינג ברוטב עגבניות וקיפר בשמן חמניות John West 145 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_030.jpeg",
+    "page": 108
+  },
+  {
+    "id": 738,
+    "name": "נתחי טונה בהירה במי מלח Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_031.jpeg",
+    "page": 108
+  },
+  {
+    "id": 739,
+    "name": "פילה מקרל בשמן זית Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_032.jpeg",
+    "page": 108
+  },
+  {
+    "id": 740,
+    "name": "פילה דניס בשמן זית Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_033.jpeg",
+    "page": 108
+  },
+  {
+    "id": 741,
+    "name": "פילה טונה בהירה בשמן זית - וונטרסקה Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_034.jpeg",
+    "page": 108
+  },
+  {
+    "id": 742,
+    "name": "פילה בקלה בשמן זית Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_035.jpeg",
+    "page": 108
+  },
+  {
+    "id": 743,
+    "name": "פילה לברק בשמן זית Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_036.jpeg",
+    "page": 108
+  },
+  {
+    "id": 744,
+    "name": "נתחי טונה בהירה בשמן זית Belluzzi 160 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_037.jpeg",
+    "page": 108
+  },
+  {
+    "id": 745,
+    "name": "פילה טונה בהירה בשמן זית Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_038.jpeg",
+    "page": 108
+  },
+  {
+    "id": 746,
+    "name": "חמוצים נירון - פלפל חריף קלוי, צלפים ובצלצלי פנינה",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_039.jpeg",
+    "page": 108
+  },
+  {
+    "id": 747,
+    "name": "מלפפונים חמוצים מתקתקים חתוכים 580 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_040.jpeg",
+    "page": 108
+  },
+  {
+    "id": 748,
+    "name": "מלפפונים חמוצים רצועות חתוכים לאורך 580 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_041.jpeg",
+    "page": 108
+  },
+  {
+    "id": 749,
+    "name": "ממרחים - פסטו בזיליקום וצימיצורי 190 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_042.jpeg",
+    "page": 108
+  },
+  {
+    "id": 750,
+    "name": "פילה סלמון בשמן זית Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_043.jpeg",
+    "page": 108
+  },
+  {
+    "id": 751,
+    "name": "חטיף פופקורן בבקבוק - מילקשייק, קרמל, שוקולד, פירות ומתוק-מלוח",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_044.jpeg",
+    "page": 108
+  },
+  {
+    "id": 752,
+    "name": "שמן זית כתית מעולה Dante 750 מ\"ל",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_045.jpeg",
+    "page": 108
+  },
+  {
+    "id": 753,
+    "name": "רוטב עגבניות מוכן Mutti - דאטריני, ציליגיני וקלאסיקו",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_046.jpeg",
+    "page": 108
+  },
+  {
+    "id": 754,
+    "name": "שמן זית כתית מעולה De Cecco 750 מ\"ל",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_047.jpeg",
+    "page": 108
+  },
+  {
+    "id": 755,
+    "name": "פריכיות כרובית בטעם מלח ים Temole 56 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_048.jpeg",
+    "page": 108
+  },
+  {
+    "id": 756,
+    "name": "רטבי עגבניות שרי Molito - פסטה, חציל, ארבייאטה ונפוליטנה 350 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_049.jpeg",
+    "page": 108
+  },
+  {
+    "id": 757,
+    "name": "פריכיות כרובית בטעם צילי ליים Temole 56 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_050.jpeg",
+    "page": 108
+  },
+  {
+    "id": 758,
+    "name": "פריכיות כרובית בטעם קייל ופלפל Temole 56 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_051.jpeg",
+    "page": 108
+  },
+  {
+    "id": 759,
+    "name": "חרדל Remia עדין מתובל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_052.jpeg",
+    "page": 108
+  },
+  {
+    "id": 760,
+    "name": "ממרח זיתי קלמטה Lelia",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_053.jpeg",
+    "page": 108
+  },
+  {
+    "id": 761,
+    "name": "פילה מקרל והרינג מעושן Łosos בשמן עם פלפל שחור",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_054.jpeg",
+    "page": 108
+  },
+  {
+    "id": 762,
+    "name": "פילה מקרל והרינג מעושן בשמן עם פלפל שחור Łosos",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_055.jpeg",
+    "page": 108
+  },
+  {
+    "id": 763,
+    "name": "פריכיות ברוקולי בטעם צילי מתוק Temole 55 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_056.jpeg",
+    "page": 108
+  },
+  {
+    "id": 764,
+    "name": "פילה סלמון בשמן Łosos - מעושן עם פלפל שחור, לימון ופלפל ועגבניות מיובשות",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_057.jpeg",
+    "page": 108
+  },
+  {
+    "id": 765,
+    "name": "אטריות Taste of Asia - ראמן, להקפצה ואודון",
+    "category": "אסייתי",
+    "image": "images_clean/new_20260623_058.jpeg",
+    "page": 108
+  },
+  {
+    "id": 766,
+    "name": "גבינת לה וואש קי רי אוריגינל 8 יחידות",
+    "category": "שונות",
+    "image": "images_clean/new_20260623_059.jpeg",
+    "page": 108
+  },
+  {
+    "id": 767,
+    "name": "לבנה כדורים בשמן מחלבת גת 360 גרם",
+    "category": "שונות",
+    "image": "images_clean/new_20260623_060.jpeg",
+    "page": 108
+  },
+  {
+    "id": 768,
+    "name": "חלווה הר ברכה - וניל שומרונית 400 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_061.jpeg",
+    "page": 108
+  },
+  {
+    "id": 769,
+    "name": "פילה סלמון מעושן Łosos - פלפל שחור, לימון ופלפל ועגבניות מיובשות",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_062.jpeg",
+    "page": 108
+  },
+  {
+    "id": 770,
+    "name": "תירס מתוק מבושל 2 יחידות",
+    "category": "הכנה מהירה",
+    "image": "images_clean/new_20260623_063.jpeg",
+    "page": 108
+  },
+  {
+    "id": 771,
+    "name": "אגדת הכפר - תערובת געלה ומיקס מן הטבע 400 גרם",
+    "category": "פירות יבשים",
+    "image": "images_clean/new_20260623_064.jpeg",
+    "page": 108
+  },
+  {
+    "id": 772,
+    "name": "רוטב ברביקיו Open Pit - Thick & Tangy אורגינל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_065.jpeg",
+    "page": 108
+  },
+  {
+    "id": 773,
+    "name": "רוטב ברביקיו Bulls-Eye Everyday דבש",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_066.jpeg",
+    "page": 108
+  },
+  {
+    "id": 774,
+    "name": "רוטב לסלט קיסר Cibona 475 מ\"ל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_067.jpeg",
+    "page": 108
+  },
+  {
+    "id": 775,
+    "name": "רוטב ברביקיו Bulls-Eye Everyday אורגינל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_068.jpeg",
+    "page": 108
+  },
+  {
+    "id": 776,
+    "name": "רוטב לסלט ראנץ Cibona 475 מ\"ל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_069.jpeg",
+    "page": 108
+  },
+  {
+    "id": 777,
+    "name": "רוטב ציפס Goudas Glorie 750 מ\"ל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_070.jpeg",
+    "page": 108
+  },
+  {
+    "id": 778,
+    "name": "מיונז Goudas Glorie 750 מ\"ל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_071.jpeg",
+    "page": 108
+  },
+  {
+    "id": 779,
+    "name": "לחם קמח מלא PanPiuma 400 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_072.jpeg",
+    "page": 108
+  },
+  {
+    "id": 780,
+    "name": "לחם לבן PanPiuma 400 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_073.jpeg",
+    "page": 108
+  },
+  {
+    "id": 781,
+    "name": "תבלינים Provence בקופסאות פח - רוזמרין, בזיליקום, אורגנו וטימין",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_074.jpeg",
+    "page": 108
+  },
+  {
+    "id": 782,
+    "name": "רוטב לסלט קיסר Cibona 475 מ\"ל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_075.jpeg",
+    "page": 108
+  },
+  {
+    "id": 783,
+    "name": "תבלינים Provence בקופסאות פח - רוזמרין, בזיליקום, אורגנו וטימין",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_076.jpeg",
+    "page": 108
+  },
+  {
+    "id": 784,
+    "name": "תערובות עשבי תיבול Provence - לסלט, פרובנס, לפיצה ולדגים",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_077.jpeg",
+    "page": 108
+  },
+  {
+    "id": 785,
+    "name": "תערובות עשבי תיבול Provence - לסלט, פרובנס, לפיצה ולדגים",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_078.jpeg",
+    "page": 108
+  },
+  {
+    "id": 786,
+    "name": "תבלינים Provence בקופסאות פח - רוזמרין, בזיליקום, אורגנו וטימין",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_079.jpeg",
+    "page": 108
+  },
+  {
+    "id": 787,
+    "name": "מלח ים פתיתים Maldon",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_080.jpeg",
+    "page": 108
+  },
+  {
+    "id": 788,
+    "name": "שעועית לבנה, חומוס ועדשים מבושלים Liel 540 גרם",
+    "category": "אורז, קטניות ודגנים",
+    "image": "images_clean/new_20260623_081.jpeg",
+    "page": 108
+  },
+  {
+    "id": 789,
+    "name": "קוביות מרק Massel - בקר, עוף, ירקות ופו אסייתי 105 גרם",
+    "category": "הכנה מהירה",
+    "image": "images_clean/new_20260623_082.jpeg",
+    "page": 108
+  },
+  {
+    "id": 790,
+    "name": "מרק נוזלי Massel - בקר, עוף וירקות 1 ליטר",
+    "category": "הכנה מהירה",
+    "image": "images_clean/new_20260623_083.jpeg",
+    "page": 108
+  },
+  {
+    "id": 791,
+    "name": "הריסה Le Phare du Cap Bon 70 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_084.jpeg",
+    "page": 108
+  },
+  {
+    "id": 792,
+    "name": "עגבניות מקולפות סן מרצאנו Nulano",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_085.jpeg",
+    "page": 108
+  },
+  {
+    "id": 793,
+    "name": "קוסקוס תומר - דק ובינוני 350 גרם",
+    "category": "פסטות",
+    "image": "images_clean/new_20260623_086.jpeg",
+    "page": 108
+  },
+  {
+    "id": 794,
+    "name": "רטבי Master Chef - אלף האיים, מיו-קטשופ, מיונז הולנדי, ספייסי ושום",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_087.jpeg",
+    "page": 108
+  },
+  {
+    "id": 795,
+    "name": "גינגר כבוש פרוס לבן Chopsticks 250 גרם",
+    "category": "אסייתי",
+    "image": "images_clean/new_20260623_088.jpeg",
+    "page": 108
+  },
+  {
+    "id": 796,
+    "name": "אטריות Chopsticks - ביצים ודלעת",
+    "category": "אסייתי",
+    "image": "images_clean/new_20260623_089.jpeg",
+    "page": 108
+  },
+  {
+    "id": 797,
+    "name": "אטריות Chopsticks - תרד ודלעת",
+    "category": "אסייתי",
+    "image": "images_clean/new_20260623_090.jpeg",
+    "page": 108
+  },
+  {
+    "id": 798,
+    "name": "לימון כבוש רבעים 700 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_091.jpeg",
+    "page": 108
+  },
+  {
+    "id": 799,
+    "name": "חומץ בלסמי מודנה Molito 500 מ\"ל וגלייז בלסמי 250 מ\"ל",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_092.jpeg",
+    "page": 108
+  },
+  {
+    "id": 800,
+    "name": "פסטו Molito - עגבניות מיובשות ובזיליקום ירוק 190 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_093.jpeg",
+    "page": 108
+  },
+  {
+    "id": 801,
+    "name": "פסטה Molito - ספגטי, פוסילי, פנה, פרפלה וסטורטוני 500 גרם",
+    "category": "פסטות",
+    "image": "images_clean/new_20260623_094.jpeg",
+    "page": 108
+  },
+  {
+    "id": 802,
+    "name": "זיתים מגולענים Molito - ירוקים וקלמטה 350 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_095.jpeg",
+    "page": 108
+  },
+  {
+    "id": 803,
+    "name": "לימון כבוש רבעים Les Domaines des Oliviers 700 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_096.jpeg",
+    "page": 108
+  },
+  {
+    "id": 804,
+    "name": "חומץ תפוחים אורגני Molito 500 מ\"ל",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_097.jpeg",
+    "page": 108
+  },
+  {
+    "id": 805,
+    "name": "חלווה שוקו וניל אל ארז 300 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_098.jpeg",
+    "page": 108
+  },
+  {
+    "id": 806,
+    "name": "חלווה ללא סוכר בטעם וניל אל ארז 300 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_099.jpeg",
+    "page": 108
+  },
+  {
+    "id": 807,
+    "name": "חלווה וניל אל ארז 300 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_100.jpeg",
+    "page": 108
+  },
+  {
+    "id": 808,
+    "name": "ביסקוטי איטלקי Molito - לימונצלו, תפוז ושוקולד, שוקולד ושקדים 250 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_101.jpeg",
+    "page": 108
+  },
+  {
+    "id": 809,
+    "name": "פילה מקרל וסרדינים John West - בשמן זית, ברוטב עגבניות ובשמן חמניות",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_102.jpeg",
+    "page": 108
+  },
+  {
+    "id": 810,
+    "name": "פילה הרינג ברוטב עגבניות וקיפר בשמן חמניות John West 145 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_103.jpeg",
+    "page": 108
+  },
+  {
+    "id": 811,
+    "name": "פריכיות תירס Slimdelis - עגבניות ועשבי תיבול, טבעי וזיתים ועירית",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_104.jpeg",
+    "page": 108
+  },
+  {
+    "id": 812,
+    "name": "רוטב HP אורגינל 250 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_105.jpeg",
+    "page": 108
+  },
+  {
+    "id": 813,
+    "name": "פילה טונה Callipo - במי מלח ובשמן זית 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_106.jpeg",
+    "page": 108
+  },
+  {
+    "id": 814,
+    "name": "זיתים שלמים קסטלוטרנו Verde Oro במלח 530 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_107.jpeg",
+    "page": 108
+  },
+  {
+    "id": 815,
+    "name": "עלי גפן ממולאים באורז נירון 400 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_108.jpeg",
+    "page": 108
+  },
+  {
+    "id": 816,
+    "name": "כרוב כבוש אורגני נטופוד 680 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_109.jpeg",
+    "page": 108
+  },
+  {
+    "id": 817,
+    "name": "נתחי טונה בהירה בשמן זית Belluzzi 160 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_110.jpeg",
+    "page": 108
+  },
+  {
+    "id": 818,
+    "name": "נתחי טונה בהירה במי מלח Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_111.jpeg",
+    "page": 108
+  },
+  {
+    "id": 819,
+    "name": "פילה מקרל בשמן זית Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_112.jpeg",
+    "page": 108
+  },
+  {
+    "id": 820,
+    "name": "פילה דניס בשמן זית Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_113.jpeg",
+    "page": 108
+  },
+  {
+    "id": 821,
+    "name": "פילה טונה בהירה בשמן זית - וונטרסקה Belluzzi 200 גרם",
+    "category": "דגים",
+    "image": "images_clean/new_20260623_114.jpeg",
+    "page": 108
+  },
+  {
+    "id": 822,
+    "name": "ארטישוק Verde Oro בשמן - אלה רומנה עם גבעול ורבעים ללא עלים עם תבלינים 530 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_115.jpeg",
+    "page": 108
+  },
+  {
+    "id": 823,
+    "name": "מטחנות תבלינים Cape Herb & Spice - צילי ושום, מלח מתובל, BBQ בראי, מלח ופלפל, ופלפל שחור",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_116.jpeg",
+    "page": 108
+  },
+  {
+    "id": 824,
+    "name": "תערובות RUB Cape Herb & Spice - BBQ מעושן, BBQ קוריאני וסטייקהאוס טקסני 100 גרם",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_117.jpeg",
+    "page": 108
+  },
+  {
+    "id": 825,
+    "name": "תערובות Cape Herb & Spice - קייגן לואיזיאנה, גראם מסאלה ולימון ועשבי תיבול יווני 100 גרם",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_118.jpeg",
+    "page": 108
+  },
+  {
+    "id": 826,
+    "name": "תבלינים Cape Herb & Spice - פפריקה מעושנת, פלפל רפאים וסריראצה צילי 75 גרם",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_119.jpeg",
+    "page": 108
+  },
+  {
+    "id": 827,
+    "name": "זיתי קלמטה מגולענים Iliada 370 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_120.jpeg",
+    "page": 108
+  },
+  {
+    "id": 828,
+    "name": "זיתים יווניים מעורבים Iliada 500 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_121.jpeg",
+    "page": 108
+  },
+  {
+    "id": 829,
+    "name": "סירופ מייפל טהור שקדיה 250 מ\"ל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_122.jpeg",
+    "page": 108
+  },
+  {
+    "id": 830,
+    "name": "זיתי קלמטה Iliada 250 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_123.jpeg",
+    "page": 108
+  },
+  {
+    "id": 831,
+    "name": "זיתים ירוקים עם עשבי תיבול Iliada 250 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_124.jpeg",
+    "page": 108
+  },
+  {
+    "id": 832,
+    "name": "ממרח זיתים Iliada - זיתי קלמטה עם עגבניות מיובשות 175 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_125.jpeg",
+    "page": 108
+  },
+  {
+    "id": 833,
+    "name": "תערובות תיבול Ina Paarmans - שום ועשבי תיבול, קייגן וברביקיו לגריל",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_126.jpeg",
+    "page": 108
+  },
+  {
+    "id": 834,
+    "name": "מרקים אורגניים Auga - שלוש עדשים, גזר, מינסטרונה ועגבניות 400 גרם",
+    "category": "הכנה מהירה",
+    "image": "images_clean/new_20260623_127.jpeg",
+    "page": 108
+  },
+  {
+    "id": 835,
+    "name": "זיתים מעורבים עם עשבי תיבול Iliada 250 גרם",
+    "category": "חמוצים ושימורים",
+    "image": "images_clean/new_20260623_128.jpeg",
+    "page": 108
+  },
+  {
+    "id": 836,
+    "name": "מבחר שמני זית כתית מעולה - סורי, פיקואל, Divo, Olitalia, פארון, גהשאן וסבא חביב 750 מ\"ל",
+    "category": "שמנים ותיבול",
+    "image": "images_clean/new_20260623_129.jpeg",
+    "page": 108
+  },
+  {
+    "id": 837,
+    "name": "מיונז Thomy קרמי ועדין תוצרת שווייץ",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_130.jpeg",
+    "page": 108
+  },
+  {
+    "id": 838,
+    "name": "קרמת בלסמי גורמה iSolai - תאנים, ענבים ותות 180 גרם",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_131.jpeg",
+    "page": 108
+  },
+  {
+    "id": 839,
+    "name": "בוטנים מלוחים אגדת הכפר 170 גרם",
+    "category": "לחמים ונשנושים",
+    "image": "images_clean/new_20260623_132.jpeg",
+    "page": 108
+  },
+  {
+    "id": 840,
+    "name": "קוסקוס Frida חיטה קשה בינוני 500 גרם",
+    "category": "פסטות",
+    "image": "images_clean/new_20260623_133.jpeg",
+    "page": 108
+  },
+  {
+    "id": 841,
+    "name": "רטבי Walden Farms ללא קלוריות - תאוזנד איילנד ורוטב ברביקיו דבש 355 מ\"ל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_134.jpeg",
+    "page": 108
+  },
+  {
+    "id": 842,
+    "name": "חטיף חלבון WIN! בטעם שוקולד דובאי קדאיף ופיסטוקים 65 גרם",
+    "category": "חטיפי חלבון",
+    "image": "images_clean/new_20260623_135.jpeg",
+    "page": 108
+  },
+  {
+    "id": 843,
+    "name": "מטחנות תבלינים GRESOS - גרגירי פלפל שחור ומיקס מלח ופלפל",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_136.jpeg",
+    "page": 108
+  },
+  {
+    "id": 844,
+    "name": "מטחנות מלח GRESOS - מלח הימלאיה ורוד ומלח ים",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_137.jpeg",
+    "page": 108
+  },
+  {
+    "id": 845,
+    "name": "תערובות תיבול GRESOS Greek Celebration - לצזיקי ולסלט יווני",
+    "category": "תבלינים",
+    "image": "images_clean/new_20260623_138.jpeg",
+    "page": 108
+  },
+  {
+    "id": 846,
+    "name": "רטבי Walden Farms ללא קלוריות - ויניגרט בלסמי והאני דיזון 355 מ\"ל",
+    "category": "רטבים וממרחים",
+    "image": "images_clean/new_20260623_139.jpeg",
     "page": 108
   }
 ]
