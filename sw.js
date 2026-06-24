@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tznobar-cache-v10';
+const CACHE_NAME = 'tznobar-cache-v11';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -39,6 +39,7 @@ self.addEventListener('fetch', (event) => {
   const requestUrl = new URL(event.request.url);
   const isSameOrigin = requestUrl.origin === self.location.origin;
   const isNavigation = event.request.mode === 'navigate';
+  const isCatalog = isSameOrigin && /\/products(_clean)?\.json$/.test(requestUrl.pathname);
 
   event.respondWith(
     (async () => {
@@ -53,6 +54,20 @@ self.addEventListener('fetch', (event) => {
           return networkResponse;
         } catch {
           return (await caches.match(event.request)) || (await caches.match('/index.html')) || Response.error();
+        }
+      }
+
+      // Catalog data: network-first so product updates show without a cache bump.
+      if (isCatalog) {
+        try {
+          const networkResponse = await fetch(event.request, { cache: 'no-store' });
+          if (networkResponse && networkResponse.status === 200) {
+            const cache = await caches.open(CACHE_NAME);
+            cache.put(event.request, networkResponse.clone());
+          }
+          return networkResponse;
+        } catch {
+          return (await caches.match(event.request)) || Response.error();
         }
       }
 
