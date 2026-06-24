@@ -1925,8 +1925,32 @@
         });
 
         if ('serviceWorker' in navigator) {
+            let swRefreshing = false;
+            // When a new SW takes control, reload once so the latest catalog shows.
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (swRefreshing) return;
+                swRefreshing = true;
+                window.location.reload();
+            });
+
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').catch((err) => {
+                navigator.serviceWorker.register('/sw.js').then((reg) => {
+                    // Check for an updated SW right away and whenever the tab regains focus.
+                    reg.update();
+                    document.addEventListener('visibilitychange', () => {
+                        if (document.visibilityState === 'visible') reg.update();
+                    });
+                    reg.addEventListener('updatefound', () => {
+                        const newWorker = reg.installing;
+                        if (!newWorker) return;
+                        newWorker.addEventListener('statechange', () => {
+                            // A new version is ready and an old SW is controlling the page.
+                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                newWorker.postMessage({ type: 'SKIP_WAITING' });
+                            }
+                        });
+                    });
+                }).catch((err) => {
                     console.warn('Service worker registration failed:', err);
                 });
             });
