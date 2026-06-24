@@ -150,12 +150,12 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
 
     # Grid layout tuning
     compact = (pdf_mode == 'fast') or len(products) > 260
-    cols = 5 if compact else 4
+    cols = 3
     margin_x = 18
     top_y = page_h - 70
     gap = 8 if compact else 12
     card_w = (page_w - (2 * margin_x) - (gap * (cols - 1))) / cols
-    img_h = 82 if compact else 102
+    img_h = 150 if compact else 180
     txt_h = 36 if compact else 44
     card_h = img_h + txt_h + 8
     row_h = card_h + gap
