@@ -857,62 +857,90 @@
         const ACCESS_KEY = 'tznobar_access_granted';
         const STORAGE_KEY = 'tznobar_catalog_products';
         const CUSTOM_CATEGORIES_KEY = 'tznobar_custom_categories';
+        const CURRENT_VERSION = '6';
+        const API_BASE = '/api/products';
+        const DEFAULT_IMAGE = 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%2250%25%22 x=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2240%22>📷</text></svg>';
+        let catalogSource = 'api';
 
         // ========== Initialize ==========
         async function init() {
             await requireAccess();
             loadCustomCategories();
 
-            // Try loading from localStorage first (user modifications)
-            const stored = localStorage.getItem(STORAGE_KEY);
-            const storedVersion = localStorage.getItem(STORAGE_KEY + '_version');
-            const CURRENT_VERSION = '6';
+            allProducts = await loadProducts();
 
-            if (stored && storedVersion === CURRENT_VERSION) {
-                try {
-                    allProducts = JSON.parse(stored);
-                    if (!Array.isArray(allProducts)) {
-                        allProducts = [];
-                    }
-                } catch {
-                    allProducts = [];
-                }
-            }
-
-            // If no stored data or version changed, load from JSON file
             if (allProducts.length === 0) {
-                // Cache-busting query bypasses any old service-worker cache on the device.
-                const bust = `?v=${CURRENT_VERSION}-${Date.now()}`;
-                const fetchCatalog = async (path) => {
-                    const res = await fetch(path + bust, { cache: 'no-store' });
-                    if (!res.ok) throw new Error(`${path} -> ${res.status}`);
-                    const data = await res.json();
-                    return Array.isArray(data) ? data : [];
-                };
-
-                try {
-                    allProducts = await fetchCatalog('products.json');
-                    if (allProducts.length === 0) {
-                        allProducts = await fetchCatalog('products_clean.json');
-                    }
-                    localStorage.setItem(STORAGE_KEY + '_version', CURRENT_VERSION);
-                    saveToStorage();
-                } catch (e) {
-                    console.error('Failed to load products:', e);
-                    allProducts = [];
-                }
-            }
-
-            // If still empty, clear stale cache markers so next reload retries cleanly.
-            if (allProducts.length === 0) {
-                localStorage.removeItem(STORAGE_KEY);
-                localStorage.removeItem(STORAGE_KEY + '_version');
                 showToast('לא הצלחנו לטעון את המוצרים. נסה לרענן את הדף.');
             }
 
             buildCategoryList();
             renderProducts();
             setupSearch();
+        }
+
+        // Load order: live API (source of truth) -> static JSON -> offline cache.
+        async function loadProducts() {
+            try {
+                const res = await fetch(`${API_BASE}?t=${Date.now()}`, { cache: 'no-store' });
+                if (res.ok) {
+                    const data = await res.json();
+                    const list = data && Array.isArray(data.products) ? data.products : [];
+                    if (list.length) {
+                        catalogSource = data.source || 'api';
+                        cacheProducts(list);
+                        return list;
+                    }
+                }
+            } catch (e) {
+                console.warn('API load failed:', e);
+            }
+
+            // Fallback: static JSON (cache-busted to bypass any old SW cache).
+            const bust = `?v=${CURRENT_VERSION}-${Date.now()}`;
+            for (const path of ['products.json', 'products_clean.json']) {
+                try {
+                    const res = await fetch(path + bust, { cache: 'no-store' });
+                    if (!res.ok) continue;
+                    const data = await res.json();
+                    if (Array.isArray(data) && data.length) {
+                        catalogSource = 'file';
+                        cacheProducts(data);
+                        return data;
+                    }
+                } catch (e) {
+                    console.warn(`Failed to load ${path}:`, e);
+                }
+            }
+
+            // Offline fallback: last good copy saved locally.
+            try {
+                const cached = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+                if (Array.isArray(cached) && cached.length) {
+                    catalogSource = 'cache';
+                    return cached;
+                }
+            } catch {}
+
+            return [];
+        }
+
+        function cacheProducts(list) {
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(list)); } catch {}
+        }
+
+        // Authenticated write helper for the products API.
+        async function apiWrite(method, path, body) {
+            const res = await fetch(path, {
+                method,
+                headers: { 'Content-Type': 'application/json', 'X-Edit-Pin': ACCESS_PIN },
+                body: body ? JSON.stringify(body) : undefined,
+            });
+            let data = {};
+            try { data = await res.json(); } catch {}
+            if (!res.ok) {
+                throw new Error(data.error || `שגיאה ${res.status}`);
+            }
+            return data;
         }
 
         function requireAccess() {
@@ -1210,31 +1238,42 @@
             }
 
             if (id) {
-                // Edit existing
-                const product = allProducts.find(p => p.id === parseInt(id));
-                if (product) {
-                    product.name = name;
-                    product.category = category;
-                    product.description = description;
-                    if (uploadedImageData && uploadedImageData !== product.image) {
-                        product.image = uploadedImageData;
-                    }
+                // Edit existing — persist to the server.
+                const numId = parseInt(id);
+                const product = allProducts.find(p => p.id === numId);
+                const update = { name, category, description };
+                if (uploadedImageData && (!product || uploadedImageData !== product.image)) {
+                    update.image = uploadedImageData;
+                }
+                try {
+                    const data = await apiWrite('PUT', `${API_BASE}/${numId}`, { product: update });
+                    const saved = data.product || Object.assign({}, product, update);
+                    const idx = allProducts.findIndex(p => p.id === numId);
+                    if (idx !== -1) allProducts[idx] = saved;
                     showToast('המוצר עודכן בהצלחה');
+                } catch (e) {
+                    showToast(e.message || 'עדכון נכשל');
+                    return;
                 }
             } else {
-                // Add new
-                const newId = allProducts.length > 0 ? Math.max(...allProducts.map(p => p.id)) + 1 : 1;
-                allProducts.push({
-                    id: newId,
+                // Add new — persist to the server (server assigns the id).
+                const newProduct = {
                     name: name,
                     category: category,
                     description: description,
-                    image: uploadedImageData || 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%2250%25%22 x=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-size=%2240%22>📷</text></svg>'
-                });
-                showToast('המוצר נוסף בהצלחה');
+                    image: uploadedImageData || DEFAULT_IMAGE,
+                };
+                try {
+                    const data = await apiWrite('POST', API_BASE, { product: newProduct });
+                    allProducts.push(data.product || Object.assign({ id: Date.now() }, newProduct));
+                    showToast('המוצר נוסף בהצלחה');
+                } catch (e) {
+                    showToast(e.message || 'הוספה נכשלה');
+                    return;
+                }
             }
 
-            saveToStorage();
+            cacheProducts(allProducts);
             buildCategoryList();
             renderProducts();
             closeModal();
@@ -1253,11 +1292,17 @@
         }
 
         function deleteProduct(id) {
-            allProducts = allProducts.filter(p => p.id !== id);
-            saveToStorage();
-            buildCategoryList();
-            renderProducts();
-            showToast('המוצר נמחק');
+            apiWrite('DELETE', `${API_BASE}/${id}`)
+                .then(() => {
+                    allProducts = allProducts.filter(p => p.id !== id);
+                    cacheProducts(allProducts);
+                    buildCategoryList();
+                    renderProducts();
+                    showToast('המוצר נמחק');
+                })
+                .catch((e) => {
+                    showToast(e.message || 'מחיקה נכשלה');
+                });
         }
 
         function closeConfirmModal() {

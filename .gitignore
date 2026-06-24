@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Backups & scratch artifacts
+*.bak
+*.bak2
+*.bak3
+products.json.bak*
+products_clean.json.bak*
+existing_*.txt
+*_review.txt
+*.tsv
+gemini_import.log
+images_inbox/
+review_new.html
+review_map.tsv
+
+# Local secrets (never commit Supabase service key)
+.env

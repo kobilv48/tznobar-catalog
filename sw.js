@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tznobar-cache-v12';
+const CACHE_NAME = 'tznobar-cache-v13';
 const APP_SHELL = [
   '/',
   '/index.html',
@@ -45,7 +45,11 @@ self.addEventListener('fetch', (event) => {
   const requestUrl = new URL(event.request.url);
   const isSameOrigin = requestUrl.origin === self.location.origin;
   const isNavigation = event.request.mode === 'navigate';
+  const isApi = isSameOrigin && requestUrl.pathname.startsWith('/api/');
   const isCatalog = isSameOrigin && /\/products(_clean)?\.json$/.test(requestUrl.pathname);
+
+  // Never cache live API calls — always hit the network for fresh data.
+  if (isApi) return;
 
   event.respondWith(
     (async () => {

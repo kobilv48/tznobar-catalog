@@ -29,6 +29,59 @@ except Exception:
 PORT = int(os.environ.get('PORT', '8080'))
 PRODUCTS_FILE = 'products.json'
 
+# Supabase persistence (optional). When configured, the catalog is read from
+# and written to Supabase so edits are permanent across all devices. The
+# service_role key is SECRET and must only live in server env vars.
+SUPABASE_URL = os.environ.get('SUPABASE_URL', '').rstrip('/')
+SUPABASE_SERVICE_KEY = os.environ.get('SUPABASE_SERVICE_KEY', '')
+# PIN required to add/edit/delete. Defaults to the catalog's access PIN.
+EDIT_PIN = os.environ.get('EDIT_PIN', '4423')
+
+SUPABASE_ENABLED = bool(SUPABASE_URL and SUPABASE_SERVICE_KEY)
+PRODUCT_FIELDS = ('id', 'name', 'category', 'image', 'page', 'description')
+
+
+def supabase_request(method, path, body=None, extra_headers=None):
+    """Call the Supabase REST API with the service key. Returns parsed JSON (or [])."""
+    if not SUPABASE_ENABLED:
+        raise RuntimeError('Supabase is not configured')
+
+    url = f"{SUPABASE_URL}/rest/v1/{path}"
+    headers = {
+        'apikey': SUPABASE_SERVICE_KEY,
+        'Authorization': f'Bearer {SUPABASE_SERVICE_KEY}',
+        'Content-Type': 'application/json',
+    }
+    if extra_headers:
+        headers.update(extra_headers)
+
+    data = json.dumps(body, ensure_ascii=False).encode('utf-8') if body is not None else None
+    req = urllib.request.Request(url, data=data, headers=headers, method=method)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        raw = resp.read().decode('utf-8', errors='ignore')
+    if not raw:
+        return []
+    try:
+        return json.loads(raw)
+    except Exception:
+        return []
+
+
+def supabase_list_products():
+    """Return all products ordered by id."""
+    return supabase_request('GET', 'products?select=*&order=id.asc')
+
+
+def supabase_next_id():
+    """Compute the next product id (max id + 1)."""
+    rows = supabase_request('GET', 'products?select=id&order=id.desc&limit=1')
+    if rows and isinstance(rows, list):
+        try:
+            return int(rows[0]['id']) + 1
+        except Exception:
+            pass
+    return 1
+
 
 def _rtl(text):
     """RTL helper for reportlab text drawing."""
@@ -225,6 +278,10 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
 
 class CatalogHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
+        # API endpoint: /api/products (catalog data, persistent when Supabase is on)
+        if self.path.split('?', 1)[0] == '/api/products':
+            self.handle_get_products()
+            return
         # API endpoint: /api/image-search?q=...
         if self.path.startswith('/api/image-search?'):
             self.handle_image_search()
@@ -240,7 +297,136 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
         if self.path == '/api/generate-pdf':
             self.handle_generate_pdf()
             return
+        if self.path.split('?', 1)[0] == '/api/products':
+            self.handle_create_product()
+            return
         self.send_json(404, {'error': 'Not found'})
+
+    def do_PUT(self):
+        if self.path.split('?', 1)[0].startswith('/api/products/'):
+            self.handle_update_product()
+            return
+        self.send_json(404, {'error': 'Not found'})
+
+    def do_DELETE(self):
+        if self.path.split('?', 1)[0].startswith('/api/products/'):
+            self.handle_delete_product()
+            return
+        self.send_json(404, {'error': 'Not found'})
+
+    # ---------- Products API ----------
+
+    def _read_json_body(self):
+        content_length = int(self.headers.get('Content-Length', '0'))
+        raw = self.rfile.read(content_length) if content_length > 0 else b'{}'
+        try:
+            return json.loads(raw.decode('utf-8')) if raw else {}
+        except Exception:
+            return {}
+
+    def _check_pin(self, payload):
+        """Validate the edit PIN from header or body. Returns True if allowed."""
+        pin = self.headers.get('X-Edit-Pin') or (payload.get('pin') if isinstance(payload, dict) else None)
+        return str(pin) == str(EDIT_PIN)
+
+    def _path_id(self):
+        """Extract the numeric id from /api/products/<id>."""
+        tail = self.path.split('?', 1)[0].rsplit('/', 1)[-1]
+        try:
+            return int(tail)
+        except (TypeError, ValueError):
+            return None
+
+    def _clean_product(self, data):
+        return {k: data.get(k) for k in PRODUCT_FIELDS if k in data}
+
+    def handle_get_products(self):
+        # Prefer Supabase (persistent). Fall back to products.json (read-only).
+        if SUPABASE_ENABLED:
+            try:
+                products = supabase_list_products()
+                self.send_json(200, {'products': products, 'source': 'supabase'})
+                return
+            except Exception as e:
+                print(f"Supabase read failed, falling back to file: {e}", file=sys.stderr)
+        try:
+            with open(PRODUCTS_FILE, 'r', encoding='utf-8') as f:
+                products = json.load(f)
+            self.send_json(200, {'products': products, 'source': 'file'})
+        except Exception as e:
+            self.send_json(500, {'error': str(e)})
+
+    def handle_create_product(self):
+        payload = self._read_json_body()
+        if not self._check_pin(payload):
+            self.send_json(403, {'error': 'PIN שגוי'})
+            return
+        if not SUPABASE_ENABLED:
+            self.send_json(503, {'error': 'אחסון מתמיד לא מוגדר בשרת'})
+            return
+        product = self._clean_product(payload.get('product', payload))
+        if not product.get('name'):
+            self.send_json(400, {'error': 'חסר שם מוצר'})
+            return
+        try:
+            product['id'] = supabase_next_id()
+            created = supabase_request(
+                'POST', 'products', body=product,
+                extra_headers={'Prefer': 'return=representation'},
+            )
+            row = created[0] if isinstance(created, list) and created else product
+            self.send_json(201, {'product': row})
+        except Exception as e:
+            print(f"Create product failed: {e}", file=sys.stderr)
+            self.send_json(500, {'error': str(e)})
+
+    def handle_update_product(self):
+        payload = self._read_json_body()
+        if not self._check_pin(payload):
+            self.send_json(403, {'error': 'PIN שגוי'})
+            return
+        if not SUPABASE_ENABLED:
+            self.send_json(503, {'error': 'אחסון מתמיד לא מוגדר בשרת'})
+            return
+        pid = self._path_id()
+        if pid is None:
+            self.send_json(400, {'error': 'מזהה מוצר לא תקין'})
+            return
+        update = self._clean_product(payload.get('product', payload))
+        update.pop('id', None)
+        update['updated_at'] = datetime.now().isoformat()
+        try:
+            updated = supabase_request(
+                'PATCH', f'products?id=eq.{pid}', body=update,
+                extra_headers={'Prefer': 'return=representation'},
+            )
+            row = updated[0] if isinstance(updated, list) and updated else None
+            if row is None:
+                self.send_json(404, {'error': 'המוצר לא נמצא'})
+                return
+            self.send_json(200, {'product': row})
+        except Exception as e:
+            print(f"Update product failed: {e}", file=sys.stderr)
+            self.send_json(500, {'error': str(e)})
+
+    def handle_delete_product(self):
+        payload = self._read_json_body()
+        if not self._check_pin(payload):
+            self.send_json(403, {'error': 'PIN שגוי'})
+            return
+        if not SUPABASE_ENABLED:
+            self.send_json(503, {'error': 'אחסון מתמיד לא מוגדר בשרת'})
+            return
+        pid = self._path_id()
+        if pid is None:
+            self.send_json(400, {'error': 'מזהה מוצר לא תקין'})
+            return
+        try:
+            supabase_request('DELETE', f'products?id=eq.{pid}')
+            self.send_json(200, {'deleted': pid})
+        except Exception as e:
+            print(f"Delete product failed: {e}", file=sys.stderr)
+            self.send_json(500, {'error': str(e)})
 
     def handle_image_search(self):
         # Parse query parameter
