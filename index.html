@@ -866,7 +866,7 @@
             // Try loading from localStorage first (user modifications)
             const stored = localStorage.getItem(STORAGE_KEY);
             const storedVersion = localStorage.getItem(STORAGE_KEY + '_version');
-            const CURRENT_VERSION = '5';
+            const CURRENT_VERSION = '6';
 
             if (stored && storedVersion === CURRENT_VERSION) {
                 try {
@@ -881,8 +881,10 @@
 
             // If no stored data or version changed, load from JSON file
             if (allProducts.length === 0) {
+                // Cache-busting query bypasses any old service-worker cache on the device.
+                const bust = `?v=${CURRENT_VERSION}-${Date.now()}`;
                 const fetchCatalog = async (path) => {
-                    const res = await fetch(path, { cache: 'no-store' });
+                    const res = await fetch(path + bust, { cache: 'no-store' });
                     if (!res.ok) throw new Error(`${path} -> ${res.status}`);
                     const data = await res.json();
                     return Array.isArray(data) ? data : [];
