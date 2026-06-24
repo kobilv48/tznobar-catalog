@@ -1562,14 +1562,14 @@
             // Layout constants
             const PAGE_H = 1123;
             const compactMode = products.length > 250 || pdfMode === 'fast';
-            const CARD_W = compactMode ? 145 : 170;
-            const IMAGE_H = compactMode ? 116 : 140;
-            const INFO_H = compactMode ? 44 : 52;
+            const CARD_W = compactMode ? 180 : 240;
+            const IMAGE_H = compactMode ? 150 : 200;
+            const INFO_H = compactMode ? 46 : 54;
             const CARD_H = IMAGE_H + INFO_H;
             const GAP = compactMode ? 8 : 12;
             const PADDING = 20;
             const HEADER_H = 60;
-            const COLS = compactMode ? 5 : 4;
+            const COLS = 3;
             const ROW_H = CARD_H + GAP;
 
             const loadPageImages = async (page) => {
