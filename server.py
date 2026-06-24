@@ -156,7 +156,7 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
     gap = 8 if compact else 12
     card_w = (page_w - (2 * margin_x) - (gap * (cols - 1))) / cols
     img_h = 150 if compact else 180
-    txt_h = 36 if compact else 44
+    txt_h = 50 if compact else 58
     card_h = img_h + txt_h + 8
     row_h = card_h + gap
     max_rows = int((top_y - 28) // row_h)
@@ -165,32 +165,26 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
     # Per request: always include images in the generated PDF.
     include_images = True
 
-    def split_name_lines(name, max_chars=20, max_lines=2):
+    def split_name_lines(name, max_width_pt, font_size, max_lines=4):
+        """Word-wrap a name to fit the card width, showing the full name (no truncation)."""
         words = name.split()
         if not words:
             return ['']
+
+        def fits(text):
+            return pdfmetrics.stringWidth(_rtl(text), font_name, font_size) <= max_width_pt
 
         lines = []
         current = ''
         for word in words:
             candidate = f"{current} {word}".strip()
-            if len(candidate) <= max_chars:
+            if fits(candidate) or not current:
                 current = candidate
-                continue
-
-            if current:
+            else:
                 lines.append(current)
-            current = word
-
-            if len(lines) == max_lines - 1:
-                break
-
-        if len(lines) < max_lines and current:
+                current = word
+        if current:
             lines.append(current)
-
-        consumed_words = len(' '.join(lines).split())
-        if consumed_words < len(words):
-            lines[-1] = (lines[-1][:max(1, max_chars - 1)] + '…') if lines[-1] else '…'
 
         return lines[:max_lines]
 
@@ -261,16 +255,17 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
                             except Exception:
                                 pass
 
-                # Product name
+                # Product name (full name, word-wrapped to the card width)
                 c.setFillColor(colors.HexColor('#1f1f1f'))
                 name = (product.get('name') or '').strip()
-                lines = split_name_lines(name, max_chars=18 if compact else 22, max_lines=2)
-                c.setFont(font_name, 8.2 if compact else 9.2)
-                if len(lines) == 1:
-                    c.drawCentredString(x + card_w / 2, y + 12, _rtl(lines[0]))
-                else:
-                    c.drawCentredString(x + card_w / 2, y + 16, _rtl(lines[0]))
-                    c.drawCentredString(x + card_w / 2, y + 7, _rtl(lines[1]))
+                name_font = 8.2 if compact else 9.2
+                c.setFont(font_name, name_font)
+                lines = split_name_lines(name, card_w - 10, name_font, max_lines=4)
+                line_gap = 9.0 if compact else 10.0
+                n = len(lines)
+                start_y = y + txt_h / 2 + ((n - 1) * line_gap) / 2 - line_gap / 2 + 2
+                for idx, ln in enumerate(lines):
+                    c.drawCentredString(x + card_w / 2, start_y - idx * line_gap, _rtl(ln))
 
             c.showPage()
 
