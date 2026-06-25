@@ -10,6 +10,7 @@ import re
 import os
 import sys
 import gc
+import hashlib
 import threading
 import concurrent.futures
 from datetime import datetime
@@ -159,6 +160,64 @@ def _thumb_jpeg_bytes(path, target_w_pt, target_h_pt):
     return data
 
 
+# On-disk cache of fully-rendered catalog PDFs. Keyed by a hash of the product
+# data + export options, so a PDF is only regenerated when the catalog actually
+# changes. This keeps the memory-heavy generation rare on the free tier — most
+# shares just stream an already-built file.
+_PDF_CACHE_DIR = os.path.join(tempfile.gettempdir(), 'tznobar_pdf_cache')
+_PDF_CACHE_LOCK = threading.Lock()
+
+
+def _pdf_cache_key(products, export_all, selected_category, pdf_mode):
+    """Stable hash of the inputs that affect the rendered PDF."""
+    h = hashlib.sha256()
+    h.update(f'{bool(export_all)}|{selected_category or ""}|{pdf_mode}|'.encode('utf-8'))
+    # Only the fields that influence the output, in catalog order.
+    for p in products:
+        h.update('\x1f'.join((
+            str(p.get('id', '')),
+            str(p.get('name', '')),
+            str(p.get('category', '')),
+            str(p.get('image', '')),
+        )).encode('utf-8'))
+        h.update(b'\x1e')
+    return h.hexdigest()
+
+
+def get_or_build_catalog_pdf(products, export_all, selected_category, pdf_mode):
+    """Return a path to a cached catalog PDF, building it once if needed."""
+    if not products:
+        raise ValueError('No products to export')
+    key = _pdf_cache_key(products, export_all, selected_category, pdf_mode)
+    cache_path = os.path.join(_PDF_CACHE_DIR, f'catalog_{key}.pdf')
+    if os.path.exists(cache_path) and os.path.getsize(cache_path) > 0:
+        return cache_path
+    with _PDF_CACHE_LOCK:
+        # Re-check inside the lock in case another request just built it.
+        if os.path.exists(cache_path) and os.path.getsize(cache_path) > 0:
+            return cache_path
+        os.makedirs(_PDF_CACHE_DIR, exist_ok=True)
+        tmp_fd, tmp_path = tempfile.mkstemp(prefix='catalog_', suffix='.pdf', dir=_PDF_CACHE_DIR)
+        os.close(tmp_fd)
+        try:
+            generate_catalog_pdf(
+                products=products,
+                output_path=tmp_path,
+                export_all=export_all,
+                selected_category=selected_category,
+                pdf_mode=pdf_mode,
+            )
+            os.replace(tmp_path, cache_path)  # atomic publish
+        except Exception:
+            if os.path.exists(tmp_path):
+                try:
+                    os.remove(tmp_path)
+                except Exception:
+                    pass
+            raise
+    return cache_path
+
+
 def generate_catalog_pdf(products, output_path, export_all=True, selected_category=None, pdf_mode='fast'):
     """Create a catalog PDF on disk to keep RAM usage low."""
     if not products:
@@ -189,7 +248,7 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
     c.setFont(font_name, 12)
     subtitle = (f"קטגוריה: {selected_category}" if (not export_all and selected_category) else '')
     c.drawCentredString(page_w / 2, page_h - 345, _rtl(subtitle))
-    c.drawCentredString(page_w / 2, page_h - 365, datetime.now().strftime('%Y-%m-%d'))
+    c.drawCentredString(page_w / 2, page_h - 365, datetime.now().strftime('%Y'))
     c.showPage()
 
     # Grid layout tuning
@@ -510,7 +569,6 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(response)
 
     def handle_generate_pdf(self):
-        tmp_path = None
         try:
             content_length = int(self.headers.get('Content-Length', '0'))
             raw = self.rfile.read(content_length) if content_length > 0 else b'{}'
@@ -535,19 +593,17 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
             else:
                 products = [p for p in all_products if p.get('category') == selected_category]
 
-            with tempfile.NamedTemporaryFile(prefix='catalog_', suffix='.pdf', delete=False) as tmp:
-                tmp_path = tmp.name
-
-            generate_catalog_pdf(
+            # Reuse a cached PDF when the catalog is unchanged; only build (the
+            # memory-heavy step) when something actually changed.
+            pdf_path = get_or_build_catalog_pdf(
                 products=products,
-                output_path=tmp_path,
                 export_all=export_all,
                 selected_category=selected_category,
                 pdf_mode=pdf_mode,
             )
 
             filename = 'catalog.pdf' if export_all else 'catalog-category.pdf'
-            file_size = os.path.getsize(tmp_path)
+            file_size = os.path.getsize(pdf_path)
             self.send_response(200)
             self.send_header('Content-Type', 'application/pdf')
             self.send_header('Content-Disposition', f'attachment; filename="{filename}"')
@@ -555,7 +611,7 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
             self.send_header('Content-Length', str(file_size))
             self.end_headers()
 
-            with open(tmp_path, 'rb') as pdf_file:
+            with open(pdf_path, 'rb') as pdf_file:
                 while True:
                     chunk = pdf_file.read(64 * 1024)
                     if not chunk:
@@ -564,12 +620,6 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
         except Exception as e:
             print(f"PDF generation error: {e}", file=sys.stderr)
             self.send_json(500, {'error': str(e)})
-        finally:
-            if tmp_path and os.path.exists(tmp_path):
-                try:
-                    os.remove(tmp_path)
-                except Exception:
-                    pass
 
     def log_message(self, format, *args):
         # Only log API calls, not static file requests.
