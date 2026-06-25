@@ -1974,6 +1974,15 @@
                 window.location.reload();
             });
 
+            // A freshly activated SW asks open clients to reload onto the new version.
+            navigator.serviceWorker.addEventListener('message', (event) => {
+                if (event.data && event.data.type === 'RELOAD_FOR_UPDATE') {
+                    if (swRefreshing) return;
+                    swRefreshing = true;
+                    window.location.reload();
+                }
+            });
+
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/sw.js').then((reg) => {
                     // Check for an updated SW right away and whenever the tab regains focus.

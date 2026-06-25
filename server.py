@@ -603,7 +603,11 @@ if __name__ == '__main__':
     print(f"Serving catalog on port {PORT}")
     print(f"Local URL: http://localhost:{PORT}")
     print(f"Image search API: /api/image-search?q=...")
-    server = http.server.HTTPServer(('', PORT), CatalogHandler)
+    # Threading server so a slow request (e.g. PDF generation) doesn't block
+    # other requests — including Render's health check, which otherwise times
+    # out and triggers a "server failure" alert.
+    server = http.server.ThreadingHTTPServer(('', PORT), CatalogHandler)
+    server.daemon_threads = True
     try:
         server.serve_forever()
     except KeyboardInterrupt:
