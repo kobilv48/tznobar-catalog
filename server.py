@@ -9,6 +9,7 @@ import html as html_lib
 import re
 import os
 import sys
+import gc
 import threading
 import concurrent.futures
 from datetime import datetime
@@ -326,6 +327,9 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
             c.showPage()
 
     c.save()
+    # Reclaim decode/render buffers promptly so steady-state RAM stays low on
+    # memory-limited hosts (free tier is 512MB).
+    gc.collect()
 
 class CatalogHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
