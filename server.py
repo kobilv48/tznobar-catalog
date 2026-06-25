@@ -138,6 +138,12 @@ def _thumb_jpeg_bytes(path, target_w_pt, target_h_pt):
         return cached
     try:
         with Image.open(path) as img:
+            # Ask the JPEG decoder to downscale while decoding so huge source
+            # photos never fully expand in RAM (critical on memory-limited hosts).
+            try:
+                img.draft('RGB', (max_w_px, max_h_px))
+            except Exception:
+                pass
             img = ImageOps.exif_transpose(img)
             if img.mode not in ('RGB', 'L'):
                 img = img.convert('RGB')
@@ -246,7 +252,10 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
                     if _local not in seen_paths and os.path.exists(_local):
                         seen_paths.add(_local)
         if seen_paths:
-            workers = min(8, (os.cpu_count() or 2) * 2)
+            # Keep parallelism low so peak memory (each worker decodes one image)
+            # stays well within the host's limit. On constrained hosts the CPU is
+            # tiny anyway, so more threads wouldn't help but would spike RAM.
+            workers = min(2, (os.cpu_count() or 1))
             with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
                 list(pool.map(lambda p: _thumb_jpeg_bytes(p, tw, th), seen_paths))
 
