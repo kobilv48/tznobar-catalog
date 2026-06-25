@@ -1200,6 +1200,7 @@
 
         // ========== Save Product ==========
         async function saveProduct() {
+            if (window.__isSaving) return;
             const id = document.getElementById('editProductId').value;
             const name = document.getElementById('productName').value.trim();
             let category = document.getElementById('productCategory').value;
@@ -1219,64 +1220,57 @@
                 category = category.trim();
             }
 
-            // If no image uploaded, search for one automatically
-            if (!uploadedImageData || uploadedImageData === null) {
-                const btn = document.getElementById('saveProductBtn');
-                btn.disabled = true;
-                btn.textContent = 'מחפש תמונה...';
-                try {
-                    const autoImage = await searchProductImage(name + ' ' + category);
-                    if (autoImage) {
-                        uploadedImageData = autoImage;
-                    }
-                } catch (e) {
-                    console.warn('Auto image search failed:', e);
-                } finally {
-                    btn.disabled = false;
-                    btn.textContent = 'שמור';
-                }
-            }
+            // Capture the chosen image before closing the modal (closeModal resets it),
+            // then close immediately so the form can't be submitted twice.
+            window.__isSaving = true;
+            let imageData = uploadedImageData;
+            closeModal();
 
-            if (id) {
-                // Edit existing — persist to the server.
-                const numId = parseInt(id);
-                const product = allProducts.find(p => p.id === numId);
-                const update = { name, category, description };
-                if (uploadedImageData && (!product || uploadedImageData !== product.image)) {
-                    update.image = uploadedImageData;
+            try {
+                // If no image was provided, search for one automatically.
+                if (!imageData) {
+                    try {
+                        const autoImage = await searchProductImage(name + ' ' + category);
+                        if (autoImage) imageData = autoImage;
+                    } catch (e) {
+                        console.warn('Auto image search failed:', e);
+                    }
                 }
-                try {
+
+                if (id) {
+                    // Edit existing — persist to the server.
+                    const numId = parseInt(id);
+                    const product = allProducts.find(p => p.id === numId);
+                    const update = { name, category, description };
+                    if (imageData && (!product || imageData !== product.image)) {
+                        update.image = imageData;
+                    }
                     const data = await apiWrite('PUT', `${API_BASE}/${numId}`, { product: update });
                     const saved = data.product || Object.assign({}, product, update);
                     const idx = allProducts.findIndex(p => p.id === numId);
                     if (idx !== -1) allProducts[idx] = saved;
                     showToast('המוצר עודכן בהצלחה');
-                } catch (e) {
-                    showToast(e.message || 'עדכון נכשל');
-                    return;
-                }
-            } else {
-                // Add new — persist to the server (server assigns the id).
-                const newProduct = {
-                    name: name,
-                    category: category,
-                    description: description,
-                    image: uploadedImageData || DEFAULT_IMAGE,
-                };
-                try {
+                } else {
+                    // Add new — persist to the server (server assigns the id).
+                    const newProduct = {
+                        name: name,
+                        category: category,
+                        description: description,
+                        image: imageData || DEFAULT_IMAGE,
+                    };
                     const data = await apiWrite('POST', API_BASE, { product: newProduct });
                     allProducts.push(data.product || Object.assign({ id: Date.now() }, newProduct));
                     showToast('המוצר נוסף בהצלחה');
-                } catch (e) {
-                    showToast(e.message || 'הוספה נכשלה');
-                    return;
                 }
-            }
 
-            cacheProducts(allProducts);
-            buildCategoryList();
-            renderProducts();
-            closeModal();
+                cacheProducts(allProducts);
+                buildCategoryList();
+                renderProducts();
+            } catch (e) {
+                showToast(e.message || 'השמירה נכשלה');
+            } finally {
+                window.__isSaving = false;
+            }
         }
 
         // ========== Delete Product ==========

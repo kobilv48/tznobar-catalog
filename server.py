@@ -9,6 +9,8 @@ import html as html_lib
 import re
 import os
 import sys
+import threading
+import concurrent.futures
 from datetime import datetime
 import tempfile
 from io import BytesIO
@@ -115,6 +117,41 @@ def _pick_font_name():
     return 'Helvetica'
 
 
+# Cache of compressed JPEG thumbnails, keyed by (path, mtime, max_w_px, max_h_px).
+# Persists across requests in the long-running server process, so repeated catalog
+# exports reuse already-processed images instead of re-decoding them every time.
+_THUMB_CACHE = {}
+_THUMB_CACHE_LOCK = threading.Lock()
+
+
+def _thumb_jpeg_bytes(path, target_w_pt, target_h_pt):
+    """Return compressed JPEG bytes for an image, cached by path + mtime + size."""
+    try:
+        mtime = os.path.getmtime(path)
+    except OSError:
+        return None
+    max_w_px = max(140, int(target_w_pt * 1.7))
+    max_h_px = max(140, int(target_h_pt * 1.7))
+    key = (path, mtime, max_w_px, max_h_px)
+    cached = _THUMB_CACHE.get(key)
+    if cached is not None:
+        return cached
+    try:
+        with Image.open(path) as img:
+            img = ImageOps.exif_transpose(img)
+            if img.mode not in ('RGB', 'L'):
+                img = img.convert('RGB')
+            img.thumbnail((max_w_px, max_h_px), Image.Resampling.LANCZOS)
+            buf = BytesIO()
+            img.save(buf, format='JPEG', quality=58, optimize=True)
+            data = buf.getvalue()
+    except Exception:
+        return None
+    with _THUMB_CACHE_LOCK:
+        _THUMB_CACHE[key] = data
+    return data
+
+
 def generate_catalog_pdf(products, output_path, export_all=True, selected_category=None, pdf_mode='fast'):
     """Create a catalog PDF on disk to keep RAM usage low."""
     if not products:
@@ -189,19 +226,29 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
         return lines[:max_lines]
 
     def build_image_reader(local_img_path, target_w_pt, target_h_pt):
-        """Resize/compress images before embedding to reduce memory pressure."""
-        max_w_px = max(140, int(target_w_pt * 1.7))
-        max_h_px = max(140, int(target_h_pt * 1.7))
-        with Image.open(local_img_path) as img:
-            img = ImageOps.exif_transpose(img)
-            if img.mode not in ('RGB', 'L'):
-                img = img.convert('RGB')
-            img.thumbnail((max_w_px, max_h_px), Image.Resampling.LANCZOS)
+        """Return a reportlab ImageReader from a cached, compressed thumbnail."""
+        data = _thumb_jpeg_bytes(local_img_path, target_w_pt, target_h_pt)
+        if not data:
+            return None
+        return ImageReader(BytesIO(data))
 
-            compressed = BytesIO()
-            img.save(compressed, format='JPEG', quality=58, optimize=True)
-            compressed.seek(0)
-            return ImageReader(compressed), compressed
+    # Pre-process every image in parallel to warm the thumbnail cache before drawing.
+    # PIL releases the GIL during decode/resize/encode, so threads give a real speedup,
+    # and the cache makes subsequent exports of the same catalog near-instant.
+    if include_images:
+        tw, th = card_w - 12, img_h - 4
+        seen_paths = set()
+        for _items in grouped.values():
+            for _product in _items:
+                _src = _product.get('image', '')
+                if _src and isinstance(_src, str) and not _src.startswith('data:image'):
+                    _local = _src.lstrip('/')
+                    if _local not in seen_paths and os.path.exists(_local):
+                        seen_paths.add(_local)
+        if seen_paths:
+            workers = min(8, (os.cpu_count() or 2) * 2)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+                list(pool.map(lambda p: _thumb_jpeg_bytes(p, tw, th), seen_paths))
 
     for category, items in grouped.items():
         for page_idx in range(0, len(items), page_capacity):
@@ -240,18 +287,18 @@ def generate_catalog_pdf(products, output_path, export_all=True, selected_catego
                         local_img = img_src.lstrip('/')
                         if os.path.exists(local_img):
                             try:
-                                reader, compressed_buf = build_image_reader(local_img, card_w - 12, img_h - 4)
-                                c.drawImage(
-                                    reader,
-                                    x + 6,
-                                    y + txt_h + 6,
-                                    card_w - 12,
-                                    img_h - 4,
-                                    preserveAspectRatio=True,
-                                    anchor='c',
-                                    mask='auto'
-                                )
-                                compressed_buf.close()
+                                reader = build_image_reader(local_img, card_w - 12, img_h - 4)
+                                if reader is not None:
+                                    c.drawImage(
+                                        reader,
+                                        x + 6,
+                                        y + txt_h + 6,
+                                        card_w - 12,
+                                        img_h - 4,
+                                        preserveAspectRatio=True,
+                                        anchor='c',
+                                        mask='auto'
+                                    )
                             except Exception:
                                 pass
 
@@ -512,8 +559,9 @@ class CatalogHandler(http.server.SimpleHTTPRequestHandler):
                     pass
 
     def log_message(self, format, *args):
-        # Only log API calls, not static file requests
-        if '/api/' in (args[0] if args else ''):
+        # Only log API calls, not static file requests.
+        first = args[0] if args else ''
+        if isinstance(first, str) and '/api/' in first:
             super().log_message(format, *args)
 
 
